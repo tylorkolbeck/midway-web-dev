@@ -1,0 +1,44 @@
+@import "../../css/colors.scss";
+
+.Button {
+  display: inline-block;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  text-decoration: none;
+  background: $color-primary;
+  // background-image: linear-gradient(to right top, #33bce3, #32c8c4, #31d4a5, #30e086, #2fec68);
+  color: $color-grey-xlight;
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  text-align: center;
+  transition: all 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 12px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  font-weight: 200;
+  white-space: nowrap;
+
+  &.light {
+    background: $color-grey-xlight;
+    color: $color-grey-dark;
+  }
+
+  &.dark {
+    background: $color-primary;
+    color: $color-grey-xlight;
+  }
+}
+
+.Button:hover,
+.Button:focus {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.Button:focus {
+  outline: none;
+  border: none;
+}

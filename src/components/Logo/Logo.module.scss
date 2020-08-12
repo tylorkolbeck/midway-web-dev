@@ -1,0 +1,22 @@
+@import "../../css/colors.scss";
+
+.Logo {
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.Logo_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // background: $color-primary;
+
+  & h1 {
+    color: $color-grey-xlight;
+    border: none;
+    font-size: 24px;
+    margin: 0px;
+    padding: 0px;
+  }
+}

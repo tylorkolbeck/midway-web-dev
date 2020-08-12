@@ -1,0 +1,44 @@
+@import "../css/colors.scss";
+
+a {
+  color: $color-primary;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+main {
+  padding: 0px 2rem;
+}
+
+b {
+  font-weight: bold;
+}
+
+a {
+  font-weight: 300;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  svg {
+    margin-left: 5px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  border: none;
+}
+
+p {
+  font-weight: 300;
+  line-height: 1.4rem;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}

@@ -1,0 +1,51 @@
+@import "../../css/colors.scss";
+
+.Navigation_Wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  // background: white;
+
+  padding: 15px 0px;
+
+  & ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    align-items: center;
+
+    & li {
+      padding: 0px 15px;
+      margin: 0px;
+
+      & a {
+        color: $color-grey-xlight;
+      }
+    }
+  }
+}
+
+.Navigtion_content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .Navigtion_content {
+    padding: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Navigation_Wrapper ul {
+    display: none;
+  }
+
+  .Navigation_Wrapper {
+    background: $color-grey-xlight;
+  }
+}
