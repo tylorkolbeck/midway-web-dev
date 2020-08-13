@@ -9,7 +9,6 @@ import user_interface from "../assets/user_interface.svg"
 import { FiArrowRight } from "react-icons/fi"
 import meetTheTeam from "../assets/meet_the_team.svg"
 import WhatWeKnow from "../components/WhatWeKnow/WhatWeKnow"
-import Button from "../components/Button/Button"
 
 export default function Home() {
   return (
@@ -74,15 +73,11 @@ export default function Home() {
               Learn More <FiArrowRight />
             </Link>
           </div>
-          <div className={styles.svg_wrapper}>
-            {/* <img src={designIllustration} alt="Design Illustration" /> */}
-          </div>
+          <div className={styles.svg_wrapper}></div>
         </section>
 
         <section className={styles.Homepage_section}>
-          <div className={styles.svg_wrapper}>
-            {/* <img src={designIllustration} alt="Design Illustration" /> */}
-          </div>
+          <div className={styles.svg_wrapper}></div>
           <div>
             <h1>Professional Services</h1>
             <p style={{ fontWeight: "300" }}>

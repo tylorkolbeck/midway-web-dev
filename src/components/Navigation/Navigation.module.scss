@@ -2,7 +2,7 @@
 
 .Navigation_Wrapper {
   position: absolute;
-  top: 0;
+  top: 10px;
   left: 0;
   right: 0;
   // background: white;
@@ -21,6 +21,7 @@
 
       & a {
         color: $color-grey-xlight;
+        font-weight: bold;
       }
     }
   }
@@ -43,9 +44,5 @@
 @media screen and (max-width: 768px) {
   .Navigation_Wrapper ul {
     display: none;
-  }
-
-  .Navigation_Wrapper {
-    background: $color-grey-xlight;
   }
 }

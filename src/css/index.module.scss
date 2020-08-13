@@ -2,7 +2,7 @@
 
 .Services_container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   margin: 0 auto;
   grid-gap: 2rem;
   margin-top: -75px;
@@ -74,5 +74,21 @@
   img {
     height: 300px;
     width: auto;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .Services_container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .Homepage_section {
+    grid-template-columns: 1fr;
+  }
+
+  .svg_wrapper {
+    display: none;
   }
 }
