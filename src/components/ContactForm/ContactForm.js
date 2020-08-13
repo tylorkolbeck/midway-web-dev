@@ -23,12 +23,7 @@ export default function ContactForm(props) {
           <h4>Message</h4>
           <textarea placeholder="Enter your messsage..." />
         </div>
-        <div
-          style={{
-            gridColumn: "1 / 3",
-            display: "flex",
-          }}
-        >
+        <div>
           <Button bg="tert" icon="arrowRight" style={{ width: "120px" }}>
             Send
           </Button>
