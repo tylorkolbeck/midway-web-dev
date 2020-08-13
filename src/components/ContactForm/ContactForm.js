@@ -11,6 +11,7 @@ const initialFormState = {
 export default function ContactForm(props) {
   const [state, setState] = useState(initialFormState)
   const [error, setError] = useState(false)
+  const [messageSuccess, setMessageSuccess] = useState(false)
 
   let formClass = props.mini ? styles.miniForm : ""
 
@@ -28,6 +29,7 @@ export default function ContactForm(props) {
     })
       .then(() => {
         setState(initialFormState)
+        setMessageSuccess("Your message is on its way!")
         setError(false)
       })
       .catch(() => setError("There was an error sending your message."))
@@ -44,6 +46,7 @@ export default function ContactForm(props) {
       <div>
         <h1>Contact Us</h1>
         <p className="error-text">{error && error}</p>
+        <p className="success-text">{messageSuccess && messageSuccess}</p>
       </div>
 
       <div className={[styles.ContactForm, formClass].join(" ")}>
