@@ -23,8 +23,11 @@
   flex-wrap: wrap;
   // grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
   border-radius: 12px;
-  grid-gap: 2rem;
   justify-content: center;
+
+  .iconCard {
+    margin: 10px 10px;
+  }
 
   & > div {
     width: 100px;

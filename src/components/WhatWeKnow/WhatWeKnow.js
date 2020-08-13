@@ -17,35 +17,35 @@ export default function WhatWeKnow() {
     <div className={styles.Tech_stack}>
       <h1>What We Know</h1>
       <div>
-        <div>
+        <div className={styles.iconCard}>
           <DiJsBadge />
           <p>Javascript</p>
         </div>
-        <div>
+        <div className={styles.iconCard}>
           <DiReact />
           <p>React</p>
         </div>
-        <div>
+        <div className={styles.iconCard}>
           <DiHtml5 />
           <p>HTML</p>
         </div>
-        <div>
+        <div className={styles.iconCard}>
           <DiCss3 />
           <p>CSS</p>
         </div>
-        <div>
+        <div className={styles.iconCard}>
           <DiNodejsSmall />
           <p>NodeJS</p>
         </div>
-        <div>
+        <div className={styles.iconCard}>
           <DiWordpress />
           <p>Wordpress</p>
         </div>
-        <div>
+        <div className={styles.iconCard}>
           <DiMysql />
           <p>MySQL</p>
         </div>
-        <div>
+        <div className={styles.iconCard}>
           <DiMongodb />
           <p>MongoDB</p>
         </div>
