@@ -70,6 +70,7 @@ textarea {
   resize: none;
   transition: background 0.2s ease-in-out;
   box-sizing: border-box;
+  border-radius: 0px;
 }
 
 /* Remove the stupid outer glow in Webkit */
@@ -148,6 +149,7 @@ input[type="file"] {
 /* Make webkit render the search input like a normal text field */
 input[type="search"] {
   -webkit-appearance: textfield;
+  -webkit-appearance: none;
   // -webkit-box-sizing: content-box;
 }
 

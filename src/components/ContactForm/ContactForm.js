@@ -29,7 +29,11 @@ export default function ContactForm(props) {
             display: "flex",
           }}
         >
-          <Button bg="tert" icon="arrowRight" style={{ width: "120px" }}>
+          <Button
+            bg="tert"
+            icon="arrowRight"
+            style={{ width: "120px", marginTop: "20px" }}
+          >
             Send
           </Button>
         </div>
