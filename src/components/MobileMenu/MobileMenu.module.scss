@@ -1,0 +1,31 @@
+@import "../../css/colors.scss";
+
+.MobileMenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  min-width: 100vw;
+  padding: 15px 0px;
+  margin-right: 100vw;
+  transition: all 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  padding-left: 25px;
+
+  &.open {
+    margin-left: 0;
+    background: $color-footer-bg;
+
+    & a {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: $color-accent;
+    }
+
+    & a:first-of-type {
+      margin-top: 75px;
+    }
+  }
+}

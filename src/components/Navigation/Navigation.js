@@ -4,13 +4,14 @@ import styles from "./Navigation.module.scss"
 import Logo from "../Logo/Logo"
 import Button from "../Button/Button"
 import Hamburger from "../Hamburger/Hamburger"
+import MobileMenu from "../MobileMenu/MobileMenu"
 
 export default function Navigation() {
   return (
     <nav className={styles.Navigation_Wrapper}>
       <div className={styles.Navigtion_content}>
         <div>
-          <Hamburger />
+          <MobileMenu />
           <ul>
             <li>
               <Logo />

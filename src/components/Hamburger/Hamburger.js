@@ -1,13 +1,15 @@
 import React from "react"
 import styles from "./Hamburger.module.scss"
 
-export default function Hamburger() {
+export default function Hamburger({ open, onClick }) {
   return (
-    <div className={[styles.nav_icon].join(" ")}>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
+    <div className={open ? styles.BurgerWrapper : ""} onClick={onClick}>
+      <div className={[styles.nav_icon, open ? styles.open : ""].join(" ")}>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   )
 }
