@@ -8,66 +8,59 @@ import development from "../assets/development.svg"
 import user_interface from "../assets/user_interface.svg"
 import { FiArrowRight } from "react-icons/fi"
 import ContactForm from "../components/ContactForm/ContactForm"
-
-import {
-  DiJsBadge,
-  DiReact,
-  DiHtml5,
-  DiCss3,
-  DiNodejsSmall,
-  DiWordpress,
-  DiMongodb,
-  DiMysql,
-} from "react-icons/di"
+import meetTheTeam from "../assets/meet_the_team.svg"
+import WhatWeKnow from "../components/WhatWeKnow/WhatWeKnow"
 
 export default function Home({ data }) {
   return (
     <Layout>
       <Hero />
       <main>
-        <div className={styles.Services_container}>
-          <div className={styles.Service}>
-            <div className={styles.Service_icon}>
-              <img src={development} alt="Web Development" />
+        <section>
+          <div className={styles.Services_container}>
+            <div className={styles.Service}>
+              <div className={styles.Service_icon}>
+                <img src={development} alt="Web Development" />
+              </div>
+              <h4>Website | Wordpress</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+                numquam?
+              </p>
+              <Link to="/">
+                Learn More <FiArrowRight />
+              </Link>
             </div>
-            <h4>Website | Wordpress</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-              numquam?
-            </p>
-            <Link to="/">
-              Learn More <FiArrowRight />
-            </Link>
-          </div>
-          <div className={styles.Service}>
-            <div className={styles.Service_icon}>
-              <img src={cloud_computing} alt="Cloud Computing" />
+            <div className={styles.Service}>
+              <div className={styles.Service_icon}>
+                <img src={cloud_computing} alt="Cloud Computing" />
+              </div>
+              <h4>Web App | CMS</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+                numquam?
+              </p>
+              <Link to="/">
+                Learn More <FiArrowRight />
+              </Link>
             </div>
-            <h4>Web App | CMS</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-              numquam?
-            </p>
-            <Link to="/">
-              Learn More <FiArrowRight />
-            </Link>
-          </div>
-          <div className={styles.Service}>
-            <div className={styles.Service_icon}>
-              <img src={user_interface} alt="UX and Design" />
+            <div className={styles.Service}>
+              <div className={styles.Service_icon}>
+                <img src={user_interface} alt="UX and Design" />
+              </div>
+              <h4>Design | UX</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+                numquam?
+              </p>
+              <Link to="/">
+                Learn More <FiArrowRight />
+              </Link>
             </div>
-            <h4>Design | UX</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-              numquam?
-            </p>
-            <Link to="/">
-              Learn More <FiArrowRight />
-            </Link>
           </div>
-        </div>
+        </section>
 
-        <div className={styles.Homepage_section}>
+        <section className={styles.Homepage_section}>
           <div>
             <h1>Get Yourself Online</h1>
             <p style={{ fontWeight: "300" }}>
@@ -84,9 +77,9 @@ export default function Home({ data }) {
           <div className={styles.svg_wrapper}>
             {/* <img src={designIllustration} alt="Design Illustration" /> */}
           </div>
-        </div>
+        </section>
 
-        <div className={styles.Homepage_section}>
+        <section className={styles.Homepage_section}>
           <div className={styles.svg_wrapper}>
             {/* <img src={designIllustration} alt="Design Illustration" /> */}
           </div>
@@ -101,48 +94,23 @@ export default function Home({ data }) {
               Learn More <FiArrowRight />
             </Link>
           </div>
-        </div>
+        </section>
+        <WhatWeKnow />
 
-        <div className={styles.Tech_stack}>
-          <h1>What We Know</h1>
-          <div>
-            <div>
-              <DiJsBadge />
-              <p>Javascript</p>
-            </div>
-            <div>
-              <DiReact />
-              <p>React</p>
-            </div>
-            <div>
-              <DiHtml5 />
-              <p>HTML</p>
-            </div>
-            <div>
-              <DiCss3 />
-              <p>CSS</p>
-            </div>
-            <div>
-              <DiNodejsSmall />
-              <p>NodeJS</p>
-            </div>
-            <div>
-              <DiWordpress />
-              <p>Wordpress</p>
-            </div>
-            <div>
-              <DiMysql />
-              <p>MySQL</p>
-            </div>
-            <div>
-              <DiMongodb />
-              <p>MongoDB</p>
-            </div>
-          </div>
-        </div>
+        <section className={styles.MeetTheTeam}>
+          <h1>Meet The Team</h1>
+
+          <img src={meetTheTeam} alt="Meet The Team" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque,
+            odit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic,
+            tenetur?
+          </p>
+        </section>
+
         <ContactForm />
 
-        <div style={{ height: "1000px" }}></div>
+        {/* <div style={{ height: "1000px" }}></div> */}
       </main>
     </Layout>
   )

@@ -15,6 +15,7 @@
   padding: 30px 30px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   color: $color-grey-dark;
+  transition: all 0.3s ease-in-out;
 
   &:nth-child(1) a {
     color: $color-primary;
@@ -31,6 +32,11 @@
   & h4 {
     margin-top: 20px;
   }
+
+  &:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
 }
 
 .Homepage_section {
@@ -46,6 +52,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  overflow: visible;
 }
 
 .Homepage_section:nth-child(3) .svg_wrapper {
@@ -55,43 +62,17 @@
   background-position: center;
 }
 
-.Tech_stack {
-  margin-top: 150px;
+.MeetTheTeam {
   text-align: center;
+  margin-top: 100px;
 
-  h1 {
+  p {
+    max-width: 600px;
     text-align: center;
-    margin-bottom: 50px;
+    margin: 0 auto;
   }
-}
-
-.Tech_stack > div {
-  display: flex;
-  flex-wrap: wrap;
-  // grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
-  border-radius: 12px;
-  grid-gap: 2rem;
-  justify-content: center;
-
-  & > div {
-    width: 100px;
-    padding: 20px 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    border-radius: 12px;
-    font-size: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-    p {
-      font-size: 14px;
-      white-space: nowrap;
-      margin: 0px;
-      margin-top: 10px;
-      color: darken($color-grey-xlight, 40);
-    }
-
-    // color: red;
+  img {
+    height: 300px;
+    width: auto;
   }
 }
