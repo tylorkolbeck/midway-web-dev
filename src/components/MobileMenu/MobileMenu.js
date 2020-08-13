@@ -4,7 +4,7 @@ import Hamburger from "../Hamburger/Hamburger"
 import { Link } from "gatsby"
 
 export default function MobileMenu() {
-  const [menuOpen, setMenuOpen] = useState(true)
+  const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
     menuOpen
