@@ -29,7 +29,7 @@ export default function ContactForm() {
             justifyContent: "center",
           }}
         >
-          <Button bg="tert" style={{ width: "120px" }}>
+          <Button bg="tert" icon="arrowRight" style={{ width: "120px" }}>
             Send
           </Button>
         </div>
