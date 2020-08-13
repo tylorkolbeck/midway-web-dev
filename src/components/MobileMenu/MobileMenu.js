@@ -24,10 +24,18 @@ export default function MobileMenu() {
         <div
           className={[styles.MobileMenu, menuOpen ? styles.open : ""].join(" ")}
         >
-          <Link to="/">Home</Link>
-          <Link to="/">About</Link>
-          <Link to="/">Contact</Link>
-          <Link to="/">Blog</Link>
+          <Link to="/" onClick={toggleMenuOpen}>
+            Home
+          </Link>
+          <Link to="/" onClick={toggleMenuOpen}>
+            About
+          </Link>
+          <Link to="/" onClick={toggleMenuOpen}>
+            Contact
+          </Link>
+          <Link to="/" onClick={toggleMenuOpen}>
+            Blog
+          </Link>
         </div>
       )}
     </div>
