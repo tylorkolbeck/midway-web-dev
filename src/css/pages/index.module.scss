@@ -1,4 +1,4 @@
-@import "../css/colors.scss";
+@import "../colors.scss";
 
 .Services_container {
   display: grid;
@@ -48,7 +48,7 @@
 }
 
 .Homepage_section:nth-child(2) .svg_wrapper {
-  background: url("../assets/design_illustration.svg");
+  background: url("../../assets/design_illustration.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -56,7 +56,7 @@
 }
 
 .Homepage_section:nth-child(3) .svg_wrapper {
-  background: url("../assets/person_illustration.svg");
+  background: url("../../assets/person_illustration.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

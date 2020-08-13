@@ -1,5 +1,6 @@
 import React from "react"
-import styles from "../css/index.module.scss"
+
+import styles from "../css/pages/index.module.scss"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Hero from "../components/Hero/Hero"

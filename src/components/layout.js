@@ -1,11 +1,11 @@
 import React from "react"
+import Head from "../components/Helmet/Helmet"
 import "normalize.css"
 import { css } from "@emotion/core"
 import { useStaticQuery, Link, graphql } from "gatsby"
 import Navigation from "./Navigation/Navigation"
 import "../css/core.scss"
 import Footer from "../components/Footer/Footer"
-
 import { rhythm } from "../utils/typography"
 
 export default function Layout({ children }) {
@@ -20,6 +20,7 @@ export default function Layout({ children }) {
   `)
   return (
     <div>
+      <Head />
       <Navigation />
       <div>{children}</div>
       <Footer />
