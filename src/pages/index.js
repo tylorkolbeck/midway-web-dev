@@ -7,6 +7,7 @@ import cloud_computing from "../assets/cloud_computing.svg"
 import development from "../assets/development.svg"
 import user_interface from "../assets/user_interface.svg"
 import { FiArrowRight } from "react-icons/fi"
+import ContactForm from "../components/ContactForm/ContactForm"
 
 import {
   DiJsBadge,
@@ -139,6 +140,7 @@ export default function Home({ data }) {
             </div>
           </div>
         </div>
+        <ContactForm />
 
         <div style={{ height: "1000px" }}></div>
       </main>

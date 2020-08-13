@@ -27,8 +27,18 @@
     color: $color-grey-dark;
   }
 
-  &.dark {
+  &.primary {
     background: $color-primary;
+    color: $color-grey-xlight;
+  }
+
+  &.accent {
+    background: $color-accent;
+    color: $color-grey-xlight;
+  }
+
+  &.tert {
+    background: $color-tert;
     color: $color-grey-xlight;
   }
 }
