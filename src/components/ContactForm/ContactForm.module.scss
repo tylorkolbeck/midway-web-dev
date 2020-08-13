@@ -6,6 +6,19 @@
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 
+  &.miniForm {
+    margin: 0;
+
+    h4 {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      height: 100px !important;
+    }
+  }
+
   input {
     width: 100%;
   }

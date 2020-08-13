@@ -7,11 +7,11 @@ import cloud_computing from "../assets/cloud_computing.svg"
 import development from "../assets/development.svg"
 import user_interface from "../assets/user_interface.svg"
 import { FiArrowRight } from "react-icons/fi"
-import ContactForm from "../components/ContactForm/ContactForm"
 import meetTheTeam from "../assets/meet_the_team.svg"
 import WhatWeKnow from "../components/WhatWeKnow/WhatWeKnow"
+import Button from "../components/Button/Button"
 
-export default function Home({ data }) {
+export default function Home() {
   return (
     <Layout>
       <Hero />
@@ -106,9 +106,18 @@ export default function Home({ data }) {
             odit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic,
             tenetur?
           </p>
+          <div
+            style={{
+              textAlign: "center",
+              display: "inline-block",
+              marginTop: "20px",
+            }}
+          >
+            <Link to="/">
+              Learn More <FiArrowRight />
+            </Link>
+          </div>
         </section>
-
-        <ContactForm />
 
         {/* <div style={{ height: "1000px" }}></div> */}
       </main>

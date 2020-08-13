@@ -2,14 +2,15 @@ import React from "react"
 import styles from "./ContactForm.module.scss"
 import Button from "../Button/Button"
 
-export default function ContactForm() {
+export default function ContactForm(props) {
+  let formClass = props.mini ? styles.miniForm : ""
+
   return (
-    <div className={styles.ContactForm_container}>
-      <div style={{ textAlign: "center", marginTop: "150px" }}>
+    <div>
+      <div>
         <h1>Contact Us</h1>
-        <p>We would love to work together!</p>
       </div>
-      <div className={styles.ContactForm}>
+      <div className={[styles.ContactForm, formClass].join(" ")}>
         <div>
           <h4>Name</h4>
           <input placeholder="Enter your name" />
@@ -26,7 +27,6 @@ export default function ContactForm() {
           style={{
             gridColumn: "1 / 3",
             display: "flex",
-            justifyContent: "center",
           }}
         >
           <Button bg="tert" icon="arrowRight" style={{ width: "120px" }}>
