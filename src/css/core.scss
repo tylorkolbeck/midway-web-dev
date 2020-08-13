@@ -191,10 +191,11 @@ textarea {
 /* Selects
 -----------------------------------------------*/
 
-select {
-}
-
 select[multiple] {
   /* Move the label to the top */
   vertical-align: top;
+}
+
+.error-text {
+  color: $color-error;
 }
