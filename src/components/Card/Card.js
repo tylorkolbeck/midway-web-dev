@@ -1,18 +1,31 @@
 import React from "react"
 import { Link } from "gatsby"
-import { FiArrowRight } from "react-icons/fi"
+// import { FiArrowRight } from "react-icons/fi"
 import styles from "./Card.module.scss"
 
 export function Card({ children }) {
   return <div className={styles.Service}>{children}</div>
 }
 
-Card.Header = ({ children }) => {
-  return <h4>{children}</h4>
+Card.Title = ({ children }) => {
+  return <h3>{children}</h3>
 }
 
-Card.Icon = ({ children }) => {
-  return <div>{children}</div>
+Card.SubTitle = ({ children }) => {
+  return <h4 className={styles.Card_subtitle}>{children}</h4>
+}
+
+Card.Image = ({ children, size, position }) => {
+  const imageStyles = {
+    width: size || "100%",
+
+    margin: "0 auto",
+  }
+  return (
+    <div style={imageStyles} className={styles.Card_image} data-width={size}>
+      {children}
+    </div>
+  )
 }
 
 Card.Link = ({ children, to }) => {

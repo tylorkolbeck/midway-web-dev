@@ -1,0 +1,43 @@
+@import "../colors.scss";
+
+.Content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  & aside {
+    flex: 1 1 0;
+    min-width: 300px;
+  }
+
+  & .Cards_people {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 2 1 0;
+    padding: 10px;
+    padding-right: 0px;
+    margin-right: -2rem;
+
+    & > div {
+      flex-wrap: wrap;
+      margin: 1rem;
+      min-width: 250px;
+      max-width: 300px;
+      flex: 1 1 0;
+      align-self: center;
+    }
+
+    .Social_media {
+      & > svg {
+        height: 1.2em;
+        width: 1.2em;
+        margin-right: 4px;
+        fill: $color-primary;
+      }
+      // & svg {
+      //   transform: scale:
+      // }
+    }
+  }
+}
