@@ -1,5 +1,7 @@
 # Midway Web Development Website
 
+## [Website Demo](https://trusting-hugle-177a1a.netlify.app/)
+
 ![Homepage Screen Shot](./src/assets/home_screen_shot.png)
 
 Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
