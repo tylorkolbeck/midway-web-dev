@@ -10,10 +10,6 @@ import useClickOutside from "../../hooks/useClickOutside"
 export default function Navigation() {
   const { isVisible, ref, setIsVisible } = useClickOutside(false)
 
-  function toggleServicesTabHandler() {
-    setIsVisible(true)
-  }
-
   return (
     <nav className={styles.Navigation_Wrapper}>
       <div className={styles.Navigtion_content}>
