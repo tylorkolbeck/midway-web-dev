@@ -15,7 +15,6 @@ import {
 export default function WhatWeKnow() {
   return (
     <div className={styles.Tech_stack}>
-      <h1>What We Know</h1>
       <div>
         <div className={styles.iconCard}>
           <DiJsBadge />

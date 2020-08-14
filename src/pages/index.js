@@ -13,12 +13,13 @@ import WhatWeKnow from "../components/WhatWeKnow/WhatWeKnow"
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout className={styles.test}>
       <Hero
         heading="We Build Things For The Web"
         subText="Professional website and web application development using the latest
           in modern web techonologies."
         size="half"
+        bg="bg_svg"
       />
       <main>
         <section>
@@ -96,7 +97,10 @@ export default function Home() {
             </Link>
           </div>
         </section>
-        <WhatWeKnow />
+
+        <Hero size="quarter" heading="What We Know">
+          <WhatWeKnow />
+        </Hero>
 
         <section className={styles.MeetTheTeam}>
           <h1>Meet The Team</h1>

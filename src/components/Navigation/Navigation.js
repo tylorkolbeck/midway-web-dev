@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { Link } from "gatsby"
 import styles from "./Navigation.module.scss"
 import Logo from "../Logo/Logo"
@@ -24,7 +24,10 @@ export default function Navigation() {
               <Logo />
             </li>
             <li>
-              <div className={styles.DropdownMenu}>
+              <div
+                className={styles.DropdownMenu}
+                onMouseLeave={() => setIsVisible(false)}
+              >
                 <button
                   ref={ref}
                   className={[
@@ -42,10 +45,10 @@ export default function Navigation() {
                     ].join(" ")}
                     onMouseLeave={() => setIsVisible(false)}
                   >
-                    <Link to="/contact">Web Development</Link>
-                    <Link to="/">Web Applications</Link>
-                    <Link to="/">Logo Design</Link>
-                    <Link to="/">UX</Link>
+                    <Link to="/service-webdevelopment">Web Development</Link>
+                    <Link to="/service-webapplications">Web Applications</Link>
+                    <Link to="/service-logodesign">Logo Design</Link>
+                    <Link to="/service-ux">UX</Link>
                   </div>
                 </button>
               </div>

@@ -1,0 +1,14 @@
+@import "../../css/colors.scss";
+
+.Aside {
+  padding-left: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  border-left: 2px solid $color-primary;
+}
+
+@media only screen and (max-width: 480px) {
+  .Aside {
+    max-width: 100%;
+  }
+}

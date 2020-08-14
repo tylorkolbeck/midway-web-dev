@@ -41,10 +41,18 @@ p {
 //   margin: 0 auto;
 // }
 
+:global {
+  .test {
+    background: green !important;
+  }
+}
+
 section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0px 2rem;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 input,
 label,

@@ -36,10 +36,6 @@
 }
 
 .DropdownMenu {
-  .Dropdown_button {
-    transition: all 0.3s ease;
-  }
-
   & button {
     display: flex;
     position: relative;
@@ -49,6 +45,12 @@
     border: none;
     margin: 0px;
     padding: 0px;
+    transition: all 0.3s ease;
+
+    &.is_open {
+      // background: red;
+      padding-bottom: 10px;
+    }
 
     &:active,
     &:focus {
@@ -71,7 +73,7 @@
       position: absolute;
       top: 30px;
       background: white;
-      padding: 15px;
+      padding: 0 15px;
       border-radius: 6px;
       transition: all 0.3s cubic-bezier(0.76, 0, 0.24, 1);
       transform-origin: top;
@@ -86,6 +88,7 @@
         &:hover {
           color: darken($color-grey-dark, 20);
           color: $color-tert;
+          padding-bottom: 0px;
         }
       }
 

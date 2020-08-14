@@ -1,0 +1,31 @@
+@import "../../css/colors.scss";
+
+.Service {
+  background: white;
+  border-radius: 12px;
+  padding: 30px 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  color: $color-grey-dark;
+  transition: all 0.3s ease-in-out;
+
+  &:nth-child(1) a {
+    color: $color-primary;
+  }
+
+  &:nth-child(2) a {
+    color: $color-accent;
+  }
+
+  &:nth-child(3) a {
+    color: $color-tert;
+  }
+
+  & h4 {
+    margin-top: 20px;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+}
