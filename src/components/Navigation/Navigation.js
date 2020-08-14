@@ -9,19 +9,11 @@ import useClickOutside from "../../hooks/useClickOutside"
 
 export default function Navigation() {
   const { isVisible, ref, setIsVisible } = useClickOutside(false)
-  const [state, setState] = useState({
-    servicesTabOpen: false,
-  })
 
   function toggleServicesTabHandler() {
-    // setState(prevState => {
-    //   return {
-    //     ...state,
-    //     servicesTabOpen: !prevState.servicesTabOpen,
-    //   }
-    // })
     setIsVisible(true)
   }
+
   return (
     <nav className={styles.Navigation_Wrapper}>
       <div className={styles.Navigtion_content}>
@@ -39,7 +31,7 @@ export default function Navigation() {
                     styles.Dropdown_button,
                     isVisible ? styles.is_open : "",
                   ].join(" ")}
-                  onClick={toggleServicesTabHandler}
+                  onClick={() => setIsVisible(true)}
                   onMouseEnter={setIsVisible}
                 >
                   Services <FiArrowDown />
