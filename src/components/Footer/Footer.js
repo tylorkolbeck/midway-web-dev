@@ -20,10 +20,10 @@ export default function Footer() {
         </div>
         <div className={styles.NavigationLinks}>
           <div>
-            <Link>Home</Link>
-            <Link>About</Link>
-            <Link>Blog</Link>
-            <Link>Contact</Link>
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/blog">Blog</Link>
+            <Link to="/contact">Contact</Link>
           </div>
           <div className={styles.socialMediaIcons}>
             <AiFillTwitterCircle />
