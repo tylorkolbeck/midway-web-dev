@@ -2,7 +2,7 @@
 
 .Hero_wrapper {
   width: 100vw;
-  height: 50vh;
+  // height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,6 +13,19 @@
   background-attachment: fixed;
   background-size: cover;
   background-position: left;
+
+  &.full {
+    height: 100vh;
+  }
+
+  &.half {
+    min-height: 50vh;
+  }
+
+  &.quarter {
+    min-height: 25vh;
+    padding-top: 25px;
+  }
 
   & h1 {
     font-size: 3rem;

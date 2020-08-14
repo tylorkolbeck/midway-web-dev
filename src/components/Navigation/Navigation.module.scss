@@ -35,6 +35,72 @@
   align-items: center;
 }
 
+.DropdownMenu {
+  .Dropdown_button {
+    transition: all 0.3s ease;
+  }
+
+  & button {
+    display: flex;
+    position: relative;
+    font-weight: bold;
+    color: $color-grey-xlight;
+    font-size: 16px;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+
+    &:active,
+    &:focus {
+      outline: none;
+      border: none;
+    }
+
+    & svg {
+      margin-left: 5px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: $color-tert;
+    }
+
+    & .Dropdown_container {
+      opacity: 0;
+      transform: scaleY(0);
+      position: absolute;
+      top: 30px;
+      background: white;
+      padding: 15px;
+      border-radius: 6px;
+      transition: all 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+      transform-origin: top;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+      & a {
+        margin: 15px 0px;
+        color: $color-grey-dark;
+        white-space: nowrap;
+        font-weight: 500;
+
+        &:hover {
+          color: darken($color-grey-dark, 20);
+          color: $color-tert;
+        }
+      }
+
+      &.is_open {
+        opacity: 1;
+        transform: scaleY(1);
+      }
+    }
+  }
+}
+
+.Dropdown_button.is_open {
+  color: $color-tert;
+}
+
 @media screen and (max-width: 1200px) {
   .Navigtion_content {
     padding: 0px 20px;

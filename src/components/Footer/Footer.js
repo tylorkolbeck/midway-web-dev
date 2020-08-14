@@ -14,7 +14,10 @@ export default function Footer() {
   return (
     <>
       <div className={styles.Footer}>
-        <ContactForm mini />
+        <div>
+          <h1>Contact Us</h1>
+          <ContactForm mini />
+        </div>
         <div className={styles.NavigationLinks}>
           <div>
             <Link>Home</Link>

@@ -14,7 +14,12 @@ import WhatWeKnow from "../components/WhatWeKnow/WhatWeKnow"
 export default function Home() {
   return (
     <Layout>
-      <Hero />
+      <Hero
+        heading="We Build Things For The Web"
+        subText="Professional website and web application development using the latest
+          in modern web techonologies."
+        size="half"
+      />
       <main>
         <section>
           <div className={styles.Services_container}>

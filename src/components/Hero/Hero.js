@@ -1,15 +1,13 @@
 import React from "react"
 import styles from "./Hero.module.scss"
 
-export default function Hero() {
+export default function Hero({ size, heading, subText }) {
+  const heroSize = size || "half"
   return (
-    <div className={styles.Hero_wrapper}>
+    <div className={[styles.Hero_wrapper, styles[heroSize]].join(" ")}>
       <section>
-        <h1>We Build Things For The Web</h1>
-        <p>
-          Professional website and web application development using the latest
-          in modern web techonologies.
-        </p>
+        <h1>{heading}</h1>
+        <p>{subText}</p>
       </section>
     </div>
   )

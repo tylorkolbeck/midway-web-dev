@@ -44,7 +44,6 @@ export default function ContactForm(props) {
   return (
     <form onSubmit={handleFormSubmit}>
       <div>
-        <h1>Contact Us</h1>
         <p className="error-text">{error && error}</p>
         <p className="success-text">{messageSuccess && messageSuccess}</p>
       </div>
