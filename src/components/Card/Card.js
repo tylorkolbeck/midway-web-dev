@@ -1,24 +1,29 @@
 import React from "react"
 import { Link } from "gatsby"
-// import { FiArrowRight } from "react-icons/fi"
 import styles from "./Card.module.scss"
 
 export function Card({ children }) {
   return <div className={styles.Service}>{children}</div>
 }
 
-Card.Title = ({ children }) => {
-  return <h3>{children}</h3>
+Card.Title = ({ children, position }) => {
+  return <h3 style={{ textAlign: position ? position : "left" }}>{children}</h3>
 }
 
-Card.SubTitle = ({ children }) => {
-  return <h4 className={styles.Card_subtitle}>{children}</h4>
+Card.SubTitle = ({ children, position }) => {
+  return (
+    <h4
+      style={{ textAlign: position ? position : "left" }}
+      className={styles.Card_subtitle}
+    >
+      {children}
+    </h4>
+  )
 }
 
 Card.Image = ({ children, size, position }) => {
   const imageStyles = {
     width: size || "100%",
-
     margin: "0 auto",
   }
   return (
@@ -28,9 +33,15 @@ Card.Image = ({ children, size, position }) => {
   )
 }
 
-Card.Link = ({ children, to }) => {
+Card.Link = ({ children, to, position }) => {
   return (
-    <Link to={to} className={styles.Card_link}>
+    <Link
+      to={to}
+      className={styles.Card_link}
+      style={{
+        display: "inline-block",
+      }}
+    >
       {children}
     </Link>
   )
