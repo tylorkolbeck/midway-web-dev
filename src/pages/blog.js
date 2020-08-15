@@ -8,7 +8,7 @@ export default function blog({ data }) {
   const blogPosts = data.allMdx.nodes
   return (
     <Layout>
-      <Hero heading="Blog Posts" size="quarter" />
+      <Hero heading="Blog Posts" size="half" />
       <section>
         {blogPosts.map(post => {
           return (
