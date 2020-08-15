@@ -50,6 +50,10 @@
   top: 16px;
 }
 
+.nav_icon.open span {
+  background: $color-grey-xlight;
+}
+
 .nav_icon.open span:nth-child(1) {
   top: 8px;
   width: 0%;

@@ -4,7 +4,7 @@ import Hamburger from "../Hamburger/Hamburger"
 import { Link } from "gatsby"
 
 export default function MobileMenu() {
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [menuOpen, setMenuOpen] = useState()
 
   useEffect(() => {
     menuOpen
@@ -20,7 +20,34 @@ export default function MobileMenu() {
     <div className={styles.MobileMenu_wrapper}>
       <Hamburger open={menuOpen} onClick={toggleMenuOpen} />
 
-      {menuOpen && (
+      <div className={[styles.menu, menuOpen ? styles.menuOpen : ""].join(" ")}>
+        <Link to="/" onClick={toggleMenuOpen}>
+          Home
+        </Link>
+        <Link to="/service-webdevelopment" onClick={toggleMenuOpen}>
+          Web Development
+        </Link>
+        <Link to="/service-webapplications" onClick={toggleMenuOpen}>
+          Web Applications
+        </Link>
+        <Link to="/service-logodesign" onClick={toggleMenuOpen}>
+          Logo Design
+        </Link>
+        <Link to="/service-ux" onClick={toggleMenuOpen}>
+          UX Services
+        </Link>
+        <Link to="/about" onClick={toggleMenuOpen}>
+          About
+        </Link>
+        <Link to="/blog" onClick={toggleMenuOpen}>
+          Blog
+        </Link>
+        <Link to="/contact" onClick={toggleMenuOpen}>
+          Contact
+        </Link>
+      </div>
+
+      {/* {menuOpen && (
         <div
           className={[styles.MobileMenu, menuOpen ? styles.open : ""].join(" ")}
         >
@@ -37,7 +64,7 @@ export default function MobileMenu() {
             Blog
           </Link>
         </div>
-      )}
+      )} */}
     </div>
   )
 }
