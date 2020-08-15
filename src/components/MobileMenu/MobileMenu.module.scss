@@ -1,5 +1,11 @@
 @import "../../css/colors.scss";
 
+.MobileMenu_wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
 .MobileMenu {
   position: absolute;
   top: 0;
@@ -13,6 +19,8 @@
   flex-direction: column;
   align-items: space-between;
   padding-left: 25px;
+  z-index: 1;
+  align-items: center;
 
   &.open {
     margin-left: 0;
@@ -21,11 +29,17 @@
     & a {
       margin-bottom: 2rem;
       font-size: 2rem;
-      color: $color-accent;
+      color: $color-grey-xlight;
     }
 
     & a:first-of-type {
       margin-top: 75px;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .MobileMenu_wrapper {
+    display: none;
   }
 }

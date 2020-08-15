@@ -5,7 +5,7 @@ import styles from "./Logo.module.scss"
 export default class Logo extends Component {
   render() {
     return (
-      <Link to="/">
+      <Link to="/" className={this.props.className}>
         <div className={styles.Logo_wrapper}>
           <div>
             <h1>MWD</h1>

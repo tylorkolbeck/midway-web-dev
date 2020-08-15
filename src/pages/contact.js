@@ -10,7 +10,7 @@ export default function contact() {
         heading="Contact Us"
         subText="Want to work together on your next web project? Send us a message and you will hear back from us within the next 24 hours!"
         size="half"
-        bg="bg_pri"
+        bg="bg_tert"
       />
       <section>
         <ContactForm />

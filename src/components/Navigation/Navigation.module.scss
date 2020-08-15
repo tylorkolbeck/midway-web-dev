@@ -2,11 +2,10 @@
 
 .Navigation_Wrapper {
   position: absolute;
+  width: 100vw;
   padding-top: 10px;
   left: 0;
   right: 0;
-  // background: white;
-
   padding: 15px 0px;
 
   & ul {
@@ -29,7 +28,8 @@
 
 .Navigtion_content {
   max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,7 +64,7 @@
 
     &:hover {
       cursor: pointer;
-      color: $color-tert;
+      color: $color-accent;
     }
 
     & .Dropdown_container {
@@ -112,6 +112,16 @@
 
 @media screen and (max-width: 768px) {
   .Navigation_Wrapper ul {
+    display: none;
+  }
+
+  .Navigation_CTA {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile_only {
     display: none;
   }
 }

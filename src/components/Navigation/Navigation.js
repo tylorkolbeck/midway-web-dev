@@ -13,8 +13,9 @@ export default function Navigation() {
   return (
     <nav className={styles.Navigation_Wrapper}>
       <div className={styles.Navigtion_content}>
+        <Logo className={styles.mobile_only} />
+        <MobileMenu />
         <div>
-          <MobileMenu />
           <ul>
             <li>
               <Logo />
@@ -60,7 +61,8 @@ export default function Navigation() {
             </li>
           </ul>
         </div>
-        <div>
+        {/* </div> */}
+        <div className={styles.Navigation_CTA}>
           <Button bg="light">Contact Us</Button>
         </div>
       </div>

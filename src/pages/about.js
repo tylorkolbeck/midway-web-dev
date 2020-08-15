@@ -15,6 +15,7 @@ export default function About({ data }) {
   return (
     <Layout>
       <Hero
+        bg="bg_tert"
         heading="Who We Are"
         subText="Meet the team behind the awesome work that is done at Midway Web Development!"
       />

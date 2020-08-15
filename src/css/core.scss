@@ -7,7 +7,7 @@ a {
 a:hover {
   text-decoration: none;
   cursor: pointer;
-  color: $color-tert !important;
+  color: $color-accent !important;
 }
 
 b {
@@ -51,8 +51,8 @@ section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0px 2rem;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 input,
 label,

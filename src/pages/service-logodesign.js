@@ -9,7 +9,7 @@ export default function Webdevelopment() {
   return (
     <Layout>
       <Hero
-        bg="bg_pri"
+        bg="bg_tert"
         size="half"
         heading="Logo Design Services"
         subText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vitae?"

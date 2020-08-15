@@ -27,13 +27,13 @@ export default function MobileMenu() {
           <Link to="/" onClick={toggleMenuOpen}>
             Home
           </Link>
-          <Link to="/" onClick={toggleMenuOpen}>
+          <Link to="/about" onClick={toggleMenuOpen}>
             About
           </Link>
-          <Link to="/" onClick={toggleMenuOpen}>
+          <Link to="/contact" onClick={toggleMenuOpen}>
             Contact
           </Link>
-          <Link to="/" onClick={toggleMenuOpen}>
+          <Link to="/blog" onClick={toggleMenuOpen}>
             Blog
           </Link>
         </div>

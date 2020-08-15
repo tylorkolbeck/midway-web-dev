@@ -9,7 +9,7 @@ export default function Webdevelopment() {
   return (
     <Layout>
       <Hero
-        bg="bg_accent"
+        bg="bg_tert"
         size="half"
         heading="UX Research Services"
         subText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vitae?"
