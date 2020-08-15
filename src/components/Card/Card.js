@@ -2,8 +2,12 @@ import React from "react"
 import { Link } from "gatsby"
 import styles from "./Card.module.scss"
 
-export function Card({ children }) {
-  return <div className={styles.Service}>{children}</div>
+export function Card(props) {
+  return (
+    <div {...props} className={styles.Service}>
+      {props.children}
+    </div>
+  )
 }
 
 Card.Title = ({ children, position }) => {
