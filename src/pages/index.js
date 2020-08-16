@@ -29,10 +29,10 @@ export default function Home() {
               </div>
               <h4>Website | Wordpress</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-                numquam?
+                Custom web design and development services to get your business
+                or idea online to your customers.
               </p>
-              <Link to="/">
+              <Link to="/service-webdevelopment">
                 Learn More <FiArrowRight />
               </Link>
             </div>
@@ -42,10 +42,10 @@ export default function Home() {
               </div>
               <h4>Web App | CMS</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-                numquam?
+                Fast and effecient web application development services to power
+                your business or idea.
               </p>
-              <Link to="/">
+              <Link to="/service-webapplications">
                 Learn More <FiArrowRight />
               </Link>
             </div>
@@ -55,10 +55,10 @@ export default function Home() {
               </div>
               <h4>Design | UX</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-                numquam?
+                Logo design, branding and UX services to ensure your prodcuts
+                are designed for your users.
               </p>
-              <Link to="/">
+              <Link to="/service-ux">
                 Learn More <FiArrowRight />
               </Link>
             </div>
@@ -106,9 +106,9 @@ export default function Home() {
 
           <img src={meetTheTeam} alt="Meet The Team" />
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque,
-            odit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic,
-            tenetur?
+            The Midway Web Development team is made up of experienced and
+            talented webdevelopers, graphic designers and UX developers. Let us
+            put our skills to use in creating your next web project.
           </p>
           <div
             style={{
@@ -117,7 +117,7 @@ export default function Home() {
               marginTop: "20px",
             }}
           >
-            <Link to="/">
+            <Link to="/about">
               Learn More <FiArrowRight />
             </Link>
           </div>
