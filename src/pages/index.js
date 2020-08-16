@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 import styles from "../css/pages/index.module.scss"
-import { Link } from "gatsby"
+import { Link, navigate } from "gatsby"
 import Layout from "../components/layout"
 import Hero from "../components/Hero/Hero"
 import cloud_computing from "../assets/cloud_computing.svg"
@@ -23,7 +23,10 @@ export default function Home() {
       <main>
         <section>
           <div className={styles.Services_container}>
-            <div className={styles.Service}>
+            <div
+              className={styles.Service}
+              onClick={() => navigate("/service-webdevelopment")}
+            >
               <div className={styles.Service_icon}>
                 <img src={development} alt="Web Development" />
               </div>
@@ -36,7 +39,10 @@ export default function Home() {
                 Learn More <FiArrowRight />
               </Link>
             </div>
-            <div className={styles.Service}>
+            <div
+              className={styles.Service}
+              onClick={() => navigate("/service-webapplications")}
+            >
               <div className={styles.Service_icon}>
                 <img src={cloud_computing} alt="Cloud Computing" />
               </div>
@@ -49,7 +55,10 @@ export default function Home() {
                 Learn More <FiArrowRight />
               </Link>
             </div>
-            <div className={styles.Service}>
+            <div
+              className={styles.Service}
+              onClick={() => navigate("/service-ux")}
+            >
               <div className={styles.Service_icon}>
                 <img src={user_interface} alt="UX and Design" />
               </div>
@@ -75,7 +84,7 @@ export default function Home() {
               so you can focus on starting your business and we will focus on
               getting you online.
             </p>
-            <Link to="/">
+            <Link to="/service-webdevelopment">
               Learn More <FiArrowRight />
             </Link>
           </div>
@@ -91,7 +100,7 @@ export default function Home() {
               <b> technology that is fast, responsive </b>, and built using the
               latest in modern web technologies.
             </p>
-            <Link to="/">
+            <Link to="/service-webapplications">
               Learn More <FiArrowRight />
             </Link>
           </div>
