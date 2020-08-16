@@ -57,6 +57,9 @@ export default function Navigation() {
               <Link to="/blog">Blog</Link>
             </li>
             <li>
+              <Link to="/comingSoon">Products</Link>
+            </li>
+            <li>
               <Link to="/contact">Contact</Link>
             </li>
           </ul>
