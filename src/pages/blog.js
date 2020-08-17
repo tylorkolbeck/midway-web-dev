@@ -27,13 +27,14 @@ export default function blog({ data }) {
             <div
               className={styles.Post}
               onClick={() => navigate(`${post.fields.slug}`)}
+              key={post.fields.slug}
             >
               <h2>{post.frontmatter.title}</h2>
               <p className={styles.Excerpt}>{post.excerpt}</p>
               <div className={styles.Tags}>
                 <IoMdPricetag />{" "}
                 {post.frontmatter.tags.map(tag => {
-                  return <span>{tag}</span>
+                  return <span key={tag}>{tag}</span>
                 })}
               </div>
 
