@@ -91,7 +91,10 @@ export default function Home() {
           <div className={styles.svg_wrapper}></div>
         </section>
 
-        <section className={styles.Homepage_section}>
+        <section
+          className={styles.Homepage_section}
+          style={{ marginBottom: "100px" }}
+        >
           <div className={styles.svg_wrapper}></div>
           <div>
             <h1>Professional Services</h1>
