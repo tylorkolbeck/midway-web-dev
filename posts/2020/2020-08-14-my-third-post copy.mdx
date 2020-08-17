@@ -1,0 +1,44 @@
+---
+title: My Third Post
+date: 2020-08-14
+published: true
+author: Tylor Kolbeck
+tags: ["html", "react", "css"]
+
+---
+
+## This is a header element
+
+```js
+function coolFunction() {
+  const coolText = "This is a super cool function"
+  console.log(coolText)
+}
+```
+
+Fall asleep `console.log('test')` upside-down take a big fluffing crap 💩 lie in the sink all day my cat stared at me he was sipping his tea, too but pose purrfectly to show my beauty so i shall purr myself to sleep and behind the couch. Have my breakfast spaghetti yarn. Chew the plant wake up wander around the house making large amounts of noise jump on top of your human's bed and fall asleep again ask to go outside and ask to come inside and ask to go outside and ask to come inside show belly touch my tail, i shred your hand purrrr but jumps off balcony gives owner dead mouse at present then poops in litter box snatches yarn and fights with dog cat chases laser then plays in grass finds tiny spot in cupboard and sleeps all day jumps in bathtub and meows when owner fills food dish the cat knocks over the food dish cat slides down the water slide and into pool and swims even though it does not like water, sit on human. Cat ass trophy rub my belly hiss or cats secretly make all the worlds muffins rub against owner because nose is wet. Shake treat bag run around the house at 4 in the morning please let me outside pouty face yay! wait, it's cold out please let me inside pouty face oh, thank you rub against mommy's leg oh it looks so nice out, please let me outside again the neighbor cat was mean to me please let me back inside meow meow, i tell my human. Lie in the sink all day. Get my claw stuck in the dog's ear woops poop hanging from butt must get rid run run around house drag poop on floor maybe it comes off woops left brown marks on floor human slave clean lick butt now, so cuddle no cuddle cuddle love scratch scratch leave fur on owners clothes stares at human while pushing stuff off a table litter kitter kitty litty little kitten big roar roar feed me for sitting in a box. Refuse to come home when humans are going to bed; stay out all night then yowl like i am dying at 4am. Meow all night small kitty warm kitty little balls of fur catch eat throw up catch eat throw up bad birds, sun bathe make it to the carpet before i vomit mmmmmm, mice. Stand with legs in litter box, but poop outside need to chase tail sit on human they not getting up ever.
+
+## Dump.js
+
+```jsx
+import React from "react"
+const Dump = props => (
+  <div
+    style={{
+      fontSize: 20,
+      border: "1px solid #efefef",
+      padding: 10,
+      background: "white",
+    }}
+  >
+    {Object.entries(props).map(([key, val]) => (
+      <pre key={key}>
+        <strong style={{ color: "white", background: "red" }}>{key} 💩</strong>
+        {JSON.stringify(val, "", " ")}
+      </pre>
+    ))}
+  </div>
+)
+export default Dump
+
+```

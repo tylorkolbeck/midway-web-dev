@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, navigate } from "gatsby"
 import styles from "./Navigation.module.scss"
 import Logo from "../Logo/Logo"
 import Button from "../Button/Button"
@@ -13,7 +13,7 @@ export default function Navigation() {
   return (
     <nav className={styles.Navigation_Wrapper}>
       <div className={styles.Navigtion_content}>
-        <Logo className={styles.mobile_only} />
+        <Logo className={styles.mobile_only} onClick={() => navigate("/")} />
         <MobileMenu />
         <div>
           <ul>
@@ -66,7 +66,9 @@ export default function Navigation() {
         </div>
         {/* </div> */}
         <div className={styles.Navigation_CTA}>
-          <Button bg="light">Contact Us</Button>
+          <Button bg="light" onClick={() => navigate("/contact")}>
+            Contact Us
+          </Button>
         </div>
       </div>
     </nav>

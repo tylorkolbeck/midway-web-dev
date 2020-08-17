@@ -4,7 +4,7 @@
   .Cards_people {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    // justify-content: center;
     margin-bottom: 100px;
 
     & > div {
@@ -18,7 +18,7 @@
 
   & .Aside_about {
     max-width: 600px;
-    margin: 0 auto;
+    // margin: 0 auto;
   }
 }
 

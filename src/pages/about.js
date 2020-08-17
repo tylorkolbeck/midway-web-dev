@@ -13,17 +13,38 @@ import kailaImg from "../assets/kaila_cropped.png"
 //   AiOutlineInstagram,
 //   AiFillGithub,
 // } from "react-icons/ai"
+const heroComponent = (
+  <Hero
+    bg="bg_tert"
+    heading="Who We Are"
+    subText="Meet the team behind the awesome work that is done at Midway Web Development!"
+  />
+)
 
 export default function About({ data }) {
   return (
-    <Layout>
-      <Hero
-        bg="bg_tert"
-        heading="Who We Are"
-        subText="Meet the team behind the awesome work that is done at Midway Web Development!"
-      />
+    <Layout hero={heroComponent} sideNav>
       <section className={styles.Content}>
-        <h1 style={{ textAlign: "center" }}>The Team</h1>
+        <aside className={styles.Aside_about}>
+          <h1>Our Mission</h1>
+          <p>
+            Our mission is to make the planning and deployment of your next web
+            project a fun and painless process. Your website defines what your
+            company is what it is about so it should be nothing short of an
+            exciting process.
+          </p>
+          <p>
+            While you handle the aspects of starting or running your business,
+            let us handle getting you online so that the world can discover you.
+            Our timely and cost effective solutions will give you one less thing
+            to worry about.
+          </p>
+          <p>
+            We proudly stand by our services and deliver our products with a
+            100% satisfaction gurantee.{" "}
+          </p>
+        </aside>
+        <h1>The Team</h1>
         <div className={styles.Cards_people}>
           <Card>
             <Card.Image size="80%">
@@ -58,25 +79,6 @@ export default function About({ data }) {
             </div>
           </Card>
         </div>
-        <aside className={styles.Aside_about}>
-          <h1 style={{ textAlign: "center" }}>Our Mission</h1>
-          <p>
-            Our mission is to make the planning and deployment of your next web
-            project a fun and painless process. Your website defines what your
-            company is what it is about so it should be nothing short of an
-            exciting process.
-          </p>
-          <p>
-            While you handle the aspects of starting or running your business,
-            let us handle getting you online so that the world can discover you.
-            Our timely and cost effective solutions will give you one less thing
-            to worry about.
-          </p>
-          <p>
-            We proudly stand by our services and deliver our products with a
-            100% satisfaction gurantee.{" "}
-          </p>
-        </aside>
       </section>
     </Layout>
   )

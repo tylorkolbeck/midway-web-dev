@@ -1,13 +1,13 @@
 @import "../css/colors.scss";
 
 a {
-  color: $color-primary;
+  color: $color-grey-dark;
 }
 
 a:hover {
   text-decoration: none;
   cursor: pointer;
-  color: $color-accent !important;
+  color: $color-tert;
 }
 
 b {

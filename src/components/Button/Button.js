@@ -12,6 +12,7 @@ export default function Button(props) {
       style={{ ...props.style }}
       className={[styles.Button, styles[props.bg]].join(" ")}
       type={props.type}
+      onClick={props.onClick}
     >
       {props.children}
       {props.icon ? iconMapping[props.icon] : null}

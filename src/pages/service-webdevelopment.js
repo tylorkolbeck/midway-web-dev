@@ -8,23 +8,27 @@ import Aside from "../components/Aside/Aside"
 import WhatWeKnow from "../components/WhatWeKnow/WhatWeKnow"
 
 export default function Webdevelopment() {
+  const hero = (
+    <Hero
+      bg="bg_tert"
+      size="half"
+      heading="Web Development Services"
+      subText="At Midway Web Development we have have a team of proffesionals that
+  can provide you with all of the necessary services to get your
+  business online."
+    />
+  )
   return (
-    <Layout>
-      <Hero
-        bg="bg_tert"
-        size="half"
-        heading="Web Development Services"
-        subText="At Midway Web Development we have have a team of proffesionals that
-        can provide you with all of the necessary services to get your
-        business online."
-      />
+    <Layout sideNav hero={hero}>
       <section className={styles.Technologies}>
         <h1>Technologies</h1>
         <p>
           These are just some of the technologies that we specialize in and use
           to build your website.
         </p>
-        <WhatWeKnow />
+        <div style={{ margin: "50px 0" }}>
+          <WhatWeKnow />
+        </div>
       </section>
       <section className={styles.Content}>
         {/* <Aside>
@@ -33,13 +37,13 @@ export default function Webdevelopment() {
         </Aside> */}
         <h1>About Our Services</h1>
         <div>
-          <h2>Qualility Online Presence</h2>
+          <h2>Quality Online Presence</h2>
           <p>
             The easiest way for a company to legitimize themselves and build
             client trust is to have a strong internet presence. An online
-            presence not only adds value to your companies brand but it also
+            presence not only adds value to your company's brand but it also
             offers an opportunity get your business in front of possible
-            clients. A website not only consist of having flashy graphics and
+            clients. A website is not only made up of flashy graphics and
             colors, but of thoughtful design and usability. At MWD we take
             usability very seriously. If you have a product it will not be worth
             a penny if it is not usable.

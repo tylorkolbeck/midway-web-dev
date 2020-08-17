@@ -1,0 +1,44 @@
+@import "../css/colors.scss";
+
+.Layout_container {
+  &.showNav {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+    grid-gap: 2rem;
+  }
+
+  & .SideNavigation {
+    width: 200px;
+    & ul {
+      list-style: none;
+      margin-top: 50px;
+
+      & li a {
+        margin-top: 10px;
+        padding-left: 6px;
+      }
+
+      & .Navigation_header {
+        color: $color-tert;
+        font-weight: 600;
+      }
+
+      & .Navigation_header:not(:first-of-type) {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .showNav {
+    display: block;
+  }
+
+  .SideNavigation {
+    display: none;
+  }
+}
