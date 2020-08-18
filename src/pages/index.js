@@ -33,7 +33,7 @@ export default function Home() {
               <h4>Website | Wordpress</h4>
               <p>
                 Custom web design and development services to get your business
-                or idea online to your customers.
+                online for customers to see.
               </p>
               <Link to="/service-webdevelopment">
                 Learn More <FiArrowRight />
@@ -91,7 +91,10 @@ export default function Home() {
           <div className={styles.svg_wrapper}></div>
         </section>
 
-        <section className={styles.Homepage_section}>
+        <section
+          className={styles.Homepage_section}
+          style={{ marginBottom: "100px" }}
+        >
           <div className={styles.svg_wrapper}></div>
           <div>
             <h1>Professional Services</h1>
@@ -116,7 +119,7 @@ export default function Home() {
           <img src={meetTheTeam} alt="Meet The Team" />
           <p>
             The Midway Web Development team is made up of experienced and
-            talented webdevelopers, graphic designers and UX developers. Let us
+            talented web developers, graphic designers and UX developers. Let us
             put our skills to use in creating your next web project.
           </p>
           <div

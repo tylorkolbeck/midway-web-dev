@@ -7,15 +7,17 @@ import Hero from "../components/Hero/Hero"
 import { IoMdPricetag } from "react-icons/io"
 
 export default function blog({ data }) {
+  const heroElement = (
+    <Hero
+      heading="Blog Posts"
+      subText="Browse our collection of blog posts centered around web development, User Experience and Graphic Design."
+      size="half"
+      bg="bg_tert"
+    />
+  )
   const blogPosts = data.allMdx.nodes
   return (
-    <Layout>
-      <Hero
-        heading="Blog Posts"
-        subText="Browse our collection of blog posts centered around web development, User Experience and Graphic Design."
-        size="half"
-        bg="bg_tert"
-      />
+    <Layout sideNav hero={heroElement}>
       <section
         className={styles.Blog_post_wrapper}
         style={{ marginTop: "50px" }}
@@ -25,13 +27,14 @@ export default function blog({ data }) {
             <div
               className={styles.Post}
               onClick={() => navigate(`${post.fields.slug}`)}
+              key={post.fields.slug}
             >
               <h2>{post.frontmatter.title}</h2>
               <p className={styles.Excerpt}>{post.excerpt}</p>
               <div className={styles.Tags}>
                 <IoMdPricetag />{" "}
                 {post.frontmatter.tags.map(tag => {
-                  return <span>{tag}</span>
+                  return <span key={tag}>{tag}</span>
                 })}
               </div>
 
