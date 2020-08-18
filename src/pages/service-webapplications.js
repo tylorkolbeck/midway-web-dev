@@ -12,93 +12,61 @@ export default function Webdevelopment() {
         bg="bg_tert"
         size="half"
         heading="Web Application Services"
-        subText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vitae?"
+        subText="At Midway Web Development we have extensive experience building both internal and customer facing web applications."
       />
-
-      <section>
-        <Aside>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
-          officiis expedita doloremque id deserunt praesentium provident
-          laboriosam suscipit ex cum?
-        </Aside>
-      </section>
 
       <section className={styles.Technologies}>
         <h1>Technologies</h1>
+        <p>
+          These are just some of the technologies that we specialize in and use
+          to build your web application.
+        </p>
         <WhatWeKnow />
       </section>
 
       <section className={styles.Content}>
         <h1>About Our Services</h1>
         <div>
-          <h2>Lorem, ipsum dolor.</h2>
+          <h2>Quality and Reliability</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis unde
-            sed possimus dolorem aliquid eaque doloribus tenetur saepe
-            necessitatibus quae. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quidem, fuga aut. Commodi dolores optio veritatis
-            nemo ratione hic natus odit?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            eaque aperiam illo similique nobis mollitia dolore labore neque!
-            Facilis, explicabo?
+            At Midway Web Development we take pride in the quality of our work.
+            Every app we build utliizes the latest technologies and libraries to
+            ensure your app remains performant and bug free. The experience will
+            be seamless and intuitive as your users navigate the features of
+            your app.
           </p>
         </div>
       </section>
 
       <section className={styles.Content}>
         <div>
-          <h2>Lorem, ipsum dolor.</h2>
+          <h2>Mobile First Design</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis unde
-            sed possimus dolorem aliquid eaque doloribus tenetur saepe
-            necessitatibus quae. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quidem, fuga aut. Commodi dolores optio veritatis
-            nemo ratione hic natus odit?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            eaque aperiam illo similique nobis mollitia dolore labore neque!
-            Facilis, explicabo?
+            With mobile conversion rates on the rise and the fact that Google
+            ranks for mobile-friendliness, it only makes sense to keep this in
+            mind when developing your application. By designing you for mobile
+            first you create a foundation that will strengthen your designs for
+            tablet and desktop.
           </p>
         </div>
       </section>
 
-      <Hero bg="bg_tert" size="quarter" heading="Web Development Services" />
-
-      <section className={styles.Content}>
-        <h1>Why Websites Are Important</h1>
-        <div>
-          <h2>Lorem, ipsum dolor.</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis unde
-            sed possimus dolorem aliquid eaque doloribus tenetur saepe
-            necessitatibus quae. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quidem, fuga aut. Commodi dolores optio veritatis
-            nemo ratione hic natus odit?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            eaque aperiam illo similique nobis mollitia dolore labore neque!
-            Facilis, explicabo?
-          </p>
-        </div>
-      </section>
       <section className={styles.Content}>
         <div>
-          <h2>Lorem, ipsum dolor.</h2>
+          <h2>Progressive Web Apps</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis unde
-            sed possimus dolorem aliquid eaque doloribus tenetur saepe
-            necessitatibus quae. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quidem, fuga aut. Commodi dolores optio veritatis
-            nemo ratione hic natus odit?
+            Progressive Web Apps are web applications that load like regular web
+            pages or websites, but can offer the user funcitonality such as
+            working offline and device hardware access traditionaly only
+            available to native mobile apps. Progressive Web Apps are built and
+            enhanced with moderd APIs to deliver native-like capabilities,
+            reliatbility, and installability while reaching any device with a
+            single codebase.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            eaque aperiam illo similique nobis mollitia dolore labore neque!
-            Facilis, explicabo?
+            Companies who have launched Progressive Web Apps have seen
+            significant improvements. Twitter saw a 65% increase in pages per
+            session and Hulu saw a 27% increase in return visits!
           </p>
         </div>
       </section>
