@@ -6,15 +6,16 @@ import Aside from "../components/Aside/Aside"
 import WhatWeKnow from "../components/WhatWeKnow/WhatWeKnow"
 
 export default function Webdevelopment() {
+  const hero = (
+    <Hero
+      bg="bg_tert"
+      size="half"
+      heading="Web Application Services"
+      subText="At Midway Web Development we have extensive experience building both internal and customer facing web applications."
+    />
+  )
   return (
-    <Layout>
-      <Hero
-        bg="bg_tert"
-        size="half"
-        heading="Web Application Services"
-        subText="At Midway Web Development we have extensive experience building both internal and customer facing web applications."
-      />
-
+    <Layout sideNav hero={hero}>
       <section className={styles.Technologies}>
         <h1>Technologies</h1>
         <p>

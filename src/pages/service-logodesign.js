@@ -6,20 +6,22 @@ import Aside from "../components/Aside/Aside"
 import WhatWeKnow from "../components/WhatWeKnow/WhatWeKnow"
 
 export default function Webdevelopment() {
+  const hero = (
+    <Hero
+      bg="bg_tert"
+      size="half"
+      heading="Logo Design Services"
+      subText="More than just a logo, it's your brand identity"
+    />
+  )
   return (
-    <Layout>
-      <Hero
-        bg="bg_tert"
-        size="half"
-        heading="Logo Design Services"
-        subText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vitae?"
-      />
-
+    <Layout sideNav hero={hero}>
       <section>
         <Aside>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
-          officiis expedita doloremque id deserunt praesentium provident
-          laboriosam suscipit ex cum?
+          A logo is an image that embodies the brand of an organization. It
+          needs to be easiy recognizable and usable in any format. Midway Web
+          Development has a team of creative graphic designers who will turn
+          your vision into a reality.
         </Aside>
       </section>
 
@@ -31,74 +33,27 @@ export default function Webdevelopment() {
       <section className={styles.Content}>
         <h1>About Our Services</h1>
         <div>
-          <h2>Lorem, ipsum dolor.</h2>
+          <h2>Professional Design</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis unde
-            sed possimus dolorem aliquid eaque doloribus tenetur saepe
-            necessitatibus quae. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quidem, fuga aut. Commodi dolores optio veritatis
-            nemo ratione hic natus odit?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            eaque aperiam illo similique nobis mollitia dolore labore neque!
-            Facilis, explicabo?
+            Designing a successful logo takes knowledge, experience, talent and
+            attention to detail. This includes a deep understanding of color
+            schemes and how they stand out out clients psychologically. Our team
+            will work closely with you to create a logo that effectively
+            communicates your brand identity and messaging to your potential
+            clients.
           </p>
         </div>
       </section>
 
       <section className={styles.Content}>
         <div>
-          <h2>Lorem, ipsum dolor.</h2>
+          <h2>Brand Guidelines</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis unde
-            sed possimus dolorem aliquid eaque doloribus tenetur saepe
-            necessitatibus quae. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quidem, fuga aut. Commodi dolores optio veritatis
-            nemo ratione hic natus odit?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            eaque aperiam illo similique nobis mollitia dolore labore neque!
-            Facilis, explicabo?
-          </p>
-        </div>
-      </section>
-
-      <Hero bg="bg_pri" size="quarter" heading="Web Development Services" />
-
-      <section className={styles.Content}>
-        <h1>Why Websites Are Important</h1>
-        <div>
-          <h2>Lorem, ipsum dolor.</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis unde
-            sed possimus dolorem aliquid eaque doloribus tenetur saepe
-            necessitatibus quae. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quidem, fuga aut. Commodi dolores optio veritatis
-            nemo ratione hic natus odit?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            eaque aperiam illo similique nobis mollitia dolore labore neque!
-            Facilis, explicabo?
-          </p>
-        </div>
-      </section>
-      <section className={styles.Content}>
-        <div>
-          <h2>Lorem, ipsum dolor.</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis unde
-            sed possimus dolorem aliquid eaque doloribus tenetur saepe
-            necessitatibus quae. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quidem, fuga aut. Commodi dolores optio veritatis
-            nemo ratione hic natus odit?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            eaque aperiam illo similique nobis mollitia dolore labore neque!
-            Facilis, explicabo?
+            In addition to a unique and scalable logo, we will equip you with
+            brand guidelines to ensure consistency in all of your marketing
+            efforts. These will include color schemes, fonts, social media
+            graphics as well as various file types for your logo to ensure high
+            quality across digital and print.
           </p>
         </div>
       </section>
