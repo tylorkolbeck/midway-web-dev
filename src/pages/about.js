@@ -53,7 +53,7 @@ export default function About({ data }) {
             <Card.Title position="center">Tylor Kolbeck</Card.Title>
             <Card.SubTitle position="center">Web | UX Developer</Card.SubTitle>
             <div style={{ textAlign: "center" }}>
-              <Card.Link>Learn More</Card.Link>
+              <Card.Link to="/resume">Learn More</Card.Link>
             </div>
           </Card>
           <Card>
@@ -65,7 +65,7 @@ export default function About({ data }) {
               Web Developer | Sales
             </Card.SubTitle>
             <div style={{ textAlign: "center" }}>
-              <Card.Link>Learn More</Card.Link>
+              <Card.Link to="/resume">Learn More</Card.Link>
             </div>
           </Card>
           <Card>
@@ -75,7 +75,7 @@ export default function About({ data }) {
             <Card.Title position="center">Kaila Kolbeck</Card.Title>
             <Card.SubTitle position="center">Designer</Card.SubTitle>
             <div style={{ textAlign: "center" }}>
-              <Card.Link>Learn More</Card.Link>
+              <Card.Link to="/resume">Learn More</Card.Link>
             </div>
           </Card>
         </div>
