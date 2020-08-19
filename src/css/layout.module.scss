@@ -9,28 +9,6 @@
     align-items: start;
     grid-gap: 2rem;
   }
-
-  & .SideNavigation {
-    width: 200px;
-    & ul {
-      list-style: none;
-      margin-top: 50px;
-
-      & li a {
-        margin-top: 10px;
-        padding-left: 6px;
-      }
-
-      & .Navigation_header {
-        color: $color-tert;
-        font-weight: 600;
-      }
-
-      & .Navigation_header:not(:first-of-type) {
-        margin-top: 20px;
-      }
-    }
-  }
 }
 
 @media only screen and (max-width: 550px) {

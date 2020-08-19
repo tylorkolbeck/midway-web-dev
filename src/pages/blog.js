@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "../css/pages/blog.module.scss"
-import { Link, graphql, navigate } from "gatsby"
+import { graphql, navigate } from "gatsby"
 import moment from "moment"
 import Layout from "../components/layout"
 import Hero from "../components/Hero/Hero"
