@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 import styles from "../css/pages/index.module.scss"
-import { Link, navigate } from "gatsby"
+import { navigate } from "gatsby"
 import Layout from "../components/layout"
 import Hero from "../components/Hero/Hero"
 import cloud_computing from "../assets/cloud_computing.svg"
@@ -9,6 +9,7 @@ import user_interface from "../assets/user_interface.svg"
 import { FiArrowRight } from "react-icons/fi"
 import meetTheTeam from "../assets/meet_the_team.svg"
 import WhatWeKnow from "../components/WhatWeKnow/WhatWeKnow"
+import Link from "../components/Link/Link"
 
 export default function Home() {
   return (
@@ -35,7 +36,7 @@ export default function Home() {
                 Custom web design and development services to get your business
                 online for customers to see.
               </p>
-              <Link to="/service-webdevelopment">
+              <Link to="/service-webdevelopment" color="pri">
                 Learn More <FiArrowRight />
               </Link>
             </div>
@@ -51,7 +52,7 @@ export default function Home() {
                 Fast and effecient web application development services to power
                 your business or idea.
               </p>
-              <Link to="/service-webapplications">
+              <Link to="/service-webapplications" color="accent">
                 Learn More <FiArrowRight />
               </Link>
             </div>
@@ -67,7 +68,7 @@ export default function Home() {
                 Logo design, branding and UX services to ensure your prodcuts
                 are designed for your users.
               </p>
-              <Link to="/service-ux">
+              <Link to="/service-ux" color="tert">
                 Learn More <FiArrowRight />
               </Link>
             </div>

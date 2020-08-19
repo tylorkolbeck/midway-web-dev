@@ -1,0 +1,32 @@
+@import "../../css/colors.scss";
+
+.Link {
+  font-weight: 500;
+
+  & .pri,
+  &:visited.pri {
+    color: $color-primary;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+
+  & .tert,
+  &:visited.tert {
+    color: $color-tert;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+
+  & .accent,
+  &:visited.accent {
+    color: $color-accent;
+
+    &:hover {
+      color: $color-tert;
+    }
+  }
+}

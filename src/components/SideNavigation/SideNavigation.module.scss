@@ -8,11 +8,13 @@
 
     & li a {
       margin-top: 10px;
-      // padding-left: 6px;
+
+      &:hover {
+        color: $color-accent;
+      }
     }
 
     & .Navigation_header {
-      color: $color-tert;
       font-weight: 600;
     }
 
