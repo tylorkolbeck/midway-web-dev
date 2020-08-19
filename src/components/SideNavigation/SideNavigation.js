@@ -37,21 +37,18 @@ function SideNavigation() {
           <Link to="/contact">Contact</Link>
         </li>
         <li>
-          <Link to="/">Products</Link>
+          <Link to="/comingSoon">Products</Link>
         </li>
 
         <li className={styles.Navigation_header}>Our Services</li>
         <li>
-          <Link to="/">Webdesign</Link>
+          <Link to="/service-webdevelopment">Web Development</Link>
         </li>
         <li>
-          <Link to="/">Web Applications</Link>
+          <Link to="/service-webapplications">Web Applications</Link>
         </li>
         <li>
-          <Link to="/">Design</Link>
-        </li>
-        <li>
-          <Link to="/">UX</Link>
+          <Link to="/service-ux">UX</Link>
         </li>
         <li className={styles.Navigation_header}>Blog Posts</li>
         <li>
