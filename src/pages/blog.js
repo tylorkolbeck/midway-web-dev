@@ -56,14 +56,17 @@ export default function blog({ data }) {
 
 export const query = graphql`
   query SITE_INDEX_QUERY {
-    allMdx(sort: { fields: frontmatter___date, order: DESC }) {
+    allMdx(
+      filter: { frontmatter: { published: { eq: true } } }
+      sort: { fields: frontmatter___date, order: DESC }
+    ) {
       nodes {
         fields {
           slug
         }
         frontmatter {
           author
-          date(formatString: "")
+          date
           title
           tags
         }

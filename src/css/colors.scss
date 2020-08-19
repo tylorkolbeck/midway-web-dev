@@ -5,3 +5,12 @@ $color-grey-dark: #3c474a;
 $color-grey-xlight: #fafafb;
 $color-footer-bg: #1b1b1b;
 $color-error: #ff0033;
+
+$color-tert-lightened: lighten($color-tert, 20);
+
+:export {
+  primary: $color-primary;
+  accent: $color-accent;
+  tert: $color-tert;
+  tertLight: $color-tert-lightened;
+}
