@@ -9,9 +9,10 @@ import Hero from "../components/Hero/Hero"
 export default function blogPost({ data }) {
   const { frontmatter, body } = data.mdx
 
+  const hero = <Hero heading={frontmatter.title} size="quarter" />
+
   return (
-    <Layout>
-      <Hero heading={frontmatter.title} size="quarter" />
+    <Layout hero={hero} sideNav>
       <section>
         <MDXRenderer>{body}</MDXRenderer>
       </section>

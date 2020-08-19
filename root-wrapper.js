@@ -9,12 +9,6 @@ const linkStyling = {
   display: "inline-block",
 }
 
-const liStyling = {
-  color: colors.primary,
-}
-
-console.log(colors)
-
 // This is where you define styling for the markdown that is pulled in for the blog
 const components = {
   h2: ({ children }) => <h2>{children}</h2>,
@@ -44,5 +38,9 @@ const components = {
 }
 
 export const wrapRootElement = ({ element }) => {
-  return <MDXProvider components={components}>{element}</MDXProvider>
+  return (
+    <MDXProvider components={components}>
+      <div>{element}</div>
+    </MDXProvider>
+  )
 }
