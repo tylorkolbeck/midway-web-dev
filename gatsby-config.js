@@ -3,6 +3,7 @@ require("dotenv").config()
 module.exports = {
   siteMetadata: {
     title: "Pandas Eating Lots",
+    siteUrl: "https://trusting-hugle-177a1a.netlify.app/",
   },
   plugins: [
     `gatsby-plugin-sass`,
