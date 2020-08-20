@@ -1,5 +1,6 @@
 import React from "react"
 import styles from "../css/pages/about.module.scss"
+import { navigate } from "gatsby"
 import Layout from "../components/layout"
 import Hero from "../components/Hero/Hero"
 import { Card } from "../components/Card/Card"
