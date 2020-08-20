@@ -18,11 +18,11 @@ const heroComponent = (
   <Hero
     bg="bg_tert"
     heading="Who We Are"
-    subText="Meet the team behind the awesome work that is done at Midway Web Development!"
+    subText="Meet the team at Midway Web Development!"
   />
 )
 
-export default function About({ data }) {
+export default function About() {
   return (
     <Layout hero={heroComponent} sideNav>
       <section className={styles.Content}>
@@ -47,7 +47,7 @@ export default function About({ data }) {
         </aside>
         <h1>The Team</h1>
         <div className={styles.Cards_people}>
-          <Card>
+          <Card onClick={() => navigate("/resume")}>
             <Card.Image size="80%">
               <img src={tylorImg} alt="Profile 1" />
             </Card.Image>
@@ -57,7 +57,7 @@ export default function About({ data }) {
               <Card.Link to="/resume">Learn More</Card.Link>
             </div>
           </Card>
-          <Card>
+          <Card onClick={() => navigate("/resume")}>
             <Card.Image size="80%">
               <img src={johnImg} alt="Profile 1" />
             </Card.Image>
@@ -69,7 +69,7 @@ export default function About({ data }) {
               <Card.Link to="/resume">Learn More</Card.Link>
             </div>
           </Card>
-          <Card>
+          <Card onClick={() => navigate("/resume")}>
             <Card.Image size="80%">
               <img src={kailaImg} alt="Profile 1" />
             </Card.Image>

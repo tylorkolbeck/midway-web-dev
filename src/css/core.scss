@@ -3,15 +3,19 @@
 a:hover {
   text-decoration: none;
   cursor: pointer;
-  color: $color-tert;
+  color: darken($color-tert, 50);
 }
 
 b {
   font-weight: bold;
 }
 
+p {
+  font-weight: 500;
+}
+
 a {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 16px;
   display: flex;
   align-items: center;
