@@ -46,36 +46,3 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
-
-// exports.createPages = ({ graphql, actions }) => {
-//   const { createPage } = actions
-//   return graphql(`
-//     {
-//       allContentfulBlogPost {
-//         nodes {
-//           id
-//           slug
-//         }
-//       }
-//     }
-//   `)
-//     .then(result => {
-//       if (result.errors) {
-//         console.log("Error retrieving contentful data")
-//       }
-
-//       const blogPostTemplate = path.resolve("./src/templates/blogpost.js")
-//       result.data.allContentfulBlogPost.nodes.forEach(post => {
-//         createPage({
-//           path: `/blogpost/${post.slug}`,
-//           component: slash(blogPostTemplate),
-//           id: post.id,
-//           context: {
-//             slug: post.slug,
-//             id: post.id,
-//           },
-//         })
-//       })
-//     })
-//     .catch(error => console.log("Error retrieving contentful data", error))
-// }

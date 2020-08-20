@@ -24,6 +24,10 @@ export default function Navigation() {
               <div
                 className={styles.DropdownMenu}
                 onMouseLeave={() => setIsVisible(false)}
+                onFocus={() => setIsVisible(true)}
+                onBlur={() => setIsVisible(false)}
+                role="button"
+                tabIndex="0"
               >
                 <button
                   ref={ref}

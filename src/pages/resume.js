@@ -1,11 +1,9 @@
 import React from "react"
 import styles from "../css/pages/resume.module.scss"
-import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Hero from "../components/Hero/Hero"
 import Link from "../components/Link/Link"
 import { AiFillLinkedin, AiFillTwitterSquare } from "react-icons/ai"
-import { MdEmail } from "react-icons/md"
 
 export default function resume() {
   const hero = (

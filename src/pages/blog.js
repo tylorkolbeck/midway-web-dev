@@ -27,6 +27,9 @@ export default function blog({ data }) {
             <div
               className={styles.Post}
               onClick={() => navigate(`${post.fields.slug}`)}
+              onKeyDown={() => navigate(`${post.fields.slug}`)}
+              role="button"
+              tabIndex="0"
               key={post.fields.slug}
             >
               <h2>{post.frontmatter.title}</h2>

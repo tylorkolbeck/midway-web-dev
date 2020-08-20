@@ -1,6 +1,5 @@
 import React from "react"
 import styles from "../css/layout.module.scss"
-import { Link } from "gatsby"
 import SideNavigation from "../components/SideNavigation/SideNavigation"
 import Head from "../components/Helmet/Helmet"
 import "normalize.css"

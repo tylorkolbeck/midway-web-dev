@@ -22,7 +22,6 @@ function SideNavigation() {
   const {
     allMdx: { nodes: posts },
   } = useStaticQuery(queryRecentPosts)
-  console.log(posts)
   return (
     <div className={styles.SideNavigation}>
       <ul>
@@ -57,7 +56,7 @@ function SideNavigation() {
 
         {posts.map(post => {
           return (
-            <li>
+            <li key={post.slug}>
               <Link to={`../${post.slug}`} id={post.slug}>
                 {post.frontmatter.title}
               </Link>

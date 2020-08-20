@@ -2,7 +2,6 @@ import React from "react"
 import styles from "../css/pages/service-webdevelopment.module.scss"
 import Layout from "../components/layout"
 import Hero from "../components/Hero/Hero"
-import Aside from "../components/Aside/Aside"
 import WhatWeKnow from "../components/WhatWeKnow/WhatWeKnow"
 
 export default function Webdevelopment() {

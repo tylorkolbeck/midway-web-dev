@@ -4,16 +4,9 @@ import { navigate } from "gatsby"
 import Layout from "../components/layout"
 import Hero from "../components/Hero/Hero"
 import { Card } from "../components/Card/Card"
-import avatar from "../assets/avatar_default.png"
 import tylorImg from "../assets/tylor_cropped.png"
 import johnImg from "../assets/john_cropped.png"
 import kailaImg from "../assets/kaila_cropped.png"
-// import {
-//   AiOutlineArrowRight,
-//   AiFillFacebook,
-//   AiOutlineInstagram,
-//   AiFillGithub,
-// } from "react-icons/ai"
 const heroComponent = (
   <Hero
     bg="bg_tert"
@@ -47,7 +40,12 @@ export default function About() {
         </aside>
         <h1>The Team</h1>
         <div className={styles.Cards_people}>
-          <Card onClick={() => navigate("/resume")}>
+          <Card
+            onClick={() => navigate("/resume")}
+            onKeyDown={() => navigate("/resume")}
+            role="button"
+            tabIndex="0"
+          >
             <Card.Image size="80%">
               <img src={tylorImg} alt="Profile 1" />
             </Card.Image>
@@ -57,7 +55,12 @@ export default function About() {
               <Card.Link to="/resume">Learn More</Card.Link>
             </div>
           </Card>
-          <Card onClick={() => navigate("/resume")}>
+          <Card
+            onClick={() => navigate("/resume")}
+            onKeyDown={() => navigate("/resume")}
+            role="button"
+            tabIndex="0"
+          >
             <Card.Image size="80%">
               <img src={johnImg} alt="Profile 1" />
             </Card.Image>
@@ -69,7 +72,12 @@ export default function About() {
               <Card.Link to="/resume">Learn More</Card.Link>
             </div>
           </Card>
-          <Card onClick={() => navigate("/resume")}>
+          <Card
+            onClick={() => navigate("/resume")}
+            onKeyDown={() => navigate("/resume")}
+            role="button"
+            tabIndex="0"
+          >
             <Card.Image size="80%">
               <img src={kailaImg} alt="Profile 1" />
             </Card.Image>

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import styles from "../css/pages/index.module.scss"
 import { navigate } from "gatsby"
 import Layout from "../components/layout"
@@ -27,6 +27,9 @@ export default function Home() {
             <div
               className={styles.Service}
               onClick={() => navigate("/service-webdevelopment")}
+              onKeyDown={() => navigate("/service-webdevelopment")}
+              role="button"
+              tabIndex="0"
             >
               <div className={styles.Service_icon}>
                 <img src={development} alt="Web Development" />
@@ -43,6 +46,9 @@ export default function Home() {
             <div
               className={styles.Service}
               onClick={() => navigate("/service-webapplications")}
+              onKeyDown={() => navigate("/service-webapplications")}
+              role="button"
+              tabIndex="0"
             >
               <div className={styles.Service_icon}>
                 <img src={cloud_computing} alt="Cloud Computing" />
@@ -59,6 +65,9 @@ export default function Home() {
             <div
               className={styles.Service}
               onClick={() => navigate("/service-ux")}
+              onKeyDown={() => navigate("/service-ux")}
+              role="button"
+              tabIndex="0"
             >
               <div className={styles.Service_icon}>
                 <img src={user_interface} alt="UX and Design" />

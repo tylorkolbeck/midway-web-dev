@@ -1,7 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import { MDXProvider } from "@mdx-js/react"
 import Layout from "../components/layout"
 import Hero from "../components/Hero/Hero"
 // import Aside from "../components/Aside/Aside"
