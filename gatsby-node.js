@@ -1,17 +1,26 @@
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const path = require(`path`)
-const { graphql } = require("gatsby")
+// const { graphql } = require("gatsby")
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
-  const blogPostTemplate = path.resolve("src/templates/blogPost.js")
+  const blogPostTemplate = path.resolve("./src/templates/blogPost.js")
+  const resumeTemplate = path.resolve("./src/templates/resume.js")
 
   return graphql(`
     {
-      allMdx {
+      blogs: allMdx {
         nodes {
           fields {
             slug
+          }
+        }
+      }
+      resumes: allContentfulResume {
+        nodes {
+          slug
+          internal {
+            type
           }
         }
       }
@@ -21,16 +30,31 @@ exports.createPages = ({ actions, graphql }) => {
       throw result.errors
     }
 
-    const posts = result.data.allMdx.nodes
+    const posts = result.data.blogs.nodes
+    const resumes = result.data.resumes.nodes
 
     posts.forEach(post => {
-      createPage({
-        path: post.fields.slug,
-        component: blogPostTemplate,
-        context: {
-          slug: post.fields.slug,
-        },
-      })
+      if (post.fields) {
+        createPage({
+          path: post.fields.slug,
+          component: blogPostTemplate,
+          context: {
+            slug: post.fields.slug,
+          },
+        })
+      }
+    })
+    // TODO: create resume pages here
+    resumes.forEach(resume => {
+      if (resume.slug) {
+        createPage({
+          path: resume.slug,
+          component: resumeTemplate,
+          context: {
+            slug: resume.slug,
+          },
+        })
+      }
     })
   })
 }
@@ -46,3 +70,12 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
+
+// resumes: allContentfulResume {
+//   nodes {
+//     slug
+//     internal {
+//       type
+//     }
+//   }
+// }

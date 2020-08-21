@@ -1,5 +1,7 @@
 # Midway Web Development Website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/335b98e7-1b90-45dd-8e6d-ed34ef0d01cc/deploy-status)](https://app.netlify.com/sites/trusting-hugle-177a1a/deploys)
+
 ## [Website Demo](https://trusting-hugle-177a1a.netlify.app/)
 
 ![Homepage Screen Shot](./src/assets/home_screen_shot.png)
