@@ -13,15 +13,27 @@
 
   .NavigationLinks {
     min-height: 368px;
-    display: grid;
-    // grid-template-columns: 1fr 1fr;
-    // gap: 2rem;
+    display: inline-grid;
+    grid-gap: 3rem;
+    grid-template-columns: min-content min-content;
     margin-top: 81px;
+    justify-content: center;
+
+    & ul {
+      list-style: none;
+      margin-left: 0px;
+    }
     a {
       margin-bottom: 20px;
       font-size: 16px;
       color: $color-grey-xlight;
       font-weight: bold;
+      white-space: nowrap;
+    }
+
+    h3 {
+      margin-top: 0px;
+      color: $color-tert;
     }
 
     .socialMediaIcons {
@@ -32,6 +44,14 @@
     .socialMediaIcons svg {
       margin-right: 10px;
     }
+
+    // .SubLink_wrapper {
+    //   & p {
+    //     font-size: 16px;
+    //     color: $color-grey-xlight;
+    //     font-weight: bold;
+    //   }
+    // }
   }
 }
 

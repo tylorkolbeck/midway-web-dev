@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { navLinks, serviceLinks } from "../../utils/siteNavigationLinks"
 import styles from "./Footer.module.scss"
 import ContactForm from "../ContactForm/ContactForm"
 import {
@@ -19,19 +20,40 @@ export default function Footer() {
           <ContactForm mini />
         </div>
         <div className={styles.NavigationLinks}>
-          <div>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/blog">Blog</Link>
-            <Link to="/contact">Contact</Link>
-          </div>
-          <div className={styles.socialMediaIcons}>
+          <ul>
+            <h3>Navigation</h3>
+            {navLinks.map(link => {
+              if (link.slug) {
+                return (
+                  <li>
+                    <Link to={link.slug}>{link.displayText}</Link>
+                  </li>
+                )
+              }
+            })}
+          </ul>
+          {/* Services */}
+          <ul>
+            {/* <p>{link.displayText}</p> */}
+            <h3>Services</h3>
+            <ul>
+              {serviceLinks.map(link => {
+                return (
+                  <li>
+                    <Link to={link.slug}>{link.displayText}</Link>
+                  </li>
+                )
+              })}
+            </ul>
+          </ul>
+
+          {/* <div className={styles.socialMediaIcons}>
             <AiFillTwitterCircle />
             <AiFillFacebook />
             <AiOutlineInstagram />
             <AiFillDribbbleCircle />
             <AiFillGithub />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className={styles.copyright}>
