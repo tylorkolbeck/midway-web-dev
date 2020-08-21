@@ -50,9 +50,6 @@ function SideNavigation() {
           <Link to="/service-ux">UX</Link>
         </li>
         <li className={styles.Navigation_header}>Blog Posts</li>
-        <li>
-          <Link to="/blog">View All</Link>
-        </li>
 
         {posts.map(post => {
           return (
@@ -63,6 +60,9 @@ function SideNavigation() {
             </li>
           )
         })}
+        <li>
+          <Link to="/blog">View All...</Link>
+        </li>
       </ul>
     </div>
   )
