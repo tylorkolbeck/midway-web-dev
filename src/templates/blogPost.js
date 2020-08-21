@@ -11,7 +11,7 @@ export default function blogPost({ data }) {
 
   return (
     <Layout hero={hero} sideNav>
-      <section style={{ maxWidth: "100vw" }}>
+      <section>
         <MDXRenderer>{body}</MDXRenderer>
       </section>
     </Layout>

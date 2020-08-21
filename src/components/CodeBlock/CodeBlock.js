@@ -36,6 +36,7 @@ const LineContent = styled.span`
 
 const CopyCode = styled.button`
   position: absolute;
+  background: dodgerblue;
   right: 0.25rem;
   border: 0;
   border-radius: 3px;
@@ -57,27 +58,29 @@ export default function CodeBlock({ codeString, language, ...props }) {
   }
 
   return (
-    <Highlight
-      {...defaultProps}
-      code={codeString}
-      language={language}
-      theme={theme}
-    >
-      {({ className, style, tokens, getLineProps, getTokenProps }) => (
-        <Pre className={className} style={style}>
-          <CopyCode onClick={handleClick}>Copy</CopyCode>
-          {tokens.map((line, i) => (
-            <Line key={i} {...getLineProps({ line, key: i })}>
-              <LineNo>{i + 1}</LineNo>
-              <LineContent>
-                {line.map((token, key) => (
-                  <span key={key} {...getTokenProps({ token, key })} />
-                ))}
-              </LineContent>
-            </Line>
-          ))}
-        </Pre>
-      )}
-    </Highlight>
+    <div>
+      <Highlight
+        {...defaultProps}
+        code={codeString}
+        language={language}
+        theme={theme}
+      >
+        {({ className, style, tokens, getLineProps, getTokenProps }) => (
+          <Pre className={className} style={style}>
+            <CopyCode onClick={handleClick}>Copy</CopyCode>
+            {tokens.map((line, i) => (
+              <Line key={i} {...getLineProps({ line, key: i })}>
+                <LineNo>{i + 1}</LineNo>
+                <LineContent>
+                  {line.map((token, key) => (
+                    <span key={key} {...getTokenProps({ token, key })} />
+                  ))}
+                </LineContent>
+              </Line>
+            ))}
+          </Pre>
+        )}
+      </Highlight>
+    </div>
   )
 }

@@ -54,7 +54,7 @@ function SideNavigation() {
         {posts.map(post => {
           return (
             <li key={post.slug}>
-              <Link to={`../${post.slug}`} id={post.slug}>
+              <Link to={`/${post.slug}`} id={post.slug}>
                 {post.frontmatter.title}
               </Link>
             </li>

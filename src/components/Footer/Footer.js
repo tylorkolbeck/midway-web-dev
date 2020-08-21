@@ -32,9 +32,7 @@ export default function Footer() {
               }
             })}
           </ul>
-          {/* Services */}
           <ul>
-            {/* <p>{link.displayText}</p> */}
             <h3>Services</h3>
             <ul>
               {serviceLinks.map(link => {
@@ -46,14 +44,6 @@ export default function Footer() {
               })}
             </ul>
           </ul>
-
-          {/* <div className={styles.socialMediaIcons}>
-            <AiFillTwitterCircle />
-            <AiFillFacebook />
-            <AiOutlineInstagram />
-            <AiFillDribbbleCircle />
-            <AiFillGithub />
-          </div> */}
         </div>
       </div>
       <div className={styles.copyright}>

@@ -16,7 +16,7 @@ export default function Layout(props) {
       <div
         className={[
           styles.Layout_container,
-          props.sideNav ? styles.showNav : "",
+          props.sideNav ? styles.showSideNav : "",
         ].join(" ")}
       >
         {props.sideNav && <SideNavigation />}
