@@ -3,7 +3,6 @@ import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import Layout from "../components/layout"
 import Hero from "../components/Hero/Hero"
-// import Aside from "../components/Aside/Aside"
 
 export default function blogPost({ data }) {
   const { frontmatter, body } = data.mdx
@@ -12,7 +11,7 @@ export default function blogPost({ data }) {
 
   return (
     <Layout hero={hero} sideNav>
-      <section>
+      <section style={{ maxWidth: "100vw" }}>
         <MDXRenderer>{body}</MDXRenderer>
       </section>
     </Layout>

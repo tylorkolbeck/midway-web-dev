@@ -9,7 +9,7 @@ const Pre = styled.pre`
   text-align: left;
   margin: 1em 0;
   padding: 0.5em;
-  overflow: scroll;
+  overflow: auto;
   padding: 10px 10px;
   border-radius: 10px !important;
   margin-bottom: 25px;
