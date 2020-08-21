@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "../css/pages/about.module.scss"
-import { navigate } from "gatsby"
+import { navigate, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Hero from "../components/Hero/Hero"
 import { Card } from "../components/Card/Card"
@@ -15,7 +15,9 @@ const heroComponent = (
   />
 )
 
-export default function About() {
+export default function About({ data }) {
+  const { allContentfulResume: team } = data
+  console.log(team)
   return (
     <Layout hero={heroComponent} sideNav>
       <section className={styles.Content}>
@@ -40,55 +42,47 @@ export default function About() {
         </aside>
         <h1>The Team</h1>
         <div className={styles.Cards_people}>
-          <Card
-            onClick={() => navigate("/resume")}
-            onKeyDown={() => navigate("/resume")}
-            role="button"
-            tabIndex="0"
-          >
-            <Card.Image size="80%">
-              <img src={tylorImg} alt="Profile 1" />
-            </Card.Image>
-            <Card.Title position="center">Tylor Kolbeck</Card.Title>
-            <Card.SubTitle position="center">Web | UX Developer</Card.SubTitle>
-            <div style={{ textAlign: "center" }}>
-              <Card.Link to="/resume">Learn More</Card.Link>
-            </div>
-          </Card>
-          <Card
-            onClick={() => navigate("/resume")}
-            onKeyDown={() => navigate("/resume")}
-            role="button"
-            tabIndex="0"
-          >
-            <Card.Image size="80%">
-              <img src={johnImg} alt="Profile 1" />
-            </Card.Image>
-            <Card.Title position="center">John Kaplanis</Card.Title>
-            <Card.SubTitle position="center">
-              Web Developer | Sales
-            </Card.SubTitle>
-            <div style={{ textAlign: "center" }}>
-              <Card.Link to="/resume">Learn More</Card.Link>
-            </div>
-          </Card>
-          <Card
-            onClick={() => navigate("/resume")}
-            onKeyDown={() => navigate("/resume")}
-            role="button"
-            tabIndex="0"
-          >
-            <Card.Image size="80%">
-              <img src={kailaImg} alt="Profile 1" />
-            </Card.Image>
-            <Card.Title position="center">Kaila Kolbeck</Card.Title>
-            <Card.SubTitle position="center">Designer</Card.SubTitle>
-            <div style={{ textAlign: "center" }}>
-              <Card.Link to="/resume">Learn More</Card.Link>
-            </div>
-          </Card>
+          {team.nodes.map(person => {
+            return (
+              <Card
+                onClick={() => navigate(`/${person.slug}`)}
+                onKeyDown={() => navigate(`/${person.slug}`)}
+                role="button"
+                tabIndex="0"
+                key={person.slug}
+              >
+                <Card.Image size="80%">
+                  <img src={person.avatarImage.fixed.src} alt="Profile 1" />
+                </Card.Image>
+                <Card.Title position="center">{person.name}</Card.Title>
+                <Card.SubTitle position="center">
+                  {person.cardTitle}
+                </Card.SubTitle>
+                <div style={{ textAlign: "center" }}>
+                  <Card.Link to={`/${person.slug}`}>Learn More</Card.Link>
+                </div>
+              </Card>
+            )
+          })}
         </div>
       </section>
     </Layout>
   )
 }
+
+export const query = graphql`
+  query GetAboutCardData {
+    allContentfulResume {
+      nodes {
+        cardTitle
+        avatarImage {
+          fixed {
+            src
+          }
+        }
+        slug
+        name
+      }
+    }
+  }
+`
