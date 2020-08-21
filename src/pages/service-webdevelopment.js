@@ -39,7 +39,7 @@ export default function Webdevelopment() {
       </section>
 
       <section className={styles.Content}>
-        <h1>Why We Care About...</h1>
+        <h1>What We Care About...</h1>
         <div>
           <h2>Responsive Web Design</h2>
           <p>
