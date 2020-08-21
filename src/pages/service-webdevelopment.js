@@ -17,54 +17,59 @@ export default function Webdevelopment() {
   )
   return (
     <Layout sideNav hero={hero}>
-      <section className={styles.Technologies}>
-        <h1>Technologies</h1>
-        <p>
-          These are just some of the technologies that we specialize in and use
-          to build your website.
-        </p>
-        <div style={{ margin: "50px 0" }}>
-          <WhatWeKnow />
-        </div>
-      </section>
       <section className={styles.Content}>
         {/* <Aside>
           We believe that getting your website up and running should be an
           enjoyable process because it will define who you are on the web.{" "}
         </Aside> */}
-        <h1>About Our Services</h1>
+
         <div>
-          <h2>Quality Online Presence</h2>
+          <h1>Why You Need A Website.</h1>
           <p>
             The easiest way for a company to legitimize themselves and build
             client trust is to have a strong internet presence. An online
             presence not only adds value to your company's brand but it also
             offers an opportunity get your business in front of possible
             clients. A website is not only made up of flashy graphics and
-            colors, but of thoughtful design and usability. At MWD we take
-            usability very seriously. If you have a product it will not be worth
-            a penny if it is not usable.
+            colors, but of thoughtful design and usability. At MWD we put
+            usability at the forefront when designing your web product beacuse,
+            if you have a product it is only worth something if its usable.
           </p>
         </div>
       </section>
 
       <section className={styles.Content}>
+        <h1>Why We Care About...</h1>
         <div>
           <h2>Responsive Web Design</h2>
           <p>
             With over half of all web traffic coming from a mobile device it is
             important that your website looks good and performs well across as
             many devices sizes as possible. Thats why at MWD we develop websites
-            that are responsive and performant by using the latest in modern web
-            technologies.
+            that are responsive and performant.
           </p>
           <p>
-            We first design your website with the mobile user in mind by
-            optimizing media to be delivered on slow speed connections as well
-            ensuring the layout works for a smaller device. We then design out
-            your desktop sized site taking advantage of the extra screen real
-            estate and connection performance to really wow your audience.
+            When developing your website we start with mobile layouts. We
+            optimize the site to so that media can be quickly delivered on slow
+            speed connections and that the site looks good from the smallest
+            phone up to a device the size of a TV.
           </p>
+        </div>
+      </section>
+
+      <section className={styles.Technologies}>
+        <h2>Technology </h2>
+        <p>
+          When choosing a company to design and build your website you want to
+          know what technologies they are using. This matters because you want a
+          website that is secure, performant, reliable and easy to maintain. At
+          MWD We use the latest in web development technologies so that you have
+          nothing to worry about except running your business. Below is a list
+          of a hand full of the main technologies that we.
+        </p>
+
+        <div style={{ maxWidth: "600px", margin: "50px auto" }}>
+          <WhatWeKnow />
         </div>
       </section>
 
@@ -94,8 +99,8 @@ export default function Webdevelopment() {
             A website is not useful if it does not provide the right message.
             Your site “copy” is the content that delivers your message and
             guides people through your website to convey information and deliver
-            your message. At MWD we help you to create your message so that your
-            can convert visitors into paying clients.
+            your message. At MWD we help you to create your message so your
+            visitors can find what they came looking for.
           </p>
         </div>
       </section>

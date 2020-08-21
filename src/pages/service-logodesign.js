@@ -3,7 +3,6 @@ import styles from "../css/pages/service-webdevelopment.module.scss"
 import Layout from "../components/layout"
 import Hero from "../components/Hero/Hero"
 import Aside from "../components/Aside/Aside"
-import WhatWeKnow from "../components/WhatWeKnow/WhatWeKnow"
 
 export default function Webdevelopment() {
   const hero = (
@@ -19,19 +18,13 @@ export default function Webdevelopment() {
       <section>
         <Aside>
           A logo is an image that embodies the brand of an organization. It
-          needs to be easiy recognizable and usable in any format. Midway Web
+          needs to be easily recognizable and usable in any format. Midway Web
           Development has a team of creative graphic designers who will turn
           your vision into a reality.
         </Aside>
       </section>
 
-      <section className={styles.Technologies}>
-        <h1>Technologies</h1>
-        <WhatWeKnow />
-      </section>
-
       <section className={styles.Content}>
-        <h1>About Our Services</h1>
         <div>
           <h2>Professional Design</h2>
           <p>

@@ -1,11 +1,12 @@
 @import "../../css/colors.scss";
 
 .Aside {
-  padding-left: 20px;
+  padding-left: 10px;
   max-width: 600px;
   margin: 50px auto;
-  border-left: 2px solid $color-accent;
+  border-left: 3px solid $color-tert;
   line-height: 1.5rem;
+  color: $color-grey-light;
 }
 
 @media only screen and (max-width: 480px) {
