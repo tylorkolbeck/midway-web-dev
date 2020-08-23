@@ -12,12 +12,12 @@ export function Card(props) {
 
 Card.Title = ({ children, position }) => {
   return (
-    <h4
+    <h3
       className={styles.Card_Title}
       style={{ textAlign: position ? position : "left" }}
     >
       {children}
-    </h4>
+    </h3>
   )
 }
 
