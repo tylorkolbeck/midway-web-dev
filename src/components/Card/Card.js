@@ -4,14 +4,21 @@ import styles from "./Card.module.scss"
 
 export function Card(props) {
   return (
-    <div {...props} className={styles.Service}>
+    <div {...props} className={styles.Card}>
       {props.children}
     </div>
   )
 }
 
 Card.Title = ({ children, position }) => {
-  return <h3 style={{ textAlign: position ? position : "left" }}>{children}</h3>
+  return (
+    <h4
+      className={styles.Card_Title}
+      style={{ textAlign: position ? position : "left" }}
+    >
+      {children}
+    </h4>
+  )
 }
 
 Card.SubTitle = ({ children, position }) => {

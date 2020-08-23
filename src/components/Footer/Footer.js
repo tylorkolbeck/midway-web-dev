@@ -25,7 +25,7 @@ export default function Footer() {
             {navLinks.map(link => {
               if (link.slug) {
                 return (
-                  <li>
+                  <li key={link.slug}>
                     <Link to={link.slug}>{link.displayText}</Link>
                   </li>
                 )
@@ -37,7 +37,7 @@ export default function Footer() {
             <ul>
               {serviceLinks.map(link => {
                 return (
-                  <li>
+                  <li key={link.slug}>
                     <Link to={link.slug}>{link.displayText}</Link>
                   </li>
                 )

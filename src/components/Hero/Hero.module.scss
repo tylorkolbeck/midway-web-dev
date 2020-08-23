@@ -9,12 +9,8 @@
   align-items: center;
   padding: 0px 20px;
 
-  &.bg_pri {
-    background: rgb(51, 188, 227);
-    background: -moz-linear-gradient(222deg, rgba(51, 188, 227, 0.5186449579831933) 0%, rgba(51, 188, 227, 1) 41%);
-    background: -webkit-linear-gradient(222deg, rgba(51, 188, 227, 0.5186449579831933) 0%, rgba(51, 188, 227, 1) 41%);
-    background: linear-gradient(222deg, rgba(51, 188, 227, 0.5186449579831933) 0%, rgba(51, 188, 227, 1) 41%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#33bce3",endColorstr="#33bce3",GradientType=1);
+  &.pri {
+    background: $color-primary;
   }
 
   &.bg_svg {

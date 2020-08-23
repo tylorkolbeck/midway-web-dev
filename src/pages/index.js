@@ -3,130 +3,159 @@ import styles from "../css/pages/index.module.scss"
 import { navigate } from "gatsby"
 import Layout from "../components/layout"
 import Hero from "../components/Hero/Hero"
-import cloud_computing from "../assets/cloud_computing.svg"
-import development from "../assets/development.svg"
-import user_interface from "../assets/user_interface.svg"
 import { FiArrowRight } from "react-icons/fi"
 import meetTheTeam from "../assets/meet_the_team.svg"
 import WhatWeKnow from "../components/WhatWeKnow/WhatWeKnow"
 import Link from "../components/Link/Link"
+import HomePageHero from "../components/HomePageHero/HomePageHero"
+import { Card } from "../components/Card/Card"
+import Button from "../components/Button/Button"
+// Images
+import performance_src from "../assets/performance.svg"
+import contract_src from "../assets/contract.svg"
+import marketing_src from "../assets/marketing.svg"
+import idea_src from "../assets/idea.svg"
+import meeting_src from "../assets/meeting.svg"
 
 export default function Home() {
   return (
     <Layout className={styles.test}>
-      <Hero
-        heading="We Build Things For The Web"
-        subText="Professional website and web application development using the latest
-          in modern web techonologies."
-        size="half"
-        bg="bg_svg"
-      />
+      <HomePageHero />
       <main>
         <section>
+          <h1>
+            Anything You Need<span className="blue-dot">.</span>
+          </h1>
           <div className={styles.Services_container}>
-            <div
-              className={styles.Service}
-              onClick={() => navigate("/service-webdevelopment")}
-              onKeyDown={() => navigate("/service-webdevelopment")}
-              role="button"
-              tabIndex="0"
-            >
-              <div className={styles.Service_icon}>
-                <img src={development} alt="Web Development" />
-              </div>
-              <h4>Website | Wordpress</h4>
+            <Card>
+              <Card.Title>Proffesional Website</Card.Title>
               <p>
-                Custom web design and development services to get your business
-                online for customers to see.
+                Need a custom website to get your business online? Learn more
+                about why a website is critical to your companys success.
               </p>
-              <Link to="/service-webdevelopment" color="pri">
-                Learn More <FiArrowRight />
-              </Link>
-            </div>
-            <div
-              className={styles.Service}
-              onClick={() => navigate("/service-webapplications")}
-              onKeyDown={() => navigate("/service-webapplications")}
-              role="button"
-              tabIndex="0"
-            >
-              <div className={styles.Service_icon}>
-                <img src={cloud_computing} alt="Cloud Computing" />
-              </div>
-              <h4>Web App | CMS</h4>
+              <Card.Link to="/service-webdevelopment">Learn More</Card.Link>
+            </Card>
+            <Card>
+              <Card.Title>Custom Applications</Card.Title>
               <p>
-                Fast and effecient web application development services to power
-                your business or idea.
+                Need a custom web application? Learn more about how we can help
+                you improve your companies effiency with a custom web service.
               </p>
-              <Link to="/service-webapplications" color="accent">
-                Learn More <FiArrowRight />
-              </Link>
-            </div>
-            <div
-              className={styles.Service}
-              onClick={() => navigate("/service-ux")}
-              onKeyDown={() => navigate("/service-ux")}
-              role="button"
-              tabIndex="0"
-            >
-              <div className={styles.Service_icon}>
-                <img src={user_interface} alt="UX and Design" />
-              </div>
-              <h4>Design | UX</h4>
+              <Card.Link to="/service-webapplications">Learn More</Card.Link>
+            </Card>
+
+            <Card>
+              <Card.Title>Design And User Experience</Card.Title>
               <p>
-                Logo design, branding and UX services to ensure your prodcuts
-                are designed for your users.
+                Need a Logo, company branding or UX services? Learn more about
+                how we design for the user.
               </p>
-              <Link to="/service-ux" color="tert">
-                Learn More <FiArrowRight />
-              </Link>
-            </div>
+              <Card.Link to="/service-ux">Learn More</Card.Link>
+            </Card>
           </div>
         </section>
 
         <section className={styles.Homepage_section}>
           <div>
-            <h1 className="h1-xl">Get Yourself Online</h1>
-            <p style={{ fontWeight: "300" }}>
-              Let us help you to{" "}
-              <b>get your next business or web project online. </b> We have a
-              talented team of experienced web developers and graphic designers
-              so you can focus on starting your business and we will focus on
-              getting you online.
+            <h1 className="h1-xl">
+              High Performance<span className="blue-dot">.</span>
+            </h1>
+            <p>
+              We develop using the <b>latest in modern web technologies</b> so
+              you can be guranteed that your product will be fast and
+              effiecient. A fast website means happy customers.
             </p>
+
             <Link to="/service-webdevelopment">
               Learn More <FiArrowRight />
             </Link>
           </div>
-          <div className={styles.svg_wrapper}></div>
+          <div className={styles.svg_wrapper}>
+            <img src={performance_src} alt="Performant Services"></img>
+          </div>
         </section>
 
         <section
           className={styles.Homepage_section}
           style={{ marginBottom: "100px" }}
         >
-          <div className={styles.svg_wrapper}></div>
+          <div className={styles.svg_wrapper}>
+            <img src={contract_src} alt="Performant Services"></img>
+          </div>
           <div>
-            <h1 className="h1-xl">Professional Services</h1>
-            <p style={{ fontWeight: "300" }}>
-              We can provide you with{" "}
-              <b> technology that is fast, responsive </b>, and built using the
-              latest in modern web technologies.
+            <h1 className="h1-xl">
+              Professional Services<span className="blue-dot">.</span>
+            </h1>
+
+            <p>
+              Let us help you get your next business or web project online. We
+              have a talented team of experienced{" "}
+              <b>web developers, graphic designers, and content writers</b> to
+              work for you so all you have to focus on is your business' day to
+              day operations.
             </p>
+
             <Link to="/service-webapplications">
               Learn More <FiArrowRight />
             </Link>
           </div>
         </section>
 
-        <Hero size="quarter" heading="What We Know">
+        <section className={styles.Homepage_section}>
+          <div>
+            <h1 className="h1-xl">
+              Reach Your Audience<span className="blue-dot">.</span>
+            </h1>
+            <p>
+              At MWD we put a lot of focus into SEO and marketing to help you to
+              gain quality organic traffic. With organice traffic you can save
+              hundreds on ad space as well as increasing your visitor count.
+            </p>
+            <Link to="/service-webdevelopment">
+              Learn More <FiArrowRight />
+            </Link>
+          </div>
+          <div className={styles.svg_wrapper}>
+            <img src={marketing_src} alt="Performant Services"></img>
+          </div>
+        </section>
+
+        <section
+          className={styles.Homepage_section}
+          style={{ marginBottom: "100px" }}
+        >
+          <div className={styles.svg_wrapper}>
+            <img src={idea_src} alt="Performant Services"></img>
+          </div>
+          <div>
+            <h1 className="h1-xl">
+              Innovative Talent<span className="blue-dot">.</span>
+            </h1>
+
+            <p>
+              Have an idea but you not sure how to move it forward to the next
+              step? MWD utilizes a proven process to welcome innovative thinking
+              and design to help you make your product successful.
+            </p>
+
+            <Link to="/service-webapplications">
+              Learn More <FiArrowRight />
+            </Link>
+          </div>
+        </section>
+
+        <Hero size="quarter" heading="What We Know" bg="pri">
           <WhatWeKnow />
         </Hero>
 
         <section className={styles.MeetTheTeam}>
-          <h1>Meet The Team</h1>
+          <h1>
+            Meet The Team<span className="blue-dot">.</span>
+          </h1>
 
-          <img src={meetTheTeam} alt="Meet The Team" />
+          <div className={styles.svg_wrapper}>
+            <img src={meeting_src} alt="Performant Services"></img>
+          </div>
           <p>
             The Midway Web Development team is made up of experienced and
             talented web developers, graphic designers and UX developers. Let us
@@ -139,13 +168,9 @@ export default function Home() {
               marginTop: "20px",
             }}
           >
-            <Link to="/about">
-              Learn More <FiArrowRight />
-            </Link>
+            <Button to="/about">Meet The Team</Button>
           </div>
         </section>
-
-        {/* <div style={{ height: "1000px" }}></div> */}
       </main>
     </Layout>
   )

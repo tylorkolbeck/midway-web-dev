@@ -14,10 +14,15 @@ export default function Navigation() {
     <nav className={styles.Navigation_Wrapper}>
       <div className={styles.Navigtion_content}>
         <Logo className={styles.mobile_only} onClick={() => navigate("/")} />
+
         <MobileMenu />
         <div>
           <ul>
-            <li>
+            <li
+              style={{
+                width: "150px",
+              }}
+            >
               <Logo />
             </li>
             <li>
@@ -70,7 +75,7 @@ export default function Navigation() {
         </div>
         {/* </div> */}
         <div className={styles.Navigation_CTA}>
-          <Button bg="light" onClick={() => navigate("/contact")}>
+          <Button bg="primary" to="/contact">
             Contact Us
           </Button>
         </div>

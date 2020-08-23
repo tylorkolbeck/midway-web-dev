@@ -1,0 +1,28 @@
+.HomePageHero_wrapper {
+  padding: 50px 20px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 10%;
+
+  & h1 {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  & hr {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .HomePageHero_wrapper {
+    grid-template-columns: 1fr;
+    & p {
+      text-align: justify;
+    }
+  }
+}

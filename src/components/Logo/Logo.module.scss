@@ -7,16 +7,10 @@
 }
 
 .Logo_wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  // background: $color-primary;
-
-  & h1 {
-    color: $color-grey-xlight;
-    border: none;
-    font-size: 24px;
+  & img {
+    align-self: center;
+    width: 100%;
     margin: 0px;
-    padding: 0px;
+    max-width: 125px;
   }
 }

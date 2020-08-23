@@ -1,4 +1,4 @@
-$color-primary: #33bce3;
+// $color-primary: #33bce3;
 $color-accent: #2fec68;
 $color-tert: #4464e7;
 $color-grey-dark: #3c474a;
@@ -10,6 +10,9 @@ $color-error: #ff0033;
 // Colors after rebrand
 $color-text-header: #3a4047;
 $color-text: #5d656c;
+$color-primary: #4464e7;
+$color-secondary: #33bbe2;
+// ---- END REBRADND COLOR ----
 
 $color-tert-lightened: lighten($color-tert, 20);
 

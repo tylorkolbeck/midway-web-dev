@@ -11,7 +11,7 @@ import styles from "./Hero.module.scss"
 
 export default function Hero({ size, bg, heading, subText, children }) {
   const heroSize = size || "half"
-  const heroBackgound = bg || "bg_pri"
+  const heroBackgound = bg || "pri"
 
   return (
     <div

@@ -1,12 +1,18 @@
 @import "../../css/colors.scss";
 
-.Service {
+.Card {
   background: white;
   border-radius: 12px;
-  padding: 30px 30px;
+  padding: 50px 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   color: $color-grey-dark;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+
+  & p {
+    margin-bottom: 25px;
+  }
 
   .Card_subtitle {
     color: lighten($color-grey-dark, 30);
@@ -14,8 +20,23 @@
     margin: 0px;
     margin-bottom: 20px;
   }
+
   &:hover {
-    transform: scale(1.05);
-    cursor: pointer;
+    // transform: scale(1.05);
+    // cursor: pointer;
+  }
+
+  & .Card_link {
+    margin-top: auto;
+    color: $color-primary;
+
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+
+  & .Card_Title {
+    margin: 0px;
+    margin-bottom: 25px;
   }
 }
