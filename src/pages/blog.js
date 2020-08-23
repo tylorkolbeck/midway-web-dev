@@ -24,7 +24,7 @@ export default function blog({ data }) {
       >
         {blogPosts.map(post => {
           return (
-            <Card>
+            <Card key={`post-${post.fields.slug}`}>
               <div
                 className={styles.Post}
                 onClick={() => navigate(`${post.fields.slug}`)}
