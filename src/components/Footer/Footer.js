@@ -3,21 +3,16 @@ import { Link } from "gatsby"
 import { navLinks, serviceLinks } from "../../utils/siteNavigationLinks"
 import styles from "./Footer.module.scss"
 import ContactForm from "../ContactForm/ContactForm"
-import {
-  AiFillTwitterCircle,
-  AiFillFacebook,
-  AiOutlineInstagram,
-  AiFillDribbbleCircle,
-  AiFillGithub,
-} from "react-icons/ai"
 
 export default function Footer() {
   return (
     <>
       <div className={styles.Footer}>
         <div>
-          <h1>Contact Us</h1>
-          <ContactForm mini />
+          <h1>
+            Get In Touch<span className="blue-dot">.</span>
+          </h1>
+          <ContactForm mini light />
         </div>
         <div className={styles.NavigationLinks}>
           <ul>

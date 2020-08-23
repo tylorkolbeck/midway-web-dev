@@ -11,6 +11,10 @@
   gap: 2rem;
   overflow: hidden;
 
+  & h1 {
+    color: white;
+  }
+
   .NavigationLinks {
     min-height: 368px;
     display: inline-grid;
@@ -44,14 +48,6 @@
     .socialMediaIcons svg {
       margin-right: 10px;
     }
-
-    // .SubLink_wrapper {
-    //   & p {
-    //     font-size: 16px;
-    //     color: $color-grey-xlight;
-    //     font-weight: bold;
-    //   }
-    // }
   }
 }
 

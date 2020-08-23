@@ -1,10 +1,30 @@
 .ContactForm {
-  // background: dodgerblue;
   max-width: 600px;
-  // margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+
+  &.light {
+    color: white;
+
+    input {
+      border-color: white;
+      // border-bottom-right-radius: white;
+    }
+
+    textarea {
+      border-color: white;
+    }
+
+    input,
+    textarea::placeholder {
+      color: white;
+    }
+
+    h4 {
+      color: white;
+    }
+  }
 
   &.miniForm {
     margin: 0;
@@ -25,7 +45,6 @@
 
   .ContactForm_textarea {
     grid-column: 1 / 3;
-    // background: red;
 
     textarea {
       width: 100%;
