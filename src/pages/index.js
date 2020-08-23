@@ -1,6 +1,5 @@
 import React from "react"
 import styles from "../css/pages/index.module.scss"
-
 import { navigate } from "gatsby"
 import Layout from "../components/layout"
 import Hero from "../components/Hero/Hero"
@@ -87,7 +86,7 @@ export default function Home() {
 
         <section className={styles.Homepage_section}>
           <div>
-            <h1>Get Yourself Online</h1>
+            <h1 className="h1-xl">Get Yourself Online</h1>
             <p style={{ fontWeight: "300" }}>
               Let us help you to{" "}
               <b>get your next business or web project online. </b> We have a
@@ -108,7 +107,7 @@ export default function Home() {
         >
           <div className={styles.svg_wrapper}></div>
           <div>
-            <h1>Professional Services</h1>
+            <h1 className="h1-xl">Professional Services</h1>
             <p style={{ fontWeight: "300" }}>
               We can provide you with{" "}
               <b> technology that is fast, responsive </b>, and built using the
