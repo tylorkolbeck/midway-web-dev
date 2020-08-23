@@ -6,6 +6,7 @@
   grid-auto-rows: max-content;
   margin: 0 auto;
   grid-gap: 2rem;
+  max-width: 1200px;
 }
 
 .Homepage_section {
@@ -43,6 +44,13 @@
     width: auto;
     margin-bottom: 50px;
   }
+}
+
+.RecentPosts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 2rem;
+  grid-auto-rows: 1fr;
 }
 
 @media only screen and (max-width: 750px) {

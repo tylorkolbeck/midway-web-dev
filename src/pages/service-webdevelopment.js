@@ -23,7 +23,9 @@ export default function Webdevelopment() {
         </Aside> */}
 
         <div>
-          <h1>Why You Need A Website.</h1>
+          <h1>
+            Why You Need A Website<span className="blue-dot">.</span>
+          </h1>
           <p>
             The easiest way for a company to legitimize themselves and build
             client trust is to have a strong internet presence. An online
@@ -40,7 +42,9 @@ export default function Webdevelopment() {
       <section className={styles.Content}>
         <h1>What We Care About...</h1>
         <div>
-          <h2>Responsive Web Design</h2>
+          <h2>
+            Responsive Web Design<span className="blue-dot">.</span>
+          </h2>
           <p>
             With over half of all web traffic coming from a mobile device it is
             important that your website looks good and performs well across as
@@ -57,7 +61,9 @@ export default function Webdevelopment() {
       </section>
 
       <section className={styles.Technologies}>
-        <h2>Technology </h2>
+        <h2>
+          Technology<span className="blue-dot">.</span>
+        </h2>
         <p>
           When choosing a company to design and build your website you want to
           know what technologies they are using. This matters because you want a
@@ -74,7 +80,9 @@ export default function Webdevelopment() {
 
       <section className={styles.Content}>
         <div>
-          <h2>SEO And Marketing</h2>
+          <h2>
+            SEO And Marketing<span className="blue-dot">.</span>
+          </h2>
           <p>
             SEO or “Search Engine Optimization” is the practice of increasing
             traffic to your website through search engine results. With quality
@@ -87,7 +95,9 @@ export default function Webdevelopment() {
       </section>
       <section className={styles.Content}>
         <div>
-          <h2>Website Content</h2>
+          <h2>
+            Website Content<span className="blue-dot">.</span>
+          </h2>
           <p>
             A website is not useful if it does not provide the right message.
             Your site “copy” is the content that delivers your message and

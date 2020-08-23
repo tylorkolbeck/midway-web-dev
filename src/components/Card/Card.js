@@ -58,6 +58,10 @@ Card.Link = ({ children, to, position }) => {
   )
 }
 
+Card.Footer = ({ children }) => {
+  return <div className={styles.Card_footer}>{children}</div>
+}
+
 Card.Text = ({ children }) => {
   return <p>{children}</p>
 }

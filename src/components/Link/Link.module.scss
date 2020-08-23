@@ -8,25 +8,25 @@
     color: $color-primary;
 
     &:hover {
-      color: $color-accent;
+      color: $color-secondary;
     }
   }
 
-  & .tert,
-  &:visited.tert {
-    color: $color-tert;
+  // & .tert,
+  // &:visited.tert {
+  //   color: $color-tert;
 
-    &:hover {
-      color: $color-accent;
-    }
-  }
+  //   &:hover {
+  //     color: $color-accent;
+  //   }
+  // }
 
-  & .accent,
-  &:visited.accent {
-    color: $color-accent;
+  // & .accent,
+  // &:visited.accent {
+  //   color: $color-accent;
 
-    &:hover {
-      color: $color-tert;
-    }
-  }
+  //   &:hover {
+  //     color: $color-tert;
+  //   }
+  // }
 }

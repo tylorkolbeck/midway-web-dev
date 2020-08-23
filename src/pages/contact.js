@@ -14,7 +14,11 @@ export default function contact() {
   return (
     <Layout sideNav hero={hero}>
       <section>
-        <h1>Lets Work Together!</h1>
+        <p className="blue-heading-italic">CONTACT</p>
+
+        <h1>
+          Lets Work Together<span className="blue-dot">.</span>
+        </h1>
         <ContactForm />
       </section>
     </Layout>
