@@ -1,6 +1,7 @@
 import React from "react"
 import styles from "./SideNavigation.module.scss"
 import { useStaticQuery, graphql, Link } from "gatsby"
+import Button from "../Button/Button"
 
 const queryRecentPosts = graphql`
   query GET_RECENT_POSTS {
@@ -66,10 +67,8 @@ function SideNavigation() {
             </li>
           )
         })}
-        <li>
-          <Link to="/blog">
-            <b>View All...</b>
-          </Link>
+        <li style={{ paddingTop: "20px" }}>
+          <Button to="/blog">View All</Button>
         </li>
       </ul>
     </div>
