@@ -32,8 +32,8 @@ export default function Webdevelopment() {
             offers an opportunity get your business in front of possible
             clients. A website is not only made up of flashy graphics and
             colors, but of thoughtful design and usability. At MWD we put
-            usability at the forefront when designing your web product beacuse,
-            if you have a product it is only worth something if its usable.
+            usability at the forefront when designing your web product because,
+            if you have a product it is only worth something if it's usable.
           </p>
         </div>
       </section>
@@ -45,12 +45,12 @@ export default function Webdevelopment() {
           <p>
             With over half of all web traffic coming from a mobile device it is
             important that your website looks good and performs well across as
-            many devices sizes as possible. Thats why at MWD we develop websites
+            many device sizes as possible. That's why at MWD we develop websites
             that are responsive and performant.
           </p>
           <p>
             When developing your website we start with mobile layouts. We
-            optimize the site to so that media can be quickly delivered on slow
+            optimize the site so that media can be quickly delivered on slow
             speed connections and that the site looks good from the smallest
             phone up to a device the size of a TV.
           </p>
@@ -65,7 +65,7 @@ export default function Webdevelopment() {
           website that is secure, performant, reliable and easy to maintain. At
           MWD We use the latest in web development technologies so that you have
           nothing to worry about except running your business. Below is a list
-          of a hand full of the main technologies that we.
+          of a hand full of the main technologies that we use.
         </p>
 
         <div style={{ maxWidth: "600px", margin: "50px auto" }}>
@@ -88,7 +88,7 @@ export default function Webdevelopment() {
             SEO you can expect to attract visitors to your site that are looking
             for your service and potentially converting that user into a future
             client. All of our websites are made with SEO as a top priority,
-            there is no point in having a website if people can not find it
+            there is no point in having a website if people can not find it.
           </p>
         </div>
       </section>
