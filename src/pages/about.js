@@ -4,9 +4,7 @@ import { navigate, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Hero from "../components/Hero/Hero"
 import { Card } from "../components/Card/Card"
-import tylorImg from "../assets/tylor_cropped.png"
-import johnImg from "../assets/john_cropped.png"
-import kailaImg from "../assets/kaila_cropped.png"
+
 const heroComponent = (
   <Hero
     heading="Who We Are"
