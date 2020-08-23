@@ -9,7 +9,6 @@ import johnImg from "../assets/john_cropped.png"
 import kailaImg from "../assets/kaila_cropped.png"
 const heroComponent = (
   <Hero
-    bg="bg_tert"
     heading="Who We Are"
     subText="Meet the team at Midway Web Development!"
   />

@@ -11,9 +11,8 @@ export default function blog({ data }) {
   const heroElement = (
     <Hero
       heading="Blog Posts"
-      subText="Browse our collection of blog posts centered around web development, User Experience and Graphic Design."
+      subText="Browse our collection of blog posts where we talk about web development, design, and user experience best practices and techniques."
       size="half"
-      bg="bg_tert"
     />
   )
   const blogPosts = data.allMdx.nodes

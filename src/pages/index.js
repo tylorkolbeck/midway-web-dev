@@ -4,7 +4,6 @@ import { navigate } from "gatsby"
 import Layout from "../components/layout"
 import Hero from "../components/Hero/Hero"
 import { FiArrowRight } from "react-icons/fi"
-import meetTheTeam from "../assets/meet_the_team.svg"
 import WhatWeKnow from "../components/WhatWeKnow/WhatWeKnow"
 import Link from "../components/Link/Link"
 import HomePageHero from "../components/HomePageHero/HomePageHero"
@@ -144,7 +143,7 @@ export default function Home() {
           </div>
         </section>
 
-        <Hero size="quarter" heading="What We Know" bg="pri">
+        <Hero size="quarter" heading="What We Know" bg="pri" centered>
           <WhatWeKnow />
         </Hero>
 

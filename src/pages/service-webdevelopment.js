@@ -7,7 +7,6 @@ import WhatWeKnow from "../components/WhatWeKnow/WhatWeKnow"
 export default function Webdevelopment() {
   const hero = (
     <Hero
-      bg="bg_tert"
       size="half"
       heading="Web Development Services"
       subText="At Midway Web Development we have have a team of proffesionals that
@@ -72,12 +71,6 @@ export default function Webdevelopment() {
           <WhatWeKnow />
         </div>
       </section>
-
-      {/* <Hero
-        bg="bg_tert"
-        size="quarter"
-        heading="50% of web traffic is from a mobile device. "
-      /> */}
 
       <section className={styles.Content}>
         <div>
