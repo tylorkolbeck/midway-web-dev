@@ -1,5 +1,6 @@
 import React from "react"
 import styles from "../css/layout.module.scss"
+import "../css/global.css"
 import SideNavigation from "../components/SideNavigation/SideNavigation"
 import Head from "../components/Helmet/Helmet"
 import "normalize.css"
