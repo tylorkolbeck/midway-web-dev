@@ -3,12 +3,12 @@
 .Blog_post_wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-template-columns: 1fr;
+  // grid-template-columns: 1fr;
   grid-gap: 2rem;
   grid-auto-rows: 1fr;
 
   .Excerpt {
-    color: lighten($color-grey-dark, 20);
+    color: $color-text;
   }
 
   .Author {
@@ -20,6 +20,9 @@
   .Post {
     position: relative;
     transition: all 0.3s ease-in;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 
     & h2 {
       margin-top: 0px;

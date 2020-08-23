@@ -5,6 +5,7 @@ import moment from "moment"
 import Layout from "../components/layout"
 import Hero from "../components/Hero/Hero"
 import { IoMdPricetag } from "react-icons/io"
+import { Card } from "../components/Card/Card"
 
 export default function blog({ data }) {
   const heroElement = (
@@ -24,32 +25,34 @@ export default function blog({ data }) {
       >
         {blogPosts.map(post => {
           return (
-            <div
-              className={styles.Post}
-              onClick={() => navigate(`${post.fields.slug}`)}
-              onKeyDown={() => navigate(`${post.fields.slug}`)}
-              role="button"
-              tabIndex="0"
-              key={post.fields.slug}
-            >
-              <h2>{post.frontmatter.title}</h2>
-              <p className={styles.Excerpt}>{post.excerpt}</p>
-              <div className={styles.Tags}>
-                <IoMdPricetag />{" "}
-                {post.frontmatter.tags.map(tag => {
-                  return <span key={tag}>{tag}</span>
-                })}
-              </div>
+            <Card>
+              <div
+                className={styles.Post}
+                onClick={() => navigate(`${post.fields.slug}`)}
+                onKeyDown={() => navigate(`${post.fields.slug}`)}
+                role="button"
+                tabIndex="0"
+                key={post.fields.slug}
+              >
+                <h2>{post.frontmatter.title}</h2>
+                <p className={styles.Excerpt}>{post.excerpt}</p>
+                <div className={styles.Tags}>
+                  <IoMdPricetag />{" "}
+                  {post.frontmatter.tags.map(tag => {
+                    return <span key={tag}>{tag}</span>
+                  })}
+                </div>
 
-              <footer>
-                <p className={styles.Author}>{post.frontmatter.author}</p>
-                <span>
-                  {`${post.timeToRead} min read`}
-                  <span className={styles.Divider}>|</span>
-                  {moment(post.frontmatter.date, "YYYY-MM-DD").format("LL")}
-                </span>
-              </footer>
-            </div>
+                <footer>
+                  <p className={styles.Author}>{post.frontmatter.author}</p>
+                  <span>
+                    {`${post.timeToRead} min read`}
+                    <span className={styles.Divider}>|</span>
+                    {moment(post.frontmatter.date, "YYYY-MM-DD").format("LL")}
+                  </span>
+                </footer>
+              </div>
+            </Card>
           )
         })}
       </section>
