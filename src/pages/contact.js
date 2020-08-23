@@ -9,13 +9,16 @@ export default function contact() {
       heading="Contact Us"
       subText="Want to work together on your next web project? Send us a message and you will hear back from us within the next 24 hours!"
       size="half"
-      bg="bg_tert"
     />
   )
   return (
     <Layout sideNav hero={hero}>
       <section>
-        <h1>Lets Work Together!</h1>
+        <p className="blue-heading-italic">CONTACT</p>
+
+        <h1>
+          Lets Work Together<span className="blue-dot">.</span>
+        </h1>
         <ContactForm />
       </section>
     </Layout>

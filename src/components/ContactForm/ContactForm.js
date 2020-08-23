@@ -13,7 +13,11 @@ export default function ContactForm(props) {
   const [error, setError] = useState(false)
   const [messageSuccess, setMessageSuccess] = useState(false)
 
-  let formClass = props.mini ? styles.miniForm : ""
+  let classNames = [styles.ContactForm]
+
+  classNames.push(props.mini ? styles.miniForm : "")
+  classNames.push(props.light ? styles.light : "")
+  console.log(classNames.join(" "))
 
   const encode = data => {
     return Object.keys(data)
@@ -48,7 +52,7 @@ export default function ContactForm(props) {
         <p className="success-text">{messageSuccess && messageSuccess}</p>
       </div>
 
-      <div className={[styles.ContactForm, formClass].join(" ")}>
+      <div className={classNames.join(" ")}>
         <div>
           <h4>Name</h4>
           <input
@@ -79,14 +83,7 @@ export default function ContactForm(props) {
           />
         </div>
         <div>
-          <Button
-            bg="tert"
-            icon="arrowRight"
-            style={{ width: "120px" }}
-            type="submit"
-          >
-            Send
-          </Button>
+          <Button type="submit">Send Message</Button>
         </div>
       </div>
     </form>

@@ -3,21 +3,18 @@ import { Link } from "gatsby"
 import { navLinks, serviceLinks } from "../../utils/siteNavigationLinks"
 import styles from "./Footer.module.scss"
 import ContactForm from "../ContactForm/ContactForm"
-import {
-  AiFillTwitterCircle,
-  AiFillFacebook,
-  AiOutlineInstagram,
-  AiFillDribbbleCircle,
-  AiFillGithub,
-} from "react-icons/ai"
 
 export default function Footer() {
   return (
-    <>
+    <div className={styles.Footer_wrapper}>
       <div className={styles.Footer}>
         <div>
-          <h1>Contact Us</h1>
-          <ContactForm mini />
+          <h1>
+            Get In Touch<span className="blue-dot">.</span>
+          </h1>
+          <div>
+            <ContactForm mini light />
+          </div>
         </div>
         <div className={styles.NavigationLinks}>
           <ul>
@@ -25,7 +22,7 @@ export default function Footer() {
             {navLinks.map(link => {
               if (link.slug) {
                 return (
-                  <li>
+                  <li key={link.slug}>
                     <Link to={link.slug}>{link.displayText}</Link>
                   </li>
                 )
@@ -37,7 +34,7 @@ export default function Footer() {
             <ul>
               {serviceLinks.map(link => {
                 return (
-                  <li>
+                  <li key={link.slug}>
                     <Link to={link.slug}>{link.displayText}</Link>
                   </li>
                 )
@@ -46,9 +43,10 @@ export default function Footer() {
           </ul>
         </div>
       </div>
+
       <div className={styles.copyright}>
         <p>&copy; Copyright 2020, Midway Web Development</p>
       </div>
-    </>
+    </div>
   )
 }

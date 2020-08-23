@@ -6,7 +6,6 @@ import calendarIllustration from "../assets/illustration_calendar.svg"
 export default function comingSoon() {
   const hero = (
     <Hero
-      bg="bg_tert"
       heading="Coming Soon"
       subText="Please be patient while we update our products page."
       size="half"

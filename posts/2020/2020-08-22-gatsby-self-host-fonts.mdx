@@ -1,0 +1,65 @@
+---
+title: Gatsby, Self Hosted Fonts
+date: 2020-08-22
+published: true
+author: Tylor Kolbeck
+tags: ["gatsby", "typography", "css"]
+---
+
+## Benefits of hosting your own fonts
+
+By storing your fonts in your project folder and hosting them yourself you can easily increase the performance of your website. When you use fonts from a hosted provider like google your website will need to make aextra HTTP requests. Cutting back in HTTP requests generally increases the performance of your site.
+
+You can optimize your font loading even further by converting your fonts to Mozilla's .woff format. If your fonts are not already in that format then you can use a transformer tool. One I like to use is [transfonter.org](https://transfonter.org)
+
+## How to host your fonts
+
+The first thing you need to do is add a directory in the root of your project `static/fonts` and place the corresponding font in a sub folder folder. For example using SansPro:
+
+```
+static/fonts/SansPro/SansPro.woff
+```
+
+When the project builds the fonts will be moved to the public folder.
+
+## Add the font face
+
+Now you can create a global stylesheet where ever you are storing your stylesheets. I will name mine `global.css`.
+
+For this example I will use Bitter Italic.
+
+```
+// global.css
+@font-face {
+  font-family: "Bitter Italic";
+  src: url("../../static/fonts/bitter/Bitter-Italic.woff") format("woff");
+}
+```
+
+## Import and use the stylesheet
+
+Next you will need to import the stylesheet you just created. I am importing it into my layout component so that it is accesible in each of my pages.
+
+```
+// layout.js
+import "../css/global.css"
+```
+
+Now you can use the font family as you would anywhere else. For my project I am using css modules as well as SASS. Still make sure to provide a good fallback just incase.
+
+```
+// layout.module.scss
+  font-family: "Bitter Italic";
+```
+
+## Alternatives
+
+As with everything in web development there are lots of ways to do things and this is no exception. Some of those other ways are to use plugins such as:
+
+[TypogaphyJS](https://www.gatsbyjs.org/packages/gatsby-plugin-typography/)
+
+[Typefaces](https://github.com/KyleAMathews/typefaces)
+
+## Summary
+
+Its actually really easy to host and use your own fonts to increase your websites perfomance. Just inlcude them in your project resources and set a font face in your global css, import the stylesheet and then apply them where needed.

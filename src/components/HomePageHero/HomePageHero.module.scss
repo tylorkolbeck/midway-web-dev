@@ -1,0 +1,112 @@
+@import "../../css/colors.scss";
+
+.HomePageHero_wrapper {
+  position: relative;
+  padding: 50px 20px;
+  height: calc(100vh - 62px);
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+  & h1 {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  & hr {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -moz-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -moz-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+
+  @-moz-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      -moz-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -moz-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -moz-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+
+  .Icon_absolute_center {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    -moz-animation: bounce 3s infinite;
+    -webkit-animation: bounce 3s infinite;
+    animation: bounce 3s infinite;
+    transition: all 0.5s ease-in-out;
+    & svg {
+      height: 50px;
+      fill: $color-primary;
+    }
+
+    &.hidden {
+      opacity: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .HomePageHero_wrapper {
+    grid-template-columns: 1fr;
+    & p {
+      text-align: justify;
+    }
+  }
+}

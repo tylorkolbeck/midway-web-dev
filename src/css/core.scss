@@ -1,5 +1,103 @@
 @import "../css/colors.scss";
 
+@font-face {
+  font-family: "Bitter Italic";
+  src: url("../../static/fonts/bitter/Bitter-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SansPro Black";
+  src: url("../../static/fonts/SansProBlack/SourceSansPro-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../static/fonts/OpenSans/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../static/fonts/OpenSans/OpenSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../static/fonts/OpenSans/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../static/fonts/OpenSans/OpenSans-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../static/fonts/OpenSans/OpenSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../static/fonts/OpenSans/OpenSans-ExtraBoldItalic.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../static/fonts/OpenSans/OpenSans-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../static/fonts/OpenSans/OpenSans-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../static/fonts/OpenSans/OpenSans-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../../static/fonts/OpenSans/SourceSansPro-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../static/fonts/OpenSans/OpenSans-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
 a:hover {
   text-decoration: none;
   cursor: pointer;
@@ -11,11 +109,14 @@ b {
 }
 
 p {
-  font-weight: 500;
+  font-family: "Open Sans";
+  font-weight: 300;
+  line-height: 1.5rem;
+  color: $color-text;
+  font-size: 16px;
 }
 
 a {
-  font-weight: 500;
   font-size: 16px;
   display: flex;
   align-items: center;
@@ -28,23 +129,36 @@ h1,
 h2,
 h3,
 h4 {
+  font-family: "SansPro Black";
   border: none;
+  color: $color-text-header;
 }
 
-p {
-  font-weight: 300;
-  line-height: 1.4rem;
+.h1-xl {
+  font-size: 48px;
 }
 
-// main {
-//   max-width: 1200px;
-//   margin: 0 auto;
-// }
+.blue-dot {
+  color: $color-primary;
+}
 
-:global {
-  .test {
-    background: green !important;
-  }
+.light-dot {
+  color: $color-text;
+}
+
+.blue-heading-italic {
+  color: $color-primary;
+  font-family: "Bitter Italic";
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+
+.blue-hr {
+  outline: none;
+  border: none;
+  height: 4px;
+  background: $color-primary;
+  width: 100px;
 }
 
 section {
@@ -71,7 +185,6 @@ textarea {
   /* Browsers have different default form fonts */
   font-size: 14px;
   color: $color-grey-dark;
-  // background: lighten($color-tert, 38);
   resize: none;
   transition: background 0.2s ease-in-out;
   box-sizing: border-box;
@@ -207,4 +320,10 @@ select[multiple] {
 
 .success-text {
   color: $color-accent;
+}
+
+@media screen and (min-width: 749px) {
+  .h1-xl {
+    font-size: 72px;
+  }
 }

@@ -7,7 +7,6 @@ import Aside from "../components/Aside/Aside"
 export default function Webdevelopment() {
   const hero = (
     <Hero
-      bg="bg_tert"
       size="half"
       heading="Logo Design Services"
       subText="More than just a logo, it's your brand identity"
