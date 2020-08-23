@@ -22,12 +22,13 @@ export default function Home() {
       <HomePageHero />
       <main>
         <section>
-          <h1>
-            Anything You Need<span className="blue-dot">.</span>
+          <p className="blue-heading-italic">SERVICES</p>
+          <h1 className="h1-xl">
+            One Stop Shop<span className="blue-dot">.</span>
           </h1>
           <div className={styles.Services_container}>
             <Card>
-              <Card.Title>Proffesional Website</Card.Title>
+              <Card.Title>Proffesional Websites</Card.Title>
               <p>
                 Need a custom website to get your business online? Learn more
                 about why a website is critical to your companys success.
@@ -106,9 +107,10 @@ export default function Home() {
               Reach Your Audience<span className="blue-dot">.</span>
             </h1>
             <p>
-              At MWD we put a lot of focus into SEO and marketing to help you to
-              gain quality organic traffic. With organice traffic you can save
-              hundreds on ad space as well as increasing your visitor count.
+              At MWD we put a lot of focus into <b>SEO and marketing</b> to help
+              you to gain quality organic traffic. With organice traffic you can{" "}
+              <b>save hundreds on ad space</b> as well as increasing your
+              visitor count.
             </p>
             <Link to="/service-webdevelopment">
               Learn More <FiArrowRight />
@@ -133,8 +135,9 @@ export default function Home() {
 
             <p>
               Have an idea but you not sure how to move it forward to the next
-              step? MWD utilizes a proven process to welcome innovative thinking
-              and design to help you make your product successful.
+              step? MWD utilizes a proven process to welcome{" "}
+              <b>innovative thinking and design</b> to help you make your
+              product successful.
             </p>
 
             <Link to="/service-webapplications">
@@ -148,7 +151,7 @@ export default function Home() {
         </Hero>
 
         <section className={styles.MeetTheTeam}>
-          <h1>
+          <h1 className="h1-xl">
             Meet The Team<span className="blue-dot">.</span>
           </h1>
 
@@ -157,8 +160,8 @@ export default function Home() {
           </div>
           <p>
             The Midway Web Development team is made up of experienced and
-            talented web developers, graphic designers and UX developers. Let us
-            put our skills to use in creating your next web project.
+            talented <b>web developers, graphic designers and UX developers.</b>{" "}
+            Let us put our skills to use in creating your next web project.
           </p>
           <div
             style={{

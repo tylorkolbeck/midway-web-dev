@@ -10,13 +10,12 @@ import kailaImg from "../assets/kaila_cropped.png"
 const heroComponent = (
   <Hero
     heading="Who We Are"
-    subText="Meet the team at Midway Web Development!"
+    subText="The Midway Web Development team is made up of experienced and talented web developers, graphic designers and UX developers. Let us put our skills to use in creating your next web project."
   />
 )
 
 export default function About({ data }) {
   const { allContentfulResume: team } = data
-  console.log(team)
   return (
     <Layout hero={heroComponent} sideNav>
       <section className={styles.Content}>
@@ -39,7 +38,8 @@ export default function About({ data }) {
             100% satisfaction gurantee.{" "}
           </p>
         </aside>
-        <h1>The Team</h1>
+
+        <h1 style={{ marginTop: "50px" }}>The Team</h1>
         <div className={styles.Cards_people}>
           {team.nodes.map(person => {
             return (

@@ -1,13 +1,14 @@
 import React from "react"
 import styles from "./HomePageHero.module.scss"
 import Button from "../Button/Button"
+import { FaArrowDown } from "react-icons/fa"
 
 export default function HomePageHero() {
   return (
     <div className={styles.HomePageHero_wrapper}>
       <div>
-        <h1 className="h1-xl">
-          Perfomant website and web application services
+        <h1 className="h1-xl" style={{ maxWidth: "600px" }}>
+          Midway Web Development And Design
           <span className="blue-dot">.</span>
         </h1>
 
@@ -23,6 +24,9 @@ export default function HomePageHero() {
         </Button>
       </div>
       <div></div>
+      <div className={styles.Icon_absolute_center}>
+        <FaArrowDown />
+      </div>
     </div>
   )
 }

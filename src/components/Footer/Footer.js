@@ -6,13 +6,15 @@ import ContactForm from "../ContactForm/ContactForm"
 
 export default function Footer() {
   return (
-    <>
+    <div className={styles.Footer_wrapper}>
       <div className={styles.Footer}>
         <div>
           <h1>
             Get In Touch<span className="blue-dot">.</span>
           </h1>
-          <ContactForm mini light />
+          <div>
+            <ContactForm mini light />
+          </div>
         </div>
         <div className={styles.NavigationLinks}>
           <ul>
@@ -41,9 +43,10 @@ export default function Footer() {
           </ul>
         </div>
       </div>
+
       <div className={styles.copyright}>
         <p>&copy; Copyright 2020, Midway Web Development</p>
       </div>
-    </>
+    </div>
   )
 }

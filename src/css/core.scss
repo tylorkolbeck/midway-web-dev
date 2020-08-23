@@ -117,7 +117,6 @@ p {
 }
 
 a {
-  // font-weight: 500;
   font-size: 16px;
   display: flex;
   align-items: center;
@@ -141,6 +140,13 @@ h4 {
 
 .blue-dot {
   color: $color-primary;
+}
+
+.blue-heading-italic {
+  color: $color-primary;
+  font-family: "Bitter Italic";
+  font-size: 14px;
+  margin-bottom: 50px;
 }
 
 .blue-hr {

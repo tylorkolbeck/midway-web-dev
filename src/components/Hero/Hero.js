@@ -42,7 +42,7 @@ export default function Hero({
               <span className="blue-dot">.</span>
             </h1>
             <hr className="blue-hr"></hr>
-            <p>{subText}</p>
+            <p className={styles.SubText}>{subText}</p>
           </div>
           <div></div>
           {children && <div className={styles.Content}>{children}</div>}

@@ -5,6 +5,10 @@
   width: 100vw;
   padding: 0px 20px;
 
+  & .SubText {
+    max-width: 600px;
+  }
+
   &.pri {
     background: $color-primary;
   }
@@ -50,24 +54,6 @@
       margin-top: 50px;
     }
   }
-
-  // & h1 {
-  //   font-size: 3rem;
-  //   color: $color-grey-xlight;
-  //   border: none;
-  //   text-align: center;
-  // }
-
-  // & p {
-  //   color: $color-grey-xlight;
-  //   max-width: 600px;
-  //   font-weight: 300;
-  //   text-align: center;
-  // }
-
-  // & .Content {
-  //   margin-bottom: 60px;
-  // }
 }
 
 @media screen and (max-width: 1200px) {
