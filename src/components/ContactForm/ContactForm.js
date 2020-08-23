@@ -17,7 +17,6 @@ export default function ContactForm(props) {
 
   classNames.push(props.mini ? styles.miniForm : "")
   classNames.push(props.light ? styles.light : "")
-  console.log(classNames.join(" "))
 
   const encode = data => {
     return Object.keys(data)

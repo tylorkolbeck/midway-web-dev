@@ -82,9 +82,25 @@
       }
     }
   }
+}
 
-  // & > a {
-  //   display: block;
-  //   width: 100%;
-  // }
+.FilterControls {
+  .FilterControls_search {
+    display: flex;
+    align-items: center;
+    text-align: right;
+    justify-content: flex-start;
+
+    & svg {
+      margin-right: 10px;
+      fill: $color-primary;
+    }
+
+    input {
+      border: 2px solid $color-primary;
+      border-radius: 10px;
+      padding: 10px 10px;
+      width: 300px;
+    }
+  }
 }
