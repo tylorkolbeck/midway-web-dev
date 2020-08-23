@@ -90,9 +90,14 @@
     -moz-animation: bounce 3s infinite;
     -webkit-animation: bounce 3s infinite;
     animation: bounce 3s infinite;
+    transition: all 0.5s ease-in-out;
     & svg {
       height: 50px;
       fill: $color-primary;
+    }
+
+    &.hidden {
+      opacity: 0;
     }
   }
 }

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import styles from "../css/pages/index.module.scss"
 import Layout from "../components/layout"
 import Hero from "../components/Hero/Hero"
@@ -8,53 +8,33 @@ import Link from "../components/Link/Link"
 import HomePageHero from "../components/HomePageHero/HomePageHero"
 import { Card } from "../components/Card/Card"
 import Button from "../components/Button/Button"
-import { graphql } from "gatsby"
 // Images
 import performance_src from "../assets/performance.svg"
 import contract_src from "../assets/contract.svg"
 import marketing_src from "../assets/marketing.svg"
 import idea_src from "../assets/idea.svg"
 import meeting_src from "../assets/meeting.svg"
-import moment from "moment"
+import { useScrollPosition } from "@n8tb1t/use-scroll-position"
 
-export default function Home({ data }) {
-  const { allMdx: posts } = data
+export default function Home() {
+  const [arrowHidden, setArrowHidden] = useState(false)
+
+  // Used to hide the dancing down arrow after a certain scroll position
+  useScrollPosition(({ prevPos, currPos }) => {
+    const hideDownArrow = currPos.y < -200
+
+    if (hideDownArrow) setArrowHidden(true)
+    else return
+  })
   return (
     <Layout className={styles.test}>
-      <HomePageHero />
+      <HomePageHero arrowHidden={arrowHidden} />
       <main>
         <section>
           <p className="blue-heading-italic">SERVICES</p>
           <h1 className="h1-xl">
             One Stop Shop<span className="blue-dot">.</span>
           </h1>
-          {/* <div className={styles.Services_container}>
-            <Card>
-              <Card.Title>Proffesional Websites</Card.Title>
-              <p>
-                Need a custom website to get your business online? Learn more
-                about why a website is critical to your companys success.
-              </p>
-              <Card.Link to="/service-webdevelopment">Learn More</Card.Link>
-            </Card>
-            <Card>
-              <Card.Title>Custom Applications</Card.Title>
-              <p>
-                Need a custom web application? Learn more about how we can help
-                you improve your companies effiency with a custom web service.
-              </p>
-              <Card.Link to="/service-webapplications">Learn More</Card.Link>
-            </Card>
-
-            <Card>
-              <Card.Title>Design And User Experience</Card.Title>
-              <p>
-                Need a Logo, company branding or UX services? Learn more about
-                how we design for the user.
-              </p>
-              <Card.Link to="/service-ux">Learn More</Card.Link>
-            </Card>
-          </div> */}
         </section>
 
         <Hero size="quarter" bg="pri" centered>
@@ -86,30 +66,6 @@ export default function Home({ data }) {
             </Card>
           </div>
         </Hero>
-
-        {/* <Hero size="quarter" heading="Recent Posts" bg="pri" centered>
-          <div className={styles.RecentPosts}>
-            {posts.nodes &&
-              posts.nodes.map(post => {
-                return (
-                  <Card>
-                    <Card.Title>{post.frontmatter.title}</Card.Title>
-                    <p className={styles.Excerpt}>{post.excerpt}</p>
-                    <Card.Footer>
-                      <span>
-                        {`${post.timeToRead} min read`}
-                        <span className={styles.Divider}>|</span>
-                        {moment(post.frontmatter.date, "YYYY-MM-DD").format(
-                          "LL"
-                        )}
-                      </span>
-                    </Card.Footer>
-                    <Link to={post.slug}>Read</Link>
-                  </Card>
-                )
-              })}
-          </div>
-        </Hero> */}
 
         <section className={styles.Homepage_section}>
           <div>
@@ -233,27 +189,3 @@ export default function Home({ data }) {
     </Layout>
   )
 }
-
-export const query = graphql`
-  query RECENT_POSTS_QUERY {
-    allMdx(
-      filter: { frontmatter: { published: { eq: true } } }
-      sort: { fields: frontmatter___date, order: DESC }
-      limit: 3
-    ) {
-      nodes {
-        fields {
-          slug
-        }
-        frontmatter {
-          author
-          date
-          title
-          tags
-        }
-        excerpt(pruneLength: 100)
-        timeToRead
-      }
-    }
-  }
-`

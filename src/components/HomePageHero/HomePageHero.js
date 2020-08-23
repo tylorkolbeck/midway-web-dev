@@ -3,7 +3,7 @@ import styles from "./HomePageHero.module.scss"
 import Button from "../Button/Button"
 import { FaArrowDown } from "react-icons/fa"
 
-export default function HomePageHero() {
+export default function HomePageHero({ arrowHidden }) {
   return (
     <div className={styles.HomePageHero_wrapper}>
       <div>
@@ -24,7 +24,12 @@ export default function HomePageHero() {
         </Button>
       </div>
       <div></div>
-      <div className={styles.Icon_absolute_center}>
+      <div
+        className={[
+          styles.Icon_absolute_center,
+          arrowHidden ? styles.hidden : "",
+        ].join(" ")}
+      >
         <FaArrowDown />
       </div>
     </div>
