@@ -16,6 +16,7 @@ export default function Hero({
   subText,
   children,
   centered,
+  headingComponent,
 }) {
   const heroSize = size || "half"
   const heroBackgound = bg || ""
@@ -31,6 +32,7 @@ export default function Hero({
       {centered ? (
         <div className={styles.centered}>
           {heading && <h1>{heading}</h1>}
+          {headingComponent && headingComponent}
           {subText && <p>{subText}</p>}
           {children && <div className={styles.Content}>{children}</div>}
         </div>

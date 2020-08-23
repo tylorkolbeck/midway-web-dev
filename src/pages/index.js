@@ -34,13 +34,14 @@ export default function Home() {
           size="quarter"
           bg="pri"
           centered
-          heading={
+          headingComponent={
             <h1
               className="h1-xl"
               style={{
                 textAlign: "left",
                 maxWidth: "1200px",
                 margin: "0 auto",
+                marginBottom: "25px",
               }}
             >
               One Stop Shop.
@@ -169,13 +170,14 @@ export default function Home() {
 
         <Hero
           size="quarter"
-          heading={
+          headingComponent={
             <h1
               className="h1-xl"
               style={{
                 textAlign: "left",
                 maxWidth: "1200px",
                 margin: "0 auto",
+                marginBottom: "25px",
               }}
             >
               What We Know.
