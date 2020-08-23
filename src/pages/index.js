@@ -30,14 +30,23 @@ export default function Home() {
     <Layout className={styles.test}>
       <HomePageHero arrowHidden={arrowHidden} />
       <main>
-        <section>
-          <p className="blue-heading-italic">SERVICES</p>
-          <h1 className="h1-xl">
-            One Stop Shop<span className="blue-dot">.</span>
-          </h1>
-        </section>
-
-        <Hero size="quarter" bg="pri" centered>
+        <Hero
+          size="quarter"
+          bg="pri"
+          centered
+          heading={
+            <h1
+              className="h1-xl"
+              style={{
+                textAlign: "left",
+                maxWidth: "1200px",
+                margin: "0 auto",
+              }}
+            >
+              One Stop Shop.
+            </h1>
+          }
+        >
           <div className={styles.Services_container}>
             <Card>
               <Card.Title>Proffesional Websites</Card.Title>
@@ -158,7 +167,23 @@ export default function Home() {
           </div>
         </section>
 
-        <Hero size="quarter" heading="What We Know" bg="pri" centered>
+        <Hero
+          size="quarter"
+          heading={
+            <h1
+              className="h1-xl"
+              style={{
+                textAlign: "left",
+                maxWidth: "1200px",
+                margin: "0 auto",
+              }}
+            >
+              What We Know.
+            </h1>
+          }
+          bg="pri"
+          centered
+        >
           <WhatWeKnow />
         </Hero>
 
