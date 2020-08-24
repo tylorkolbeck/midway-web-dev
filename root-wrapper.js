@@ -34,7 +34,6 @@ const components = {
     }
   },
   a: ({ children }) => <a style={{ ...linkStyling }}>{children}</a>,
-  // li: ({ children }) => <li style={{ ...liStyling }}>{children}</li>,
 }
 
 export const wrapRootElement = ({ element }) => {

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import styles from "../css/pages/blog.module.scss"
 import { graphql, navigate } from "gatsby"
 import moment from "moment"
@@ -6,23 +6,63 @@ import Layout from "../components/layout"
 import Hero from "../components/Hero/Hero"
 import { IoMdPricetag } from "react-icons/io"
 import { Card } from "../components/Card/Card"
+import { FaSearch } from "react-icons/fa"
 
-export default function blog({ data }) {
-  const heroElement = (
-    <Hero
-      heading="Blog Posts"
-      subText="Browse our collection of blog posts where we talk about web development, design, and user experience best practices and techniques."
-      size="half"
-    />
-  )
+const heroElement = (
+  <Hero
+    heading="Blog Posts"
+    subText="Browse our collection of blog posts where we talk about web development, design, and user experience best practices and techniques."
+    size="half"
+  />
+)
+
+export default function Blog({ data }) {
+  const emptyQuery = ""
   const blogPosts = data.allMdx.nodes
+  const [state, setState] = useState({
+    filteredData: [...blogPosts],
+    query: emptyQuery,
+  })
+
+  function handleInputChange(event) {
+    const query = event.target.value
+    const posts = data.allMdx.nodes
+
+    const filteredData = posts.filter(post => {
+      const { title, tags, author } = post.frontmatter
+      return (
+        title.toLowerCase().includes(query.toLowerCase()) ||
+        // Future use when excerpts are added to frontmatter in posts
+        // excerpt.toLowerCase().includes(query.toLowerCase()) ||
+        author.toLowerCase().includes(query.toLowerCase()) ||
+        (tags && tags.join("").toLowerCase().includes(query.toLowerCase()))
+      )
+    })
+
+    setState({
+      query,
+      filteredData,
+    })
+  }
+
   return (
     <Layout sideNav hero={heroElement}>
+      <section className={styles.FilterControls}>
+        <div className={styles.FilterControls_search}>
+          <FaSearch />
+          <input
+            type="text"
+            placeholder="Search Posts..."
+            value={state.query}
+            onChange={handleInputChange}
+          />
+        </div>
+      </section>
       <section
         className={styles.Blog_post_wrapper}
         style={{ marginTop: "50px" }}
       >
-        {blogPosts.map(post => {
+        {state.filteredData.map(post => {
           return (
             <Card key={`post-${post.fields.slug}`}>
               <div
@@ -35,14 +75,14 @@ export default function blog({ data }) {
               >
                 <h2>{post.frontmatter.title}</h2>
                 <p className={styles.Excerpt}>{post.excerpt}</p>
-                <div className={styles.Tags}>
-                  <IoMdPricetag />{" "}
-                  {post.frontmatter.tags.map(tag => {
-                    return <span key={tag}>{tag}</span>
-                  })}
-                </div>
 
                 <footer>
+                  <div className={styles.Tags}>
+                    <IoMdPricetag />{" "}
+                    {post.frontmatter.tags.map(tag => {
+                      return <span key={tag}>{tag}</span>
+                    })}
+                  </div>
                   <p className={styles.Author}>{post.frontmatter.author}</p>
                   <span>
                     {`${post.timeToRead} min read`}

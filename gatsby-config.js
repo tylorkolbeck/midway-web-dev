@@ -10,6 +10,8 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     `@contentful/gatsby-transformer-contentful-richtext`,
+    `gatsby-remark-images`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -20,6 +22,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+            },
+          },
+        ],
         extensions: [`.mdx`, `.md`],
       },
     },
@@ -29,6 +39,14 @@ module.exports = {
       options: {
         path: `${__dirname}/posts`,
         name: `posts`,
+      },
+    },
+
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
     },
     {

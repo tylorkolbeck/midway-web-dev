@@ -9,7 +9,6 @@ import { AiFillLinkedin, AiFillTwitterSquare } from "react-icons/ai"
 
 export default function resume({ data }) {
   const { contentfulResume: resume } = data
-  console.log(data)
 
   const hero = (
     <Hero
