@@ -53,30 +53,37 @@ export default function ContactForm(props) {
 
       <div className={classNames.join(" ")}>
         <div>
-          <h4>Name</h4>
+          <label htmlFor="message_name">Name</label>
+
           <input
             placeholder="Enter your name"
             type="text"
             name="name"
+            id="message_name"
             value={state.name}
             onChange={handleFormChange}
           />
         </div>
         <div>
-          <h4>Email</h4>
+          <label htmlFor="message_email">Email</label>
+
           <input
             placeholder="Enter your email"
             type="email"
             name="email"
+            id="message_email"
             value={state.email}
             onChange={handleFormChange}
           />
         </div>
         <div className={styles.ContactForm_textarea}>
-          <h4>Message</h4>
+          <label htmlFor="message_message">Message</label>
+
           <textarea
             placeholder="Enter your messsage..."
             name="message"
+            id="message_message"
+            type="text"
             value={state.message}
             onChange={handleFormChange}
           />

@@ -33,7 +33,11 @@ const components = {
       )
     }
   },
+  li: ({ children }) => <li style={{ fontWeight: "300" }}>{children}</li>,
   a: ({ children }) => <a style={{ ...linkStyling }}>{children}</a>,
+  b: ({ children }) => (
+    <b style={{ fontWeight: "900", color: "red" }}>{children}</b>
+  ),
 }
 
 export const wrapRootElement = ({ element }) => {

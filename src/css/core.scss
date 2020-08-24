@@ -109,11 +109,16 @@ b {
 }
 
 p {
-  font-family: "Open Sans";
+  font-family: "Open Sans" "San Francisco", Helvetica, Arial, san-serif;
   font-weight: 300;
   line-height: 1.5rem;
   color: $color-text;
   font-size: 16px;
+}
+
+strong {
+  font-weight: 600;
+  color: darken($color-text, 10s);
 }
 
 a {
@@ -125,11 +130,15 @@ a {
   }
 }
 
+li {
+  font-family: "Open Sans" "San Francisco", Helvetica, Arial, san-serif;
+}
+
 h1,
 h2,
 h3,
 h4 {
-  font-family: "SansPro Black";
+  font-family: "SansPro Black" "San Francisco", Helvetica, Arial, san-serif;
   border: none;
   color: $color-text-header;
 }
@@ -195,7 +204,7 @@ textarea {
 input:focus,
 textarea:focus {
   outline: 0;
-  background: lighten($color-tert, 35);
+  // background: lighten($color-tert, 35);
   border-bottom: 2px solid $color-tert;
 }
 

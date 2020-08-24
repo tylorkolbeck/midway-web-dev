@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "../css/pages/service-webdevelopment.module.scss"
+import styles from "../css/pages/service-web-development.module.scss"
 import Layout from "../components/layout"
 import Hero from "../components/Hero/Hero"
 import Aside from "../components/Aside/Aside"
@@ -25,7 +25,9 @@ export default function Webdevelopment() {
 
       <section className={styles.Content}>
         <div>
-          <h2>Professional Design</h2>
+          <h2>
+            Professional Design<span className="blue-dot">.</span>
+          </h2>
           <p>
             Designing a successful logo takes knowledge, experience, talent and
             attention to detail. This includes a deep understanding of color
@@ -39,7 +41,9 @@ export default function Webdevelopment() {
 
       <section className={styles.Content}>
         <div>
-          <h2>Brand Guidelines</h2>
+          <h2>
+            Brand Guidelines<span className="blue-dot">.</span>
+          </h2>
           <p>
             In addition to a unique and scalable logo, we will equip you with
             brand guidelines to ensure consistency in all of your marketing

@@ -1,3 +1,5 @@
+@import "../../css/colors.scss";
+
 .ContactForm {
   max-width: 600px;
   display: grid;
@@ -14,6 +16,7 @@
 
     textarea {
       border-color: white;
+      color: white;
     }
 
     input,
@@ -24,6 +27,18 @@
     h4 {
       color: white;
     }
+
+    label {
+      color: white;
+      border: 0px;
+      font-size: 18px;
+    }
+  }
+
+  label {
+    color: $color-text;
+    border: 0px;
+    font-size: 18px;
   }
 
   &.miniForm {

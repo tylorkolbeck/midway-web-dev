@@ -36,6 +36,7 @@ Card.Image = ({ children, size, position }) => {
   const imageStyles = {
     width: size || "100%",
     margin: "0 auto",
+    position: "relative",
   }
   return (
     <div style={imageStyles} className={styles.Card_image} data-width={size}>

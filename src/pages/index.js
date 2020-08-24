@@ -55,7 +55,9 @@ export default function Home() {
                 Need a custom website to get your business online? Learn more
                 about why a website is critical to your companys success.
               </p>
-              <Card.Link to="/service-webdevelopment">Learn More</Card.Link>
+              <Card.Link to="/service-web-development">
+                Web Development Services
+              </Card.Link>
             </Card>
             <Card>
               <Card.Title>Custom Applications</Card.Title>
@@ -63,7 +65,9 @@ export default function Home() {
                 Need a custom web application? Learn more about how we can help
                 you improve your companies effiency with a custom web service.
               </p>
-              <Card.Link to="/service-webapplications">Learn More</Card.Link>
+              <Card.Link to="/service-webapplications">
+                Web App Services
+              </Card.Link>
             </Card>
 
             <Card>
@@ -72,7 +76,7 @@ export default function Home() {
                 Need a Logo, company branding or UX services? Learn more about
                 how we design for the user.
               </p>
-              <Card.Link to="/service-ux">Learn More</Card.Link>
+              <Card.Link to="/service-ux">UI/UX Services</Card.Link>
             </Card>
           </div>
         </Hero>
@@ -88,8 +92,8 @@ export default function Home() {
               effiecient. A fast website means happy customers.
             </p>
 
-            <Link to="/service-webdevelopment">
-              Learn More <FiArrowRight />
+            <Link to="/service-web-development">
+              Web Development Services <FiArrowRight />
             </Link>
           </div>
           <div className={styles.svg_wrapper}>
@@ -118,7 +122,7 @@ export default function Home() {
             </p>
 
             <Link to="/service-webapplications">
-              Learn More <FiArrowRight />
+              Web App Services <FiArrowRight />
             </Link>
           </div>
         </section>
@@ -134,8 +138,8 @@ export default function Home() {
               <b>save hundreds on ad space</b> as well as increasing your
               visitor count.
             </p>
-            <Link to="/service-webdevelopment">
-              Learn More <FiArrowRight />
+            <Link to="/service-web-development">
+              Web Development Services <FiArrowRight />
             </Link>
           </div>
           <div className={styles.svg_wrapper}>
@@ -163,7 +167,7 @@ export default function Home() {
             </p>
 
             <Link to="/service-webapplications">
-              Learn More <FiArrowRight />
+              Web App Services <FiArrowRight />
             </Link>
           </div>
         </section>

@@ -46,13 +46,13 @@ function SideNavigation() {
           <h4>Services</h4>
         </li>
         <li>
-          <Link to="/service-webdevelopment">Web Development</Link>
+          <Link to="/service-web-development">Web Development</Link>
         </li>
         <li>
           <Link to="/service-webapplications">Web Applications</Link>
         </li>
         <li>
-          <Link to="/service-ux">UX</Link>
+          <Link to="/service-ux">UX/UI Services</Link>
         </li>
         <li className={styles.Navigation_header}>
           <h4>Recent Posts</h4>

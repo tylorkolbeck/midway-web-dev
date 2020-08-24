@@ -51,10 +51,10 @@ export default function Navigation() {
                     ].join(" ")}
                     onMouseLeave={() => setIsVisible(false)}
                   >
-                    <Link to="/service-webdevelopment">Web Development</Link>
+                    <Link to="/service-web-development">Web Development</Link>
                     <Link to="/service-webapplications">Web Applications</Link>
                     <Link to="/service-logodesign">Logo Design</Link>
-                    <Link to="/service-ux">UX</Link>
+                    <Link to="/service-ux">UI/UX Services</Link>
                   </div>
                 </button>
               </div>

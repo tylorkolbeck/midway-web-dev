@@ -5,16 +5,39 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 100px;
-
-    & > div {
-      margin: 10px;
-      flex-basis: 250px;
-      max-width: 300px;
-      flex-shrink: 1;
-    }
+    margin-top: 50px;
+    justify-content: center;
   }
 
   & .Aside_about {
     max-width: 600px;
+  }
+}
+
+.About_profile_wrapper {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 20px;
+  & .Avatar img {
+    height: 150px;
+    width: 150px;
+  }
+
+  & .Title {
+    text-align: center;
+
+    h2 {
+      margin-bottom: 0px;
+    }
+  }
+
+  h3 {
+    text-transform: uppercase;
+    color: $color-text;
+    font-weight: lighter;
+    font-size: 1rem;
+    margin-top: 10px;
   }
 }

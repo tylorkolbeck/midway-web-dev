@@ -21,7 +21,7 @@ export const navLinks = [
 export const serviceLinks = [
   {
     displayText: "Web Development",
-    slug: "/service-webdevelopment",
+    slug: "/service-web-development",
   },
   {
     displayText: "Web Applications",
