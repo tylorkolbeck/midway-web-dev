@@ -15,16 +15,22 @@ export default function Webdevelopment() {
   return (
     <Layout sideNav hero={hero}>
       <section className={styles.Technologies}>
-        <h1>Technologies</h1>
+        <h1>
+          Technologies<span className="blue-dot">.</span>
+        </h1>
         <p>
           These are just some of the technologies that we specialize in and use
           to build your web application.
         </p>
-        <WhatWeKnow />
+        <div style={{ maxWidth: "600px", margin: "50px auto" }}>
+          <WhatWeKnow />
+        </div>
       </section>
 
       <section className={styles.Content}>
-        <h1>About Our Services</h1>
+        <h1>
+          About Our Services<span className="blue-dot">.</span>
+        </h1>
         <div>
           <h2>Quality and Reliability</h2>
           <p>

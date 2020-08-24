@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
 import styles from "./Logo.module.scss"
-import logo from "../../assets/MWD_logo.svg"
+import logo from "../../assets/logo.svg"
 
 export default class Logo extends Component {
   render() {

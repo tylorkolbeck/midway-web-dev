@@ -5,16 +5,40 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 100px;
+    margin-top: 50px;
+    justify-content: space-around;
 
-    & > div {
-      margin: 10px;
-      flex-basis: 250px;
-      max-width: 300px;
-      flex-shrink: 1;
-    }
+    // & > div {
+    //   margin: 10px;
+    //   flex-basis: 250px;
+    //   max-width: 300px;
+    //   flex-shrink: 1;
+    // }
   }
 
   & .Aside_about {
     max-width: 600px;
+  }
+}
+
+.About_profile_wrapper {
+  margin-bottom: 50px;
+  & .Avatar img {
+    height: 150px;
+    width: 150px;
+
+    margin-right: 20px;
+  }
+
+  & .Title {
+    text-align: center;
+    // display: flex;
+    // justify-content: center;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    color: $color-primary;
+    font-size: 1rem;
   }
 }

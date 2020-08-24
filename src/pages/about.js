@@ -18,7 +18,9 @@ export default function About({ data }) {
     <Layout hero={heroComponent} sideNav>
       <section className={styles.Content}>
         <aside className={styles.Aside_about}>
-          <h1>Our Mission</h1>
+          <h1>
+            Our Mission<span className="blue-dot">.</span>
+          </h1>
           <p>
             Our mission is to make the planning and deployment of your next web
             project a fun and painless process. Your website defines what your
@@ -37,28 +39,42 @@ export default function About({ data }) {
           </p>
         </aside>
 
-        <h1 style={{ marginTop: "50px" }}>The Team</h1>
+        <h1 style={{ marginTop: "50px" }}>
+          The Team<span className="blue-dot">.</span>
+        </h1>
         <div className={styles.Cards_people}>
           {team.nodes.map(person => {
             return (
-              <Card
-                onClick={() => navigate(`/${person.slug}`)}
-                onKeyDown={() => navigate(`/${person.slug}`)}
-                role="button"
-                tabIndex="0"
-                key={person.slug}
-              >
-                <Card.Image size="80%">
+              <div className={styles.About_profile_wrapper}>
+                <div className={styles.Avatar}>
                   <img src={person.avatarImage.fixed.src} alt="Profile 1" />
-                </Card.Image>
-                <Card.Title position="center">{person.name}</Card.Title>
-                <Card.SubTitle position="center">
-                  {person.cardTitle}
-                </Card.SubTitle>
-                <div style={{ textAlign: "center" }}>
-                  <Card.Link to={`/${person.slug}`}>Learn More</Card.Link>
                 </div>
-              </Card>
+                <div className={styles.Title}>
+                  <h2>{person.name}</h2>
+                  <h3>{person.cardTitle}</h3>
+                </div>
+              </div>
+
+              // <Card
+              //   onClick={() => navigate(`/${person.slug}`)}
+              //   onKeyDown={() => navigate(`/${person.slug}`)}
+              //   role="button"
+              //   tabIndex="0"
+              //   key={person.slug}
+              // >
+              //   <Card.Image size="80%">
+              //     <div className={styles.AvatarOverlay_blue}>
+              //       <img src={person.avatarImage.fixed.src} alt="Profile 1" />
+              //     </div>
+              //   </Card.Image>
+              //   <Card.Title position="center">{person.name}</Card.Title>
+              //   <Card.SubTitle position="center">
+              //     {person.cardTitle}
+              //   </Card.SubTitle>
+              //   <div style={{ textAlign: "center" }}>
+              //     <Card.Link to={`/${person.slug}`}>Learn More</Card.Link>
+              //   </div>
+              // </Card>
             )
           })}
         </div>
@@ -69,7 +85,7 @@ export default function About({ data }) {
 
 export const query = graphql`
   query GetAboutCardData {
-    allContentfulResume {
+    allContentfulResume(sort: { fields: createdAt, order: ASC }) {
       nodes {
         cardTitle
         avatarImage {
