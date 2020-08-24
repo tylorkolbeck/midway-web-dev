@@ -32,13 +32,17 @@
 
   & .Title {
     text-align: center;
-    // display: flex;
-    // justify-content: center;
+
+    h2 {
+      margin-bottom: 0px;
+    }
   }
 
   h3 {
     text-transform: uppercase;
-    color: $color-primary;
+    color: $color-text;
+    font-weight: lighter;
     font-size: 1rem;
+    margin-top: 10px;
   }
 }

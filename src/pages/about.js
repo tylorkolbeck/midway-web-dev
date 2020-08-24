@@ -50,8 +50,12 @@ export default function About({ data }) {
                   <img src={person.avatarImage.fixed.src} alt="Profile 1" />
                 </div>
                 <div className={styles.Title}>
-                  <h2>{person.name}</h2>
+                  <h2>
+                    {person.name}
+                    <span className="blue-dot">.</span>
+                  </h2>
                   <h3>{person.cardTitle}</h3>
+                  <Card.Link to={`/${person.slug}`}>Learn More</Card.Link>
                 </div>
               </div>
 
