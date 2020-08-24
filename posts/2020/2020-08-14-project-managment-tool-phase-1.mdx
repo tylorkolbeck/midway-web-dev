@@ -1,5 +1,5 @@
 ---
-title: Project Management Tool, Part 1 - Planning Phase
+title: Project Management Tool - Planning Phase(part 1)
 date: 2020-08-16
 published: true
 author: Tylor Kolbeck
@@ -12,22 +12,11 @@ tags: ["ux", "application", "workflow"]
 
 This is the first post in a behind the scenes series where we take you from start to finish of a production application designed by the Midway Web Develoment team. We will start the series off with the most important phase in any project, the planning phase. After that we will walk through our design, development and the marketing phases of the project.
 
-## Outline
-
-- The Planning Phase
-- Determing The Purpose
-- Develop The User Story
-- Project Manager Stories
-- Team Member Stories
-- Determine MVP
-
----
-
 ## The Planning Phase
 
-The planning phase is one of the most crucial parts to any web project yet it is often glossed over. With proper planning you can identify the scope of the project and lay out an effecient road map to getting your app online. You should never start developing until you are satisfied with your plan.
+The planning phase is one of the most crucial parts to any web project and should never be taken lightly. With proper planning you can identify the scope of the project and lay out an effecient road map to getting your app online. Deevelopment should never start until you are satisfied with your plan.
 
-Proper planning ensures the project:
+### Proper planning ensures that the project:
 
 - Stays on schedule
 - Stays within budget
@@ -38,26 +27,25 @@ Proper planning ensures the project:
 
 ## Determine The Purpose
 
-The first step is identifying what the problem that your web app is set out to takle. This should be a solution that solves a specific problem. The purpose of our application will be:
+The first step is identifying the problem that you want web app ito solve. It should be something that solves a specific problem. The requirement for our app will be:
 
 **Our team needs a tool to track projects by urgency, status and deadlines as well as have the ability to assign tasks to members of our team.**
 
-It is best to have a specific purpose for you app so that you can make a general assumption right of the bat about the scope, requirements and needs of the project. Also, having a clear purpose helps to ensure that the project stays on track.
+It is best to have a specific purpose for your app so that you can make a general assumption about the scope, requirements and needs of the project. Having a clear purpose also helps to ensure that the project stays on track because you will be working to solve the specific problem that you are making the app for in the first place.
 
 ## Develop The User Story
 
 At MWD we use an agile approach of identifying the project requirements by looking at it from the perspective of the end user. We can do this by creating a "conversation" about a users needs and how they would accomplish those tasks.
 
-Once we have identified the user story we can use them to plan our development sprints. This step should not get into any technical language or technologies, remember it is from the perspective of the user.
-The user story consists mostly of two elements, epics and stories. Stories are smaller in scope and can be individual tasks that contribute and make up an epic. Stories should usually take a week or two to complete.
+Once we have identified the user story we can use them to plan our development sprints. This step should not get into any technical language or technologies beacuse it is from the perspective of the user.
 
-We use the common description template of:
+The user story is generally broken into two categories; top level epics and lower level stories. Epics are an overall goal that is made up of stories. The storeis are smaller in scope and can be individual tasks that contribute to accomplish the task identified in an epic. Stories are usually short enough that they can be developed in a week or two.
 
 ### User Story Template
 
-**AS A** _TYPE OF USER_ **I WANT** _SOME GOAL_ **SO THAT** _SOME REASON_
+ALl user stories follow a similiar pattern and can be plugged into the following template:
 
-This will get placed on cards(physical or digital) so that they can be visually laid out and discussed amongst the team.
+**AS A** _TYPE OF USER_ **I WANT** _SOME GOAL_ **SO THAT** _SOME REASON_
 
 Our example application epics will be:
 
@@ -65,40 +53,52 @@ Our example application epics will be:
 
 **Epic 2:** AS A team member I WANT to be able to see tasks associated with a project SO THAT i can determine my work requirements.
 
-Once we have our epics we can identify the stories or _subtasks_ that make up our epics.
+These epics will get placed on cards(physical or digital) so that they can be visually laid out and discussed amongst the team. More specific stories are identified and placed under each epic.
 
 ### Epic 1 Project Manager Stories
 
-AS A project manager I WANT to initiate a project board
+**AS A project manager I WANT to create a project board SO THAT i can create and manage tasks involved with the project to stay on timeline and manage workloads.**
 
-AS A project manager I WANT to assign team members to the project
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AS A project manager I WANT to initiate a project board
 
-AS A project manager I WANT to add tasks to the project
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AS A project manager I WANT to assign team members to the project
 
-AS A project manager I WANT to add dues dates to tasks
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AS A project manager I WANT to add tasks to the project
 
-AS A project manager I WANT to add priorities to the tasks
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AS A project manager I WANT to add dues dates to tasks
 
-AS A project manager I WANT to add track time spent on a task
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AS A project manager I WANT to add priorities to the tasks
 
-AS A project manager I WANT to see the status of a task
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AS A project manager I WANT to add track time spent on a task
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AS A project manager I WANT to see the status of a task
 
 ### Epic 2 Team Member Stories
 
-AS A team member I WANT TO to view all tasks
+**AS A team member I WANT to be able to see tasks associated with a project SO THAT i can determine my work requirements.**
 
-AS A team member I WANT TO add time spent on a task
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AS A team member I WANT TO to view all tasks
 
-AS A team member I WANT TO change the status of a task
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AS A team member I WANT TO add time spent on a task
 
-AS A team member I WANT TO add tasks to the project
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AS A team member I WANT TO change the status of a task
 
-AS A team member I WANT TO estimate time required to complete the task
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AS A team member I WANT TO add tasks to the project
 
-As you can see we have broken our epics down into smaller digestable tasks that can be easily distributed among a team
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AS A team member I WANT TO estimate time required to complete the task
+
+As you can see we have broken our epics down into smaller digestable tasks that can be easily distributed amongst a team
 
 ## The MVP
 
-The MVP is the "minimal viable product". The MVP is the least amount of development you can do to get your product in front of users while still providing a service. By doing this you can start getting user feedback immediately. Getting early user feedback means that you will minimize time wasted on unwanted or uneeded features that maybe you thought the user wanted. Also, once your MVP is launched you can determine if the interest in your app is worth continuing on with development whether your app better suits another market or to just cut your losses and ditch the project.
+With the purpose and user stories identified the next step is to determine the projects MVP or "Minimal Viable Product".
+
+The MVP is the least amount of development you can do to get your product in front of users while still providing a service. By doing this you can start getting user feedback immediately. Getting early user feedback means that you will minimize time wasted on unwanted or uneeded features that maybe you thought the user wanted. Also, once your MVP is launched you can determine if the interest in your app is worth continuing on with development whether your app better suits another market or to just discontinue.
+
+## Identify The Tech Stack
+
+With all of our planning pieces we have a good idea of the scope and requirements of the project. Looking at the project we can start to determine the best technologies to use which would fit the product. These will include choosing front end frameworks and backend tools such as databases and servers.
 
 ## Part 2 coming soon...
+
+In the next behind the scenes post we will start the branding and design phase of the project.
