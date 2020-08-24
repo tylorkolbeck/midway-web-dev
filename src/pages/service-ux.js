@@ -3,101 +3,58 @@ import styles from "../css/pages/service-web-development.module.scss"
 import Layout from "../components/layout"
 import Hero from "../components/Hero/Hero"
 import Aside from "../components/Aside/Aside"
-import WhatWeKnow from "../components/WhatWeKnow/WhatWeKnow"
 
-export default function Webdevelopment() {
+export default function UxService() {
+  const hero = (
+    <Hero
+      size="half"
+      heading="UI/UX Design Solutions"
+      subText="The Midway Web Development team creates products and experiences that are made for the user."
+    />
+  )
+
   return (
-    <Layout>
-      <Hero
-        size="half"
-        heading="UX Research Services"
-        subText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vitae?"
-      />
-
+    <Layout sideNav hero={hero}>
       <section>
         <Aside>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
-          officiis expedita doloremque id deserunt praesentium provident
-          laboriosam suscipit ex cum?
+          The goal of UX design in business is to “improve customer satisfaction
+          and loyalty through the utility, ease of use, and pleasure provided in
+          the interaction with a product.”{" "}
+          <span style={{ fontSize: "14px" }}>
+            -Oxford Journal Interacting With Computers
+          </span>
         </Aside>
       </section>
 
-      <section className={styles.Technologies}>
-        <h1>Technologies</h1>
-        <WhatWeKnow />
-      </section>
-
-      <section className={styles.Content}>
-        <h1>About Our Services</h1>
-        <div>
-          <h2>Lorem, ipsum dolor.</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis unde
-            sed possimus dolorem aliquid eaque doloribus tenetur saepe
-            necessitatibus quae. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quidem, fuga aut. Commodi dolores optio veritatis
-            nemo ratione hic natus odit?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            eaque aperiam illo similique nobis mollitia dolore labore neque!
-            Facilis, explicabo?
-          </p>
-        </div>
-      </section>
-
       <section className={styles.Content}>
         <div>
-          <h2>Lorem, ipsum dolor.</h2>
+          <h2>What is UX Design Research?</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis unde
-            sed possimus dolorem aliquid eaque doloribus tenetur saepe
-            necessitatibus quae. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quidem, fuga aut. Commodi dolores optio veritatis
-            nemo ratione hic natus odit?
+            UX (user experience) research is the systematic study of target
+            users and their requirements, to add realistic contexts as well as
+            insights to design processes. This process can be divided into two
+            approaches: Attitudinal and Behavioral. UX researchers often adopt
+            various methods to uncover problems, discover usability issues and
+            find potential design opportunities. Doing so, they reveal valuable
+            information which can be fed into the design process.
           </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            eaque aperiam illo similique nobis mollitia dolore labore neque!
-            Facilis, explicabo?
-          </p>
-        </div>
-      </section>
 
-      <Hero bg="bg_accent" size="quarter" heading="Web Development Services" />
+          <h2>How do we help?</h2>
+          <p>
+            One of the keys to being proactive in your users experience is to
+            perform UX Research. Here at Midway Web Development, we will help
+            you discover exactly what your users need all while providing you
+            with clear data regarding it. We offer in-depth Quantitative and
+            Qualitative Research to ensure you stay ahead of design problems.
+          </p>
 
-      <section className={styles.Content}>
-        <h1>Why Websites Are Important</h1>
-        <div>
-          <h2>Lorem, ipsum dolor.</h2>
+          <h2>What do we do?</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis unde
-            sed possimus dolorem aliquid eaque doloribus tenetur saepe
-            necessitatibus quae. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quidem, fuga aut. Commodi dolores optio veritatis
-            nemo ratione hic natus odit?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            eaque aperiam illo similique nobis mollitia dolore labore neque!
-            Facilis, explicabo?
-          </p>
-        </div>
-      </section>
-      <section className={styles.Content}>
-        <div>
-          <h2>Lorem, ipsum dolor.</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis unde
-            sed possimus dolorem aliquid eaque doloribus tenetur saepe
-            necessitatibus quae. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quidem, fuga aut. Commodi dolores optio veritatis
-            nemo ratione hic natus odit?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            eaque aperiam illo similique nobis mollitia dolore labore neque!
-            Facilis, explicabo?
+            We offer your company a clear picture of target users data and help
+            you in identifying possible design opportunities. You can perform UX
+            research at any stage of the development process and we take pride
+            in aiding you in gathering the most useful insights to optimize your
+            users experience.
           </p>
         </div>
       </section>
