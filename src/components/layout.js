@@ -16,12 +16,12 @@ export default function Layout(props) {
       <div
         className={[
           styles.Layout_container,
-          props.sideNav ? styles.showSideNav : "",
+          props.sideNav ? styles.showSideNav : "", // if the layout wants the side nav add the side nav class
         ].join(" ")}
       >
         {props.sideNav && <SideNavigation />}
 
-        <div>{props.children}</div>
+        <div className={styles.layoutContent}>{props.children}</div>
       </div>
       <Footer />
     </div>

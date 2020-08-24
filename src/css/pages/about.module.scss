@@ -6,14 +6,7 @@
     flex-wrap: wrap;
     margin-bottom: 100px;
     margin-top: 50px;
-    justify-content: space-around;
-
-    // & > div {
-    //   margin: 10px;
-    //   flex-basis: 250px;
-    //   max-width: 300px;
-    //   flex-shrink: 1;
-    // }
+    justify-content: center;
   }
 
   & .Aside_about {
@@ -23,11 +16,13 @@
 
 .About_profile_wrapper {
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 20px;
   & .Avatar img {
     height: 150px;
     width: 150px;
-
-    margin-right: 20px;
   }
 
   & .Title {

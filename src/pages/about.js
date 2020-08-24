@@ -45,7 +45,7 @@ export default function About({ data }) {
         <div className={styles.Cards_people}>
           {team.nodes.map(person => {
             return (
-              <div className={styles.About_profile_wrapper}>
+              <div className={styles.About_profile_wrapper} key={person.slug}>
                 <div className={styles.Avatar}>
                   <img src={person.avatarImage.fixed.src} alt="Profile 1" />
                 </div>

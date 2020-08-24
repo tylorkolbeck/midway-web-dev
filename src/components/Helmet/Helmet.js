@@ -6,7 +6,6 @@ export default function Head() {
   return (
     <Helmet>
       <title>Midway Web Development</title>
-      <title>Midway Web Development</title>
       <meta name="title" content="Midway Web Development" />
       <meta
         name="description"

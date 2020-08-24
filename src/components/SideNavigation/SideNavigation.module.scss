@@ -28,6 +28,7 @@
 }
 
 @media only screen and (max-width: 550px) {
+  //hide the side nav on screens smaller than 550px
   .SideNavigation {
     display: none;
   }
