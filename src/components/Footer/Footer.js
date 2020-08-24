@@ -18,7 +18,9 @@ export default function Footer() {
         </div>
         <div className={styles.NavigationLinks}>
           <ul>
-            <h3>Navigation</h3>
+            <li>
+              <h3 style={{ marginBottom: "10px" }}>Navigation</h3>
+            </li>
             {navLinks.map(link => {
               if (link.slug) {
                 return (
@@ -30,16 +32,17 @@ export default function Footer() {
             })}
           </ul>
           <ul>
-            <h3>Services</h3>
-            <ul>
-              {serviceLinks.map(link => {
-                return (
-                  <li key={link.slug}>
-                    <Link to={link.slug}>{link.displayText}</Link>
-                  </li>
-                )
-              })}
-            </ul>
+            <li>
+              <h3 style={{ marginBottom: "10px" }}>Services</h3>
+            </li>
+
+            {serviceLinks.map(link => {
+              return (
+                <li key={link.slug}>
+                  <Link to={link.slug}>{link.displayText}</Link>
+                </li>
+              )
+            })}
           </ul>
         </div>
       </div>

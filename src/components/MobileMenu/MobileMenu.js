@@ -24,7 +24,7 @@ export default function MobileMenu() {
         <Link to="/" onClick={toggleMenuOpen}>
           Home
         </Link>
-        <Link to="/service-webdevelopment" onClick={toggleMenuOpen}>
+        <Link to="/service-web-development" onClick={toggleMenuOpen}>
           Web Development
         </Link>
         <Link to="/service-webapplications" onClick={toggleMenuOpen}>

@@ -55,7 +55,7 @@ export default function About({ data }) {
                     <span className="blue-dot">.</span>
                   </h2>
                   <h3>{person.cardTitle}</h3>
-                  <Card.Link to={`/${person.slug}`}>Learn More</Card.Link>
+                  <Card.Link to={`/${person.slug}`}>View Resume</Card.Link>
                 </div>
               </div>
 

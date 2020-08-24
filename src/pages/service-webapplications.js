@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "../css/pages/service-webdevelopment.module.scss"
+import styles from "../css/pages/service-web-development.module.scss"
 import Layout from "../components/layout"
 import Hero from "../components/Hero/Hero"
 import WhatWeKnow from "../components/WhatWeKnow/WhatWeKnow"
