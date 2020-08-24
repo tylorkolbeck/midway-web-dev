@@ -1,5 +1,6 @@
 import React from "react"
 import Helmet from "react-helmet"
+import metaImage from "../../../static/homepage.png"
 
 export default function Head() {
   return (
@@ -19,7 +20,7 @@ export default function Head() {
         property="og:description"
         content="Midway Web Development provides modern and efficient web, UI/UX, and design services."
       />
-      <meta property="og:image" content="../static/homepage.png" />
+      <meta property="og:image" content={metaImage} />
       {/* 
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://metatags.io/" />
