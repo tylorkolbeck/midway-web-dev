@@ -48,8 +48,27 @@ $card-border-radius: 12px;
   }
 
   & .Card_HeaderImage {
+    // border-bottom: 1px solid $color-text;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba($color-text, 0.3);
+      border-radius: $card-border-radius $card-border-radius 0 0;
+    }
     img {
       border-radius: $card-border-radius $card-border-radius 0 0;
+    }
+  }
+
+  &:hover {
+    & .Card_HeaderImage::after {
+      background: none;
     }
   }
 }
