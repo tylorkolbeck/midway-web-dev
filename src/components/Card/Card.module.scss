@@ -1,9 +1,10 @@
 @import "../../css/colors.scss";
 
+$card-border-radius: 12px;
+
 .Card {
   background: white;
-  border-radius: 12px;
-  padding: 50px 20px;
+  border-radius: $card-border-radius;
   box-shadow: 8px 5px 5px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   color: $color-grey-dark;
   transition: all 0.3s ease-in-out;
@@ -19,11 +20,6 @@
     font-weight: 400;
     margin: 0px;
     margin-bottom: 20px;
-  }
-
-  &:hover {
-    // transform: scale(1.05);
-    // cursor: pointer;
   }
 
   & .Card_link {
@@ -42,5 +38,18 @@
 
   & .Card_footer {
     margin-top: auto;
+    padding: 0px 20px;
+    padding-bottom: 25px;
+  }
+
+  & .Card_Content {
+    padding: 25px 20px;
+    height: 100%;
+  }
+
+  & .Card_HeaderImage {
+    img {
+      border-radius: $card-border-radius $card-border-radius 0 0;
+    }
   }
 }

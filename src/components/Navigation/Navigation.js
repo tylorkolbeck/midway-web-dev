@@ -66,7 +66,7 @@ export default function Navigation() {
               <Link to="/blog">Blog</Link>
             </li>
             <li>
-              <Link to="/comingSoon">Products</Link>
+              <Link to="/ourwork">Our Work</Link>
             </li>
             <li>
               <Link to="/contact">Contact</Link>

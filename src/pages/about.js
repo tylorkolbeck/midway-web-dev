@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "../css/pages/about.module.scss"
-import { navigate, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Hero from "../components/Hero/Hero"
 import { Card } from "../components/Card/Card"

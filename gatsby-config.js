@@ -17,6 +17,7 @@ module.exports = {
     `gatsby-remark-images`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-contentful`,
       options: {

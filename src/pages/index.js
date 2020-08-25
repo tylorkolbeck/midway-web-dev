@@ -50,33 +50,41 @@ export default function Home() {
         >
           <div className={styles.Services_container}>
             <Card>
-              <Card.Title>Proffesional Websites</Card.Title>
-              <p>
-                Need a custom website to get your business online? Learn more
-                about why a website is critical to your companys success.
-              </p>
-              <Card.Link to="/service-web-development">
-                Web Development Services
-              </Card.Link>
-            </Card>
-            <Card>
-              <Card.Title>Custom Applications</Card.Title>
-              <p>
-                Need a custom web application? Learn more about how we can help
-                you improve your companies effiency with a custom web service.
-              </p>
-              <Card.Link to="/service-webapplications">
-                Web App Services
-              </Card.Link>
+              <Card.Content>
+                <Card.Title>Proffesional Websites</Card.Title>
+                <p>
+                  Need a custom website to get your business online? Learn more
+                  about why a website is critical to your companys success.
+                </p>
+                <Card.Link to="/service-web-development">
+                  Web Development Services
+                </Card.Link>
+              </Card.Content>
             </Card>
 
             <Card>
-              <Card.Title>Design And User Experience</Card.Title>
-              <p>
-                Need a Logo, company branding or UX services? Learn more about
-                how we design for the user.
-              </p>
-              <Card.Link to="/service-ux">UI/UX Services</Card.Link>
+              <Card.Content>
+                <Card.Title>Custom Applications</Card.Title>
+                <p>
+                  Need a custom web application? Learn more about how we can
+                  help you improve your companies effiency with a custom web
+                  service.
+                </p>
+                <Card.Link to="/service-webapplications">
+                  Web App Services
+                </Card.Link>
+              </Card.Content>
+            </Card>
+
+            <Card>
+              <Card.Content>
+                <Card.Title>Design And User Experience</Card.Title>
+                <p>
+                  Need a Logo, company branding or UX services? Learn more about
+                  how we design for the user.
+                </p>
+                <Card.Link to="/service-ux">UI/UX Services</Card.Link>
+              </Card.Content>
             </Card>
           </div>
         </Hero>

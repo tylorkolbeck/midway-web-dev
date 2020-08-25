@@ -21,6 +21,10 @@ Card.Title = ({ children, position }) => {
   )
 }
 
+Card.Content = ({ children }) => {
+  return <div className={styles.Card_Content}>{children}</div>
+}
+
 Card.SubTitle = ({ children, position }) => {
   return (
     <h4
@@ -43,6 +47,10 @@ Card.Image = ({ children, size, position }) => {
       {children}
     </div>
   )
+}
+
+Card.HeaderImage = ({ children }) => {
+  return <div className={styles.Card_HeaderImage}>{children}</div>
 }
 
 Card.Link = ({ children, to, position }) => {
