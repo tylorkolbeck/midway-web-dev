@@ -24,18 +24,19 @@ export default function About({ data }) {
           <p>
             Our mission is to make the planning and deployment of your next web
             project a fun and painless process. Your website defines what your
-            company is what it is about so it should be nothing short of an
-            exciting process.
+            company is, what it is about, so it should be nothing short of an
+            exciting process
           </p>
           <p>
             While you handle the aspects of starting or running your business,
             let us handle getting you online so that the world can discover you.
-            Our timely and cost effective solutions will give you one less thing
-            to worry about.
+            Our timely and cost effective solutions give you one less thing to
+            worry about, allowing your business to thrive with a strong online
+            presence.
           </p>
           <p>
             We proudly stand by our services and deliver our products with a
-            100% satisfaction gurantee.{" "}
+            100% satisfaction guarantee.{" "}
           </p>
         </aside>
 
