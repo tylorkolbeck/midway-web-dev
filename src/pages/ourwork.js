@@ -19,28 +19,30 @@ export default function ourWork({ data }) {
   )
   return (
     <Layout hero={heroComponent} sideNav>
-      <div className={styles.Work_wrapper}>
-        {work.map(work => {
-          return (
-            <Card key={work.id}>
-              {/* <img src={work.websiteImage.fluid.src} /> */}
-              <Card.HeaderImage>
-                <Image fluid={work.websiteImage.fluid} alt={work.title} />
-              </Card.HeaderImage>
-              <Card.Content>
-                <Card.Title>
-                  {work.title.toUpperCase()}
-                  <span className="blue-dot">.</span>
-                </Card.Title>
-                <p>{`${work.shortDescription.slice(0, 100)}...`}</p>
-              </Card.Content>
-              <Card.Footer>
-                <Card.Link to={work.websiteUrl}>Visit Site</Card.Link>
-              </Card.Footer>
-            </Card>
-          )
-        })}
-      </div>
+      <section>
+        <div className={styles.Work_wrapper}>
+          {work.map(work => {
+            return (
+              <Card key={work.id}>
+                {/* <img src={work.websiteImage.fluid.src} /> */}
+                <Card.HeaderImage>
+                  <Image fluid={work.websiteImage.fluid} alt={work.title} />
+                </Card.HeaderImage>
+                <Card.Content>
+                  <Card.Title>
+                    {work.title.toUpperCase()}
+                    <span className="blue-dot">.</span>
+                  </Card.Title>
+                  <p>{`${work.shortDescription.slice(0, 100)}...`}</p>
+                </Card.Content>
+                <Card.Footer>
+                  <Card.Link to={work.websiteUrl}>Visit Site</Card.Link>
+                </Card.Footer>
+              </Card>
+            )
+          })}
+        </div>
+      </section>
     </Layout>
   )
 }
