@@ -39,6 +39,9 @@ export default function MobileMenu() {
         <Link to="/about" onClick={toggleMenuOpen}>
           About
         </Link>
+        <Link to="/ourwork" onClick={toggleMenuOpen}>
+          Our Work
+        </Link>
         <Link to="/blog" onClick={toggleMenuOpen}>
           Blog
         </Link>

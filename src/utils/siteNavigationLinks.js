@@ -16,6 +16,10 @@ export const navLinks = [
     displayText: "Contact",
     slug: "/contact",
   },
+  {
+    displayText: "Our Work",
+    slug: "/ourwork",
+  },
 ]
 
 export const serviceLinks = [
