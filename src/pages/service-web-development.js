@@ -17,24 +17,20 @@ export default function Webdevelopment() {
   return (
     <Layout sideNav hero={hero}>
       <section className={styles.Content}>
-        {/* <Aside>
-          We believe that getting your website up and running should be an
-          enjoyable process because it will define who you are on the web.{" "}
-        </Aside> */}
-
         <div>
           <h1>
             Why You Need A Website<span className="blue-dot">.</span>
           </h1>
           <p>
             The easiest way for a company to legitimize themselves and build
-            client trust is to have a strong internet presence. An online
-            presence not only adds value to your company's brand but it also
-            offers an opportunity get your business in front of possible
-            clients. A website is not only made up of flashy graphics and
-            colors, but of thoughtful design and usability. At MWD we put
-            usability at the forefront when designing your web product beacuse,
-            if you have a product it is only worth something if its usable.
+            client trust is to have a strong online presence. An online presence
+            not only adds value to your company's brand but it also offers an
+            opportunity get your business in front of possible clients. A
+            website is made up not only of flashy graphics and colors, but of
+            thoughtful design and usability. At MWD, we put usability at the
+            forefront of everything we do and offer solutions before they become
+            problems. When designing your web product, we know that your website
+            only adds value to your already worthy product.
           </p>
         </div>
       </section>
@@ -46,16 +42,17 @@ export default function Webdevelopment() {
             Responsive Web Design<span className="blue-dot">.</span>
           </h2>
           <p>
-            With over half of all web traffic coming from a mobile device it is
+            With over half of all web traffic coming from mobile devices it is
             important that your website looks good and performs well across as
-            many devices sizes as possible. Thats why at MWD we develop websites
-            that are responsive and performant.
+            many devices as possible. That's why we develop websites that are
+            not only responsive, but are performant and reliable.
           </p>
           <p>
             When developing your website we start with mobile layouts. We
-            optimize the site to so that media can be quickly delivered on slow
-            speed connections and that the site looks good from the smallest
-            phone up to a device the size of a TV.
+            optimize the site At MWD, we put usability at the forefront of
+            everything we do and offer solutions before they become problems.
+            When designing your web product, we know that your website only adds
+            value to your already worthy product.
           </p>
         </div>
       </section>
@@ -69,8 +66,8 @@ export default function Webdevelopment() {
           know what technologies they are using. This matters because you want a
           website that is secure, performant, reliable and easy to maintain. At
           MWD We use the latest in web development technologies so that you have
-          nothing to worry about except running your business. Below is a list
-          of a hand full of the main technologies that we.
+          nothing to worry about except running your business. Below are the
+          primary technologies that we utilize.
         </p>
 
         <div style={{ maxWidth: "600px", margin: "50px auto" }}>
@@ -88,8 +85,9 @@ export default function Webdevelopment() {
             traffic to your website through search engine results. With quality
             SEO you can expect to attract visitors to your site that are looking
             for your service and potentially converting that user into a future
-            client. All of our websites are made with SEO as a top priority,
-            there is no point in having a website if people can not find it
+            client. All of our websites are made with SEO as a top priority.
+            Whatever industry you operate in, having a strong search engine
+            optimization is paramount to your success in today’s digital age.
           </p>
         </div>
       </section>
@@ -99,11 +97,12 @@ export default function Webdevelopment() {
             Website Content<span className="blue-dot">.</span>
           </h2>
           <p>
-            A website is not useful if it does not provide the right message.
-            Your site “copy” is the content that delivers your message and
-            guides people through your website to convey information and deliver
-            your message. At MWD we help you to create your message so your
-            visitors can find what they came looking for.
+            A website can only be useful if your message is precise. Your site’s
+            “Copy” is the backbone of your site and a strong one allows your
+            users to navigate throughout your website with ease to find whatever
+            information they need. We can not only help you create your message,
+            but also deliver it strongly so your users come to understand your
+            brand and its voice.
           </p>
         </div>
       </section>

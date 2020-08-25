@@ -49,9 +49,10 @@ export default function Webdevelopment() {
           <p>
             With mobile conversion rates on the rise and the fact that Google
             ranks for mobile-friendliness, it only makes sense to keep this in
-            mind when developing your application. By designing you for mobile
-            first you create a foundation that will strengthen your designs for
-            tablet and desktop.
+            mind when developing your application. By designing your app, with
+            mobile optimization in mind, we help you create a foundation that
+            will strengthen your designs for everything from mobile to desktop
+            and beyond.
           </p>
         </div>
       </section>
@@ -61,11 +62,11 @@ export default function Webdevelopment() {
           <h2>Progressive Web Apps</h2>
           <p>
             Progressive Web Apps are web applications that load like regular web
-            pages or websites, but can offer the user funcitonality such as
-            working offline and device hardware access traditionaly only
+            pages or websites, but can offer the user functionality such as
+            working offline and device hardware access traditionally only
             available to native mobile apps. Progressive Web Apps are built and
-            enhanced with moderd APIs to deliver native-like capabilities,
-            reliatbility, and installability while reaching any device with a
+            enhanced with modern APIs to deliver native-like capabilities,
+            reliability, and installability while reaching any device with a
             single codebase.
           </p>
           <p>

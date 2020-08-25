@@ -17,6 +17,9 @@
   display: none;
   z-index: 10;
 }
+*:focus {
+  outline: none;
+}
 
 .nav_icon span {
   display: block;

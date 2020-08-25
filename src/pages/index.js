@@ -51,7 +51,7 @@ export default function Home() {
           <div className={styles.Services_container}>
             <Card>
               <Card.Content>
-                <Card.Title>Proffesional Websites</Card.Title>
+                <Card.Title>Professional Websites</Card.Title>
                 <p>
                   Need a custom website to get your business online? Learn more
                   about why a website is critical to your companys success.
@@ -96,8 +96,8 @@ export default function Home() {
             </h1>
             <p>
               We develop using the <b>latest in modern web technologies</b> so
-              you can be guranteed that your product will be fast and
-              effiecient. A fast website means happy customers.
+              you can be guranteed that your product will be fast and efficient.
+              A fast website means happy customers.
             </p>
 
             <Link to="/service-web-development">
@@ -141,8 +141,8 @@ export default function Home() {
               Reach Your Audience<span className="blue-dot">.</span>
             </h1>
             <p>
-              At MWD we put a lot of focus into <b>SEO and marketing</b> to help
-              you to gain quality organic traffic. With organice traffic you can{" "}
+              At MWD we put a lot of focus into <b>SEO and Marketing</b> to help
+              you to gain quality organic traffic. With organic traffic you can{" "}
               <b>save hundreds on ad space</b> as well as increasing your
               visitor count.
             </p>
