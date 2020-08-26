@@ -2,7 +2,6 @@
 
 .Aside {
   padding-left: 10px;
-  // max-width: 600px;
   margin: 50px auto;
   border-left: 3px solid $color-tert;
   line-height: 2rem;
@@ -11,6 +10,7 @@
   font-weight: bold;
 
   & span {
+    font-size: 14px;
     display: block;
     color: $color-text;
   }

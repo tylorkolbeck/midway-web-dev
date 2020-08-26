@@ -1,18 +1,18 @@
 ---
-title: A React Hook To Detect An Element Out Of focus
+title: React Hook To Detect Click Outside
 date: 2020-08-18
 published: true
 author: Tylor Kolbeck
 tags: ["react", "hooks", "javascript"]
 ---
 
+Code Repo [Github](https://github.com/tylorkolbeck/clickOutside/blob/master/clickOutside.js)
+
 ## The Problem
 
-In a recent project I needed a way to detect focus and blur of a react component so that I could conditionally render another element. For example, if I had a custom dropdown element that when focused would display another element containing the options for the user to select. Once the user clicked outside the element, tabbed out or hit enter on after selecting a choice then the dropdown would be hidden.
+In a recent React project, I needed a way to toggle a dropdown depending on whether or not a certain element was focused. So for example, a custom dropdown component allows the user to filter with an input field. When the input field is focused then the drop-down is shown and when the user clicks anywhere else outside of that component then the drop-down is hidden again.
 
-You can also clone the code from the repo. [Github Source](https://github.com/tylorkolbeck/clickOutside/blob/master/clickOutside.js)
-
-I wanted to be able to reuse this logic across multiple projects so this is the hook that I came up with:
+I wanted to be able to reuse this logic across multiple projects so what better thing to do then to turn it into a hook.
 
 ## The Code
 
@@ -23,12 +23,14 @@ const useClickOutside = initialIsVisible => {
   const [isVisible, setIsVisible] = useState(initialIsVisible)
   const ref = useRef(null)
 
+  // Handle a click off the element and set is visible to false
   const handleClickOutside = event => {
     if (ref.current && !ref.current.contains(event.target)) {
       setIsVisible(false)
     }
   }
 
+  // set is visible if key press is escape key or tab key
   const tabOrEscapeHandler = event => {
     if (event.keyCode == 9 || event.keyCode == 27) {
       setIsVisible(false)
@@ -38,6 +40,8 @@ const useClickOutside = initialIsVisible => {
   useEffect(() => {
     document.addEventListener("click", handleClickOutside, true)
     document.addEventListener("keydown", tabOrEscapeHandler, true)
+
+    // Clean up event listeners on unmount
     return () => {
       document.removeEventListener("click", handleClickOutside, true)
       document.removeEventListener("keydown", tabOrEscapeHandler, true)
@@ -51,12 +55,6 @@ export default useClickOutside
 
 ## Code Breakdown
 
-I export three variables
+I export three variables `ref` `isVisible` and `setIsVisible`
 
-- ref
-- isVisible
-- setIsVisible
-
-All you need to do is give the element that you want to "focus spy" the ref and whenever that component is focused, isVisible will be set to true. Once you unfocus or "blur" then isVisible will be false. I also export setIsVisible incase you would need to manually set the visibility of your component.
-
-Then all you have to do is conditionally render your selected component based on the `isVisible` state.
+All you need to do is give the element that you want to focus spy the ref. Whenever that component is focused isVisible will be set to true. Once you unfocus or "blur" the element with a click, tab out or escape key then isVisible will be set false. Use the `isVisible` to conditionally render your element. I also export setIsVisible in case you would need to manually set the visibility of your component.

@@ -29,9 +29,9 @@ export default function Webdevelopment() {
             Professional Design<span className="blue-dot">.</span>
           </h2>
           <p>
-            Designing a successful logo takes knowledge, experience, talent and
+            Designing a successful logo takes knowledge, experience, talent, and
             attention to detail. This includes a deep understanding of color
-            schemes and how they stand out out clients psychologically. Our team
+            schemes and how they stand out clients psychologically. Our team
             will work closely with you to create a logo that effectively
             communicates your brand identity and messaging to your potential
             clients.

@@ -24,15 +24,11 @@ export default function ourWork({ data }) {
           {work.map(work => {
             return (
               <Card key={work.id}>
-                {/* <img src={work.websiteImage.fluid.src} /> */}
                 <Card.HeaderImage>
                   <Image fluid={work.websiteImage.fluid} alt={work.title} />
                 </Card.HeaderImage>
                 <Card.Content>
-                  <Card.Title>
-                    {work.title.toUpperCase()}
-                    <span className="blue-dot">.</span>
-                  </Card.Title>
+                  <Card.Title>{work.title}</Card.Title>
                   <p>{`${work.shortDescription.slice(0, 100)}...`}</p>
                 </Card.Content>
                 <Card.Footer>
@@ -49,7 +45,7 @@ export default function ourWork({ data }) {
 
 export const query = graphql`
   query GetWorkData {
-    allContentfulOurWork {
+    allContentfulOurWork(sort: { fields: importance, order: ASC }) {
       nodes {
         id
         slug

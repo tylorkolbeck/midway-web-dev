@@ -42,6 +42,7 @@ export default function Home() {
                 maxWidth: "1200px",
                 margin: "0 auto",
                 marginBottom: "25px",
+                marginTop: "50px",
               }}
             >
               One Stop Shop.
@@ -54,12 +55,14 @@ export default function Home() {
                 <Card.Title>Professional Websites</Card.Title>
                 <p>
                   Need a custom website to get your business online? Learn more
-                  about why a website is critical to your companys success.
+                  about why a website is critical to your company's success.
                 </p>
+              </Card.Content>
+              <Card.Footer>
                 <Card.Link to="/service-web-development">
                   Web Development Services
                 </Card.Link>
-              </Card.Content>
+              </Card.Footer>
             </Card>
 
             <Card>
@@ -67,24 +70,28 @@ export default function Home() {
                 <Card.Title>Custom Applications</Card.Title>
                 <p>
                   Need a custom web application? Learn more about how we can
-                  help you improve your companies effiency with a custom web
+                  help you improve your companies efficiency with a custom web
                   service.
                 </p>
+              </Card.Content>
+              <Card.Footer>
                 <Card.Link to="/service-webapplications">
                   Web App Services
                 </Card.Link>
-              </Card.Content>
+              </Card.Footer>
             </Card>
 
             <Card>
               <Card.Content>
                 <Card.Title>Design And User Experience</Card.Title>
                 <p>
-                  Need a Logo, company branding or UX services? Learn more about
-                  how we design for the user.
+                  Need a logo, company branding, or UX services? Learn more
+                  about how we design for the user.
                 </p>
-                <Card.Link to="/service-ux">UI/UX Services</Card.Link>
               </Card.Content>
+              <Card.Footer>
+                <Card.Link to="/service-ux">UI/UX Services</Card.Link>
+              </Card.Footer>
             </Card>
           </div>
         </Hero>
@@ -96,8 +103,8 @@ export default function Home() {
             </h1>
             <p>
               We develop using the <b>latest in modern web technologies</b> so
-              you can be guranteed that your product will be fast and efficient.
-              A fast website means happy customers.
+              you can be guaranteed that your product will be fast and
+              efficient. A fast website means happy customers.
             </p>
 
             <Link to="/service-web-development">
@@ -142,7 +149,7 @@ export default function Home() {
             </h1>
             <p>
               At MWD we put a lot of focus into <b>SEO and Marketing</b> to help
-              you to gain quality organic traffic. With organic traffic you can{" "}
+              you gain quality organic traffic. With organic traffic you can{" "}
               <b>save hundreds on ad space</b> as well as increasing your
               visitor count.
             </p>

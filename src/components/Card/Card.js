@@ -4,7 +4,8 @@ import styles from "./Card.module.scss"
 
 export function Card(props) {
   return (
-    <div {...props} className={styles.Card}>
+    <div {...props} className={[styles.Card, props.className].join(" ")}>
+      {console.log(props.className)}
       {props.children}
     </div>
   )

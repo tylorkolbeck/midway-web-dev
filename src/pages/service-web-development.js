@@ -25,8 +25,8 @@ export default function Webdevelopment() {
             The easiest way for a company to legitimize themselves and build
             client trust is to have a strong online presence. An online presence
             not only adds value to your company's brand but it also offers an
-            opportunity get your business in front of possible clients. A
-            website is made up not only of flashy graphics and colors, but of
+            opportunity to get your business in front of possible clients. A
+            website is made up not only of flashy graphics and colors but of
             thoughtful design and usability. At MWD, we put usability at the
             forefront of everything we do and offer solutions before they become
             problems. When designing your web product, we know that your website
@@ -45,7 +45,7 @@ export default function Webdevelopment() {
             With over half of all web traffic coming from mobile devices it is
             important that your website looks good and performs well across as
             many devices as possible. That's why we develop websites that are
-            not only responsive, but are performant and reliable.
+            not only responsive but are performant and reliable.
           </p>
           <p>
             When developing your website we start with mobile layouts. We
@@ -64,7 +64,7 @@ export default function Webdevelopment() {
         <p>
           When choosing a company to design and build your website you want to
           know what technologies they are using. This matters because you want a
-          website that is secure, performant, reliable and easy to maintain. At
+          website that is secure, performant, reliable, and easy to maintain. At
           MWD We use the latest in web development technologies so that you have
           nothing to worry about except running your business. Below are the
           primary technologies that we utilize.

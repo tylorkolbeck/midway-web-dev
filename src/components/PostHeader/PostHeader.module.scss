@@ -1,0 +1,43 @@
+@import "../../css/colors.scss";
+.PostHeader {
+  display: flex;
+  justify-content: space-between;
+  & .avatar {
+    height: 50px;
+    width: auto;
+  }
+
+  & .infoBox {
+    display: flex;
+
+    & .infoBox2 {
+      margin-left: 25px;
+    }
+  }
+}
+
+.Tags {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  margin-top: 10px;
+
+  & span {
+    font-size: 12px;
+    margin-left: 4px;
+
+    &:not(:last-of-type)::after {
+      content: "\B7";
+      margin-left: 4px;
+    }
+  }
+  & svg {
+    fill: $color-tert;
+  }
+}
+
+.socialMediaLinks {
+  & button {
+    margin-left: 5px;
+  }
+}

@@ -37,14 +37,6 @@ export default function resume() {
                   <AiFillTwitterSquare />
                 </Link>
               </div>
-              {/* <div>
-              <p>
-                <Link to="/">View Resume</Link>{" "}
-              </p>
-              <p>
-                <Link to="/">Read Tylors Posts</Link>
-              </p>
-            </div> */}
             </div>
           </div>
         </div>

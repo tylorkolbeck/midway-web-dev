@@ -6,6 +6,14 @@
   grid-gap: 2rem;
   grid-auto-rows: 1fr;
 
+  .Post_Card:hover {
+    cursor: pointer;
+
+    & h3 {
+      color: $color-tert;
+    }
+  }
+
   .Excerpt {
     color: $color-text;
   }
@@ -37,50 +45,33 @@
       opacity: 1;
     }
   }
+}
 
-  .Post:hover {
-    cursor: pointer;
+.small_text {
+  font-size: 12px;
+  color: lighten($color-grey-dark, 20);
 
-    & h2 {
-      color: $color-tert;
-    }
+  &.Divider {
+    margin: 0px 4px;
   }
+}
 
-  .Tags {
-    display: flex;
-    align-items: center;
-    margin-bottom: 8px;
+.Tags {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
 
-    & span {
-      font-size: 12px;
+  & span {
+    font-size: 12px;
+    margin-left: 4px;
+
+    &:not(:last-of-type)::after {
+      content: "\B7";
       margin-left: 4px;
-
-      &:not(:last-of-type)::after {
-        content: "\B7";
-        margin-left: 4px;
-      }
-    }
-    & svg {
-      fill: $color-tert;
     }
   }
-
-  & > div {
-    display: flex;
-    flex-direction: column;
-
-    & footer {
-      margin-top: auto;
-
-      & span {
-        font-size: 12px;
-        color: lighten($color-grey-dark, 20);
-
-        &.Divider {
-          margin: 0px 4px;
-        }
-      }
-    }
+  & svg {
+    fill: $color-tert;
   }
 }
 

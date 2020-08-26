@@ -14,6 +14,9 @@ exports.createPages = ({ actions, graphql }) => {
           fields {
             slug
           }
+          frontmatter {
+            author
+          }
         }
       }
       resumes: allContentfulResume {
@@ -40,6 +43,7 @@ exports.createPages = ({ actions, graphql }) => {
           component: blogPostTemplate,
           context: {
             slug: post.fields.slug,
+            author: post.frontmatter.author,
           },
         })
       }

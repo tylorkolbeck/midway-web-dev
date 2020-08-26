@@ -3,6 +3,7 @@ import styles from "../css/pages/service-web-development.module.scss"
 import Layout from "../components/layout"
 import Hero from "../components/Hero/Hero"
 import WhatWeKnow from "../components/WhatWeKnow/WhatWeKnow"
+import Aside from "../components/Aside/Aside"
 
 export default function Webdevelopment() {
   const hero = (
@@ -15,21 +16,17 @@ export default function Webdevelopment() {
   return (
     <Layout sideNav hero={hero}>
       <section className={styles.Technologies}>
-        <h1>
-          Technologies<span className="blue-dot">.</span>
-        </h1>
-        <p>
-          These are just some of the technologies that we specialize in and use
-          to build your web application.
-        </p>
-        <div style={{ maxWidth: "600px", margin: "50px auto" }}>
-          <WhatWeKnow />
-        </div>
+        <Aside>
+          A web application is a software or program which is accessible using
+          any web browser. Its frontend is usually created using languages like
+          HTML, CSS, Javascript, which are supported by major browsers.
+          <span>- guru99.com</span>
+        </Aside>
       </section>
 
       <section className={styles.Content}>
         <h1>
-          About Our Services<span className="blue-dot">.</span>
+          Our Web Application Services<span className="blue-dot">.</span>
         </h1>
         <div>
           <h2>Quality and Reliability</h2>
@@ -74,6 +71,16 @@ export default function Webdevelopment() {
             significant improvements. Twitter saw a 65% increase in pages per
             session and Hulu saw a 27% increase in return visits!
           </p>
+        </div>
+        <h1>
+          Technologies<span className="blue-dot">.</span>
+        </h1>
+        <p>
+          These are just some of the technologies that we specialize in and use
+          to build your web application.
+        </p>
+        <div style={{ maxWidth: "600px", margin: "50px auto" }}>
+          <WhatWeKnow />
         </div>
       </section>
     </Layout>

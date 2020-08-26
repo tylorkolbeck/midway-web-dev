@@ -8,7 +8,7 @@ export default function HomePageHero({ arrowHidden }) {
     <div className={styles.HomePageHero_wrapper}>
       <div>
         <h1 className="h1-xl" style={{ maxWidth: "600px" }}>
-          Midway Web Development And Design
+          Midway Web Development and Design
           <span className="blue-dot">.</span>
         </h1>
 
@@ -17,10 +17,10 @@ export default function HomePageHero({ arrowHidden }) {
         <p>
           Getting your business online with a website or as a custom web
           application should be a fun and exciting process. At Midway Web
-          Development thats what we strive to provide.
+          Development that's what we strive to provide.
         </p>
         <Button bg="primary" style={{ marginTop: "50px" }} to="/contact">
-          Get Started
+          Get A Free Quote
         </Button>
       </div>
       <div></div>

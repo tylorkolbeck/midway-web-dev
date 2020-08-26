@@ -30,7 +30,7 @@ export default function About({ data }) {
           <p>
             While you handle the aspects of starting or running your business,
             let us handle getting you online so that the world can discover you.
-            Our timely and cost effective solutions give you one less thing to
+            Our timely and cost-effective solutions give you one less thing to
             worry about, allowing your business to thrive with a strong online
             presence.
           </p>
@@ -59,27 +59,6 @@ export default function About({ data }) {
                   <Card.Link to={`/${person.slug}`}>View Resume</Card.Link>
                 </div>
               </div>
-
-              // <Card
-              //   onClick={() => navigate(`/${person.slug}`)}
-              //   onKeyDown={() => navigate(`/${person.slug}`)}
-              //   role="button"
-              //   tabIndex="0"
-              //   key={person.slug}
-              // >
-              //   <Card.Image size="80%">
-              //     <div className={styles.AvatarOverlay_blue}>
-              //       <img src={person.avatarImage.fixed.src} alt="Profile 1" />
-              //     </div>
-              //   </Card.Image>
-              //   <Card.Title position="center">{person.name}</Card.Title>
-              //   <Card.SubTitle position="center">
-              //     {person.cardTitle}
-              //   </Card.SubTitle>
-              //   <div style={{ textAlign: "center" }}>
-              //     <Card.Link to={`/${person.slug}`}>Learn More</Card.Link>
-              //   </div>
-              // </Card>
             )
           })}
         </div>

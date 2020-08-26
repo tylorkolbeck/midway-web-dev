@@ -16,8 +16,10 @@ const components = {
     <code
       {...props}
       style={{
-        background: colors.tertLight,
-        padding: "0px 2px",
+        background: "#282C34",
+        color: "white",
+        fontWeight: "light",
+        padding: "0px 8px",
         borderRadius: "4px",
       }}
     />
