@@ -18,10 +18,25 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
     `gatsby-transformer-sharp`,
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: "UA-176398512-1",
+    //   },
+    // },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
-        trackingId: "UA-176398512-1",
+        googleAnalytics: {
+          trackingId: "UA-176398512-1",
+          // Setting this parameter is optional
+          anonymize: true,
+        },
+        // facebookPixel: {
+        //   pixelId: 'YOUR_FACEBOOK_PIXEL_ID'
+        // },
+        // Defines the environments where the tracking should be available  - default is ["production"]
+        environments: ["production", "development"],
       },
     },
     {
