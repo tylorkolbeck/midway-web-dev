@@ -12,7 +12,6 @@ const heroElement = (
   <Hero
     heading="Blog Posts"
     subText="Browse our collection of blog posts where we talk about web development, design, and user experience best practices and techniques."
-    size="half"
   />
 )
 
