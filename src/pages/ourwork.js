@@ -13,11 +13,23 @@ import ClientModal from "../components/ClientModal/ClientModal.component"
 export default function OurWork({ data }) {
   const [modalIsOpen, setModalIsOpen] = React.useState(false)
 
+  window.addEventListener('scroll', () => {
+    document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+  });
+
   function toggleModal(event, clientData) {
     if (!modalIsOpen && clientData) {
-      document.body.classList.add('modal-open');
+      const body = document.body;
+      body.classList.add('modal-open');
+      const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+      body.style.position = 'fixed';
+      body.style.top = `-${scrollY}`; 
       setModalIsOpen(clientData)
     } else {
+      const body = document.body;
+      const scrollY = body.style.top;
+      body.style.position = '';
+      window.scrollTo(0, parseInt(scrollY || '0') * -1);
       document.body.classList.remove('modal-open');
       setModalIsOpen(false)
     }
