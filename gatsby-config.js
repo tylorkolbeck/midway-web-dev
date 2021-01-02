@@ -8,6 +8,7 @@ module.exports = {
     description:
       "Midway Web Development provides modern and efficient web and design services.",
     image: "/images/homepage.png",
+    author: "Midway Web Development - Tylor Kolbeck - John Kaplanis",
   },
   plugins: [
     `gatsby-plugin-sass`,

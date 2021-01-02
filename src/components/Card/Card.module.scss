@@ -5,12 +5,19 @@ $card-border-radius: 12px;
 .Card {
   background: white;
   border-radius: $card-border-radius;
-  box-shadow: 8px 5px 5px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   color: $color-grey-dark;
   transition: all 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
   padding-bottom: 25px;
+  overflow: hidden;
+
+  .Card_Header {
+    border-radius: $card-border-radius, $card-border-radius, 0, 0;
+    padding: 20px;
+    padding-top: 0px;
+  }
 
   .Card_subtitle {
     color: lighten($color-grey-dark, 30);
@@ -67,5 +74,32 @@ $card-border-radius: 12px;
     & .Card_HeaderImage::after {
       background: none;
     }
+  }
+}
+
+.Tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 8px;
+  margin-top: 10px;
+
+  & span {
+    font-size: 12px;
+    margin-left: 4px;
+
+    &:not(:last-of-type)::after {
+      content: "\B7";
+      margin-left: 4px;
+    }
+  }
+  & svg {
+    fill: $color-tert;
+  }
+}
+
+.cursor {
+  &:hover {
+    cursor: pointer;
   }
 }

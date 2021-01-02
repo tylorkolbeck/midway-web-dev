@@ -1,0 +1,18 @@
+.Modal {
+  position: fixed;
+  z-index: 10;
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 600px;
+  max-height: 80vh;
+
+  overflow: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .Modal {
+    margin: 0 20px;
+  }
+}
