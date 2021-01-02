@@ -15,8 +15,10 @@ export default function OurWork({ data }) {
 
   function toggleModal(event, clientData) {
     if (!modalIsOpen && clientData) {
+      document.body.classList.add('modal-open');
       setModalIsOpen(clientData)
     } else {
+      document.body.classList.remove('modal-open');
       setModalIsOpen(false)
     }
   }

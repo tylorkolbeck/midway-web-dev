@@ -7,7 +7,8 @@
 
 @font-face {
   font-family: "SansPro Black";
-  src: url("../../static/fonts/SansProBlack/SourceSansPro-Black.woff") format("woff");
+  src: url("../../static/fonts/SansProBlack/SourceSansPro-Black.woff")
+    format("woff");
 }
 
 @font-face {
@@ -36,7 +37,8 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../../static/fonts/OpenSans/OpenSans-LightItalic.woff") format("woff");
+  src: url("../../static/fonts/OpenSans/OpenSans-LightItalic.woff")
+    format("woff");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -52,7 +54,8 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../../static/fonts/OpenSans/OpenSans-ExtraBoldItalic.woff") format("woff");
+  src: url("../../static/fonts/OpenSans/OpenSans-ExtraBoldItalic.woff")
+    format("woff");
   font-weight: 800;
   font-style: italic;
   font-display: swap;
@@ -76,7 +79,8 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../../static/fonts/OpenSans/OpenSans-BoldItalic.woff") format("woff");
+  src: url("../../static/fonts/OpenSans/OpenSans-BoldItalic.woff")
+    format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -84,7 +88,8 @@
 
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("../../static/fonts/OpenSans/SourceSansPro-Black.woff") format("woff");
+  src: url("../../static/fonts/OpenSans/SourceSansPro-Black.woff")
+    format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -92,7 +97,8 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../../static/fonts/OpenSans/OpenSans-SemiBoldItalic.woff") format("woff");
+  src: url("../../static/fonts/OpenSans/OpenSans-SemiBoldItalic.woff")
+    format("woff");
   font-weight: 600;
   font-style: italic;
   font-display: swap;
@@ -336,4 +342,8 @@ select[multiple] {
   .h1-xl {
     font-size: 72px;
   }
+}
+body.modal-open {
+  height: 100vh;
+  overflow-y: hidden;
 }
