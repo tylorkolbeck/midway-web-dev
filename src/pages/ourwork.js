@@ -23,6 +23,18 @@ export default function OurWork({ data }) {
 
   const { allContentfulClient: clients } = data
 
+  function lockScroll() {
+    if (typeof document !== "undefined") {
+      document.getElementsByTagName("html")[0].style.overflow = "hidden"
+    }
+  }
+
+  function unlockScroll() {
+    if (typeof document !== "undefined") {
+      document.getElementsByTagName("html")[0].style.overflow = "auto"
+    }
+  }
+
   const heroComponent = (
     <Hero
       heading="Our Work"
@@ -32,6 +44,7 @@ export default function OurWork({ data }) {
   return (
     <>
       {modalIsOpen && <ModalBackground onClick={toggleModal} />}
+      {modalIsOpen ? lockScroll() : unlockScroll()}
       <Modal shown={modalIsOpen} toggleModal={toggleModal}>
         {modalIsOpen && (
           <ClientModal clientData={modalIsOpen} closeModal={toggleModal} />
