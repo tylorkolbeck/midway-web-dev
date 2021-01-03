@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import Hero from "../components/Hero/Hero"
 import Link from "../components/Link/Link"
 import { AiFillLinkedin, AiFillTwitterSquare } from "react-icons/ai"
+import userPlaceholder from "../assets/user_placeholder.png";
 
 export default function resume({ data }) {
   const { contentfulResume: resume } = data
@@ -25,7 +26,7 @@ export default function resume({ data }) {
     <Layout hero={hero} sideNav>
       <section className={styles.Resume_top}>
         <div className={styles.Profile_image}>
-          <img src={resume.profileImage.fluid.src} alt={resume.name} />
+          <img src={query ? resume.profileImage.fluid.src : userPlaceholder} alt={resume.name} />
         </div>
         <div className={styles.Header_info}>
           <div>
